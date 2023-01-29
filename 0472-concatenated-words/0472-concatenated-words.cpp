@@ -16,7 +16,7 @@ public:
                         dp[j] = 1;
                     }
                 }
-                if (dp[n]) {
+                if (dp[n] != 0) {
                     res.push_back(word);
                     break;
                 }
