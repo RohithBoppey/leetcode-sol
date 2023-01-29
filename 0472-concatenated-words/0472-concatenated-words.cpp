@@ -10,7 +10,7 @@ public:
             vector<int> dp(n + 1, 0);
             dp[0] = 1;
             for (int i = 0; i < n; i++) {
-                if (!dp[i]) continue;
+                if (dp[i] == 0) continue;
                 for (int j = i + 1; j <= n; j++) {
                     if (j - i < n && words_set.count(word.substr(i, j - i))) {
                         dp[j] = 1;
