@@ -12,7 +12,7 @@ public:
             {'w', 'x', 'y', 'z'}
         };
 
-    void solve(string& digits, int &i, string& curr, int &n, vector<string>& res){
+    void solve(string& digits, int i, string& curr, int &n, vector<string>& res){
         if(i == n){ 
             res.push_back(curr);
             return;
@@ -20,9 +20,7 @@ public:
         int k = digits[i] - '0'; 
         for(auto x: ch[k - 2]){
             curr += x;
-            i++;
-            solve(digits, i, curr, n, res);
-            i--;
+            solve(digits, i + 1, curr, n, res);
             curr.pop_back();
         }
     }
@@ -34,8 +32,7 @@ public:
             return {};
         }
         string curr = "";
-        int start = 0;
-        solve(digits, start, curr, n, res);
+        solve(digits, 0, curr, n, res);
         return res;
     }
 };
