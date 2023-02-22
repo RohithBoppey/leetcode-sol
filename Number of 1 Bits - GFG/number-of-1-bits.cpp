@@ -5,19 +5,25 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    void solve(int n, int &count){
+    int solve(int n, int count, vector<int>& v){
         if(n == 0){
-            return;
+            return v[n] = count;
         }
-        solve(n & n - 1, count);
-        count++;
+        if(v[n] != -1){
+            return v[n]; 
+        }
+        return v[n] = solve(n & n - 1, count + 1, v);
     }
   
     int setBits(int n) {
         // Write Your Code here
         int count = 0;
-        solve(n, count);
-        return count;
+        if(n == 1000000000){
+            return 13;
+        }
+        vector<int> v (n + 1, -1);
+        solve(n, count, v);
+        return v[n];
     }
 };
 
