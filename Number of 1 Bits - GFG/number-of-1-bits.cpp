@@ -5,13 +5,18 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
+    void solve(int n, int &count){
+        if(n == 0){
+            return;
+        }
+        solve(n & n - 1, count);
+        count++;
+    }
+  
     int setBits(int n) {
         // Write Your Code here
         int count = 0;
-        while(n != 0){
-            n = n & (n - 1);
-            count++;
-        }
+        solve(n, count);
         return count;
     }
 };
