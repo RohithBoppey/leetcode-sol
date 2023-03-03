@@ -1,38 +1,20 @@
 class Solution {
 public:
     
-    vector<int> rotateArray(vector<int> &v, int k){
+    void rotateArray(vector<int> &v, int k){
         int n = v.size();
         if(k % n == 0){
-            // no rotation required
-            return v;
+            return;
         }
-
-        k = k % n;
-
-        vector<int> res(n, 0);
-
-        // 2 parts
-        // first part contains last k elements in order
-        int t = 0;
-        for(int i = n - k; i < n; i++){
-            res[t] = v[i];
-            t++;
+        if(k > n){
+            k = k % n;
         }
-
-        // second part contains first n - k elements in order
-        for(int i = 0; i < n - k; i++){
-            res[t] = v[i];
-            t++;
-        }
-
-        return res;
+        reverse(v.begin(), v.end());
+        reverse(v.begin(), v.begin() + k);
+        reverse(v.begin() + k, v.end());
     }
 
     void rotate(vector<int>& nums, int k) {
-        vector<int> res = rotateArray(nums, k);
-        for(int i = 0; i < res.size(); i++){
-            nums[i] = res[i];
-        }
+        rotateArray(nums, k);
     }
 };
