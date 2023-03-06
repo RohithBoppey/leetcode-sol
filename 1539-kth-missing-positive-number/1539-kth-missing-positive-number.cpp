@@ -14,6 +14,6 @@ public:
             }
         }
         
-        return arr[arr.size() - 1] + k;
+        return arr[j - 1] + k;
     }
 };
