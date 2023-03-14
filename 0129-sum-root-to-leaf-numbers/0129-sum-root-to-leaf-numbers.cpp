@@ -16,13 +16,18 @@ public:
             return;
         }
         if(root->left == NULL && root->right == NULL){
+//             we are including the last term
+//             this is the root case
+//             hence we need to add that
             ans += stoi(curr + to_string(root->val));
             return;
         }
+//         with reference, we are subtracting that amount of length from the curr generated so far
         string s = to_string(root->val);
         curr += s;
         solve(root->left, curr, ans);
         solve(root->right, curr, ans);
+//         removing the last s elements
         curr = curr.substr(0, curr.length() - s.length());
         return;
     }
