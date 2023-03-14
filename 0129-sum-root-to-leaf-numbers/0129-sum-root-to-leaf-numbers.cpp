@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    void solve(TreeNode* root, string curr, int& ans){
+    void solve(TreeNode* root, string& curr, int& ans){
         if(root == NULL){
             return;
         }
@@ -19,8 +19,11 @@ public:
             ans += stoi(curr + to_string(root->val));
             return;
         }
-        solve(root->left, curr + to_string(root->val), ans);
-        solve(root->right, curr + to_string(root->val), ans);
+        string s = to_string(root->val);
+        curr += s;
+        solve(root->left, curr, ans);
+        solve(root->right, curr, ans);
+        curr = curr.substr(0, curr.length() - s.length());
         return;
     }
     
