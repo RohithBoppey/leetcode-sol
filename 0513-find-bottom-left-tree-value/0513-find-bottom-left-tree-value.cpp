@@ -11,8 +11,8 @@
  */
 class Solution {
 public:
-    vector<vector<int>> bfs;
-    
+    // vector<vector<int>> bfs;
+    vector<int> curr;
     void print2dVector(vector<vector<int>> v){
         for(auto x: v){
             for(auto y: x){
@@ -27,13 +27,12 @@ public:
         q.push(root);
         q.push(NULL);
         
-        vector<int> curr;
         while(!q.empty()){
             TreeNode* node = q.front();
             q.pop();
             if(node == NULL){
 //                 level is ending
-                bfs.push_back(curr);
+                // bfs.push_back(curr);
                 curr.clear();
                 if(!q.empty()){
                     q.push(NULL);
@@ -54,7 +53,7 @@ public:
     int findBottomLeftValue(TreeNode* root) {
         solve(root);
         // print2dVector(bfs);
-        return bfs[bfs.size() - 1][0];
+        return curr[0];
         // return 0;
     }
 };
