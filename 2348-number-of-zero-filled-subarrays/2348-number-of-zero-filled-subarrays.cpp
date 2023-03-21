@@ -1,12 +1,12 @@
 class Solution {
 public:
     long long zeroFilledSubarray(vector<int>& nums) {
-//         find the consecutive ranges of i and j
-//         something like a window
-//         then we can have len = j - i + 1
-//         and possible combinations = len * (len + 1) / 2
-//         add it to total 
-//         return total
+        // find the consecutive ranges of i and j
+        // something like a window
+        // then we can have len = j - i + 1
+        // and possible combinations = len * (len + 1) / 2
+        // add it to total 
+        // return total
         
         long long total = 0, len = 0;
         int n = nums.size(); // in the number range only, so len
