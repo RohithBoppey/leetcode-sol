@@ -1,48 +1,60 @@
-class DisjointUnion{
-private:
-    int parent[100001];
-    int minWeight[100001];
-public:
-    DisjointUnion(int n){
-        for(int i = 0; i <= n; i++){
-            parent[i] = i;
-            minWeight[i] = INT_MAX;
-        }
-    }
-    
-    int findParent(int u){
-        if(parent[u] == u){
-            return u;
-        }else{
-            return parent[u] = findParent(parent[u]);
-        }
-    }
-    
-    void insert(int u, int v, int w){
-        int up = findParent(u);
-        int vp = findParent(v);
-        
-//         assinging the parent of v as u
-        parent[vp] = up;
-        
-//         now find the minimum of the u as it is the new parent
-        minWeight[up] = min({minWeight[vp], minWeight[up], w});
-    }
-    
-    
-    int returnMinWeight(int u, int v){
-        return min(minWeight[findParent(u)], minWeight[findParent(v)]);
-    }
-    
-};
-
 class Solution {
 public:
     int minScore(int n, vector<vector<int>>& roads) {
-        DisjointUnion du(n);
+//         using bfs to solve the problem
+//         the starting node is 1
+//         we need to start from 1 and find which all nodes are connected
+        
+//         we need to create an adjList for the purpose
+        vector<vector<int>> adjList(n + 1);
         for(auto &x: roads){
-            du.insert(x[0], x[1], x[2]);
+            adjList[x[0]].push_back(x[1]);
+            adjList[x[1]].push_back(x[0]);
         }
-        return du.returnMinWeight(1, n);
+        
+        
+//         now adjList is created
+//         find which all can be visited from 1
+        
+        vector<int> visited(n + 1, 0);
+        
+        
+//         using BFS - QUEUE
+        
+        queue<int> q;
+        q.push(1);
+        visited[1] = 1;
+        
+        while(!q.empty()){
+            int node = q.front();
+            q.pop();
+            visited[node] = 1;
+            
+            for(int x: adjList[node]){
+                if(!visited[x]){
+                    q.push(x);
+                }
+                
+            }
+        }
+        
+        
+//         we have updated the reachable terms from the 1
+        
+//         just traverse and find the least
+        int ans = INT_MAX;
+        for(auto &x: roads){
+            if(visited[x[0]] == 1 && visited[x[1]] == 1 && x[2] < ans){
+                ans = x[2];
+            }
+        }
+        
+    
+        return ans;
     }
 };
+
+
+
+
+
