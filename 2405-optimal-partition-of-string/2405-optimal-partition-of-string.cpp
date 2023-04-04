@@ -2,13 +2,13 @@ class Solution {
 public:
     int partitionString(string s) {
         int count = 1;
-        unordered_map<char,int> mp;
+        unordered_set<char> set;
         for(auto ch: s){
-            if(mp[ch] >= 1){
-                mp.clear();
+            if(set.find(ch) != set.end()){
+                set.clear();
                 count++;
             }
-            mp[ch]++;
+            set.insert(ch);
         }
         return count;
     }
