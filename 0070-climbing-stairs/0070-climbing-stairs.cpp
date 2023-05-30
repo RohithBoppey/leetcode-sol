@@ -1,40 +1,34 @@
 class Solution {
 public:
-    int solve(vector<int>& ways, int n, int start){
+    
+    int solve(vector<int>& res, int start, int n){
         if(start >= n){
-            // no way to reach the end
             return 0;
         }
         
-        if(ways[start] != -1){
-            // already calculated
-            return ways[start];
+        if(res[start] != -1){
+            // already done
+            return res[start];
         }
         
-        // not cal
-        // need to cal
-        
-        // it always depends on the next problem
-        return ways[start] = solve(ways, n, start + 1) + solve(ways, n, start + 2); 
+        return res[start] = solve(res, start + 1, n) + solve(res, start + 2, n);
     }
     
     int climbStairs(int n) {
-        // using the concept of DP
-        vector<int> ways(n + 1, -1);
-        
-        if(n < 2){
+        if(n == 1){
             return 1;
         }
+        if(n == 2){
+            return 2;
+        }
         
-        ways[n] = 1;
-        ways[n-1] = 1;
-        ways[n-2] = 2;
+        vector<int> res(n + 1, -1);
         
-        // ways means number of ways we can reach the end 
-        // if the start position is i
+        // initial
+        res[n] = 0;
+        res[n - 1] = 1;
+        res[n - 2] = 2;
         
-        solve(ways, n, 0);
-        return ways[0];
-        
+        return solve(res, 0, n);
     }
 };
