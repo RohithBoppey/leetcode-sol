@@ -1,24 +1,22 @@
 class MyHashSet {
 public:
-    set<int> s;
+    
+    vector<bool> res;
     
     MyHashSet() {
-        
+        res.resize(1000001, false);
     }
     
     void add(int key) {
-        s.insert(key);
+        res[key] = true;
     }
     
     void remove(int key) {
-        s.erase(key);
+        res[key] = false;   
     }
     
     bool contains(int key) {
-        if(s.find(key) != s.end()){
-            return true;
-        }
-        return false;
+        return res[key];
     }
 };
 
