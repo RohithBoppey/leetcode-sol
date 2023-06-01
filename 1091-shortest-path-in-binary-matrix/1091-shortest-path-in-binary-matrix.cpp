@@ -41,7 +41,7 @@ public:
             
             if(row == rows - 1 && col == cols - 1){
                 // reached last index
-                return c;
+                // return c;
                 maxCount = min(maxCount, c);
             }
             
