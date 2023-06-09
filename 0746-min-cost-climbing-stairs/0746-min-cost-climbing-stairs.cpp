@@ -11,9 +11,9 @@ public:
         
         // compute
         // either 1 step or 2 steps
-        return v[start] = min(
-            cost[start] + solve(cost, start + 1, v, n),
-            cost[start] + solve(cost, start + 2, v, n)
+        return v[start] = cost[start] + min(
+            solve(cost, start + 1, v, n),
+            solve(cost, start + 2, v, n)
         ); 
     
     }
