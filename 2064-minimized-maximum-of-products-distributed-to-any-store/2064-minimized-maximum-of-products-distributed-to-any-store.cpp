@@ -20,7 +20,7 @@ public:
         }
         
         int mid;
-        int ans = INT_MAX;
+        int ans = INT_MIN;
         long long int shopsCovered;
         
         // we are checking how many shops it can cover and based on that
