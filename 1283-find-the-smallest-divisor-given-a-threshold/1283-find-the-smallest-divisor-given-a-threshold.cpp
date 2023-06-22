@@ -23,7 +23,7 @@ public:
             }else{
                 // already condition is meeting here
                 // sum has to increase -> divisor has to reduce
-                minDiv = mid;
+                minDiv = min(mid, minDiv);
                 high = mid - 1;
             }
             
