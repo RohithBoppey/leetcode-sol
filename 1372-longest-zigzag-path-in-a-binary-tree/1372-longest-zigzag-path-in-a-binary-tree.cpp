@@ -31,6 +31,7 @@ public:
         }
     }
 
+    // new
     int longestZigZag(TreeNode* root) {
         int ans = 0;
 
