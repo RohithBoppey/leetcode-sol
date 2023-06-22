@@ -2,13 +2,14 @@ class Solution {
 public:
     
     long long int solve(vector<int>& candies, int n){
-        // return the number of children that we can feed if each pile contains n candies
+        // return the number of children that we can feed if each pile contains n candies 
         
         long long int ans = 0;
         for(auto pile: candies){
             ans += pile / n;
             // less than pile means automatically zero
         }
+        
         return ans;
     }
     
