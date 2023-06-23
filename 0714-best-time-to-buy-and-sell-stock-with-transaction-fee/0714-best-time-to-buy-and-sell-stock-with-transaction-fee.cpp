@@ -1,16 +1,45 @@
 class Solution {
 public:
-    int maxProfit(vector<int>& prices, int fee) {
-        vector<int> free(prices.size()),hold(prices.size());
-
-        // buying stock on day 1
-        hold[0] = -prices[0];
-        for(int i = 1;i < prices.size();i++){
-            // Buying stock today or not doing anything.
-            hold[i] = max(hold[i-1],free[i-1]-prices[i]);
-            // Selling stock today or not doing anything.
-            free[i] = max(free[i-1],hold[i-1]+prices[i]-fee);
+    int dp[50001][2];
+    
+    int max1(int a, int b, int c){
+        return max(a, max(b, c));
+    }
+    
+    int solve(vector<int>& prices, int day, bool buy, int &n, int& fee){
+        // this function return max profit that can be obtained from day 0
+        if(day >= n){
+            // cannot generate any profit
+            return 0;
         }
-        return free[prices.size()-1];
+        
+        if(dp[day][buy] != -1){
+            // already sol
+            return dp[day][buy];
+        }
+        
+        int profit = 0;
+        
+        if(buy == true){
+            // if buying he is spending amount, so whaterver profit he gets below, he needs to subtract current
+            int buy = solve(prices, day + 1, false, n, fee) - prices[day];
+            int notbuy = solve(prices, day + 1, true, n, fee);
+            profit = max1(profit, buy, notbuy);
+        }
+        else{
+            // he can sell or not sell
+            // cooldown exists, so +2;
+            int sell = solve(prices, day + 1, true, n, fee) + prices[day] - fee;
+            int notsell = solve(prices, day + 1, false, n, fee);
+            profit = max1(profit, sell, notsell);
+        }
+        
+        return dp[day][buy] = profit;
+    }
+    
+    int maxProfit(vector<int>& prices, int fee) {
+        int n = prices.size();
+        memset(dp, -1, sizeof(dp));
+        return solve(prices, 0, true, n, fee);
     }
 };
