@@ -9,6 +9,7 @@ public:
             return 0;
         }
         
+        // new
         if(curr == n){
             if(diff == 0){
                 return 0;
