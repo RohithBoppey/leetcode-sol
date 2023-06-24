@@ -1,6 +1,6 @@
 class Solution {
 public:
-    
+    // new
     int n;
     int kadanesMax(vector<int>& nums){
         // this function returns the max sum of an array in O(N)
