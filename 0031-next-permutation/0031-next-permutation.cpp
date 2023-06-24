@@ -3,7 +3,7 @@ public:
     void nextPermutation(vector<int>& nums) {
         int n = nums.size();
         
-        // the idea is to find the next permutation
+        // the idea is to find the next permutation new
         
         // from behind, finding the required position
         int req_pos = -1;
