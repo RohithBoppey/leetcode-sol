@@ -28,8 +28,3 @@ matrix[i][col] = 0;
 }
 }
 }
-};
-```
-​
-but we can mark the row and col too
-​
