@@ -20,7 +20,7 @@ public:
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
                 if(rowm[i] == 1 || colm[j] == 1){
-                    // found a 0
+                    // found a 0 new
                     matrix[i][j] = 0;
                 }
             }
