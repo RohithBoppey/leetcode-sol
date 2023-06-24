@@ -17,7 +17,7 @@ public:
         
         if(n <= 2) { return res; }
         
-        // now we need to generate a pascal traingle
+        // now we need to generate a pascal traingle yeah
         
         vector<int> t;
         int t1;
