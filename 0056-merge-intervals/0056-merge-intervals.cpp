@@ -8,6 +8,7 @@ public:
             return intervals;
         }
         
+        // new
         sort(intervals.begin(), intervals.end());
         
         int start = 0, next = 1;
