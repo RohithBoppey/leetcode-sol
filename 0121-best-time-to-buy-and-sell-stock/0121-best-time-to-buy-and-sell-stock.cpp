@@ -1,16 +1,31 @@
 class Solution {
 public:
-    
     int maxProfit(vector<int>& prices) {
-        int ans = 0;
         int n = prices.size();
-        int local_max = INT_MIN;
+        
+        int mx = -1;
+        
+        int p, mp = 0;
+        
+        // the idea is to find the max number possible (SO FAR)
         for(int i = n - 1; i >= 0; i--){
-            local_max = max(local_max, prices[i]);
-            if(local_max != INT_MIN){
-                ans = max(ans, local_max - prices[i]);
-            }
+            if(mx == -1){
+                mx = prices[i];
+            }else{
+                // not empty
+                if(mx > prices[i]){
+                    // bigger price
+                    p = mx - prices[i];
+                    mp = max(p, mp);
+                }else{
+                    // smaller price
+                    mx = prices[i];
+                }
+            }         
         }
-        return ans;
+        
+        return mp;
     }
 };
+
+
