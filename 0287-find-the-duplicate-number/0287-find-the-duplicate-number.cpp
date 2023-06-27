@@ -11,7 +11,7 @@ public:
         slow = nums[0];
         fast = nums[0];
         
-        // to find the first breaking point
+        // to find the first breaking point new
         while(1){
             slow = nums[slow];
             fast = nums[nums[fast]];
