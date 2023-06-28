@@ -3,6 +3,7 @@ public:
     int majorityElement(vector<int>& nums) {
         int n = nums.size();
         
+        // new
         // using the moore's voting algorithm - to find the majority element
         int count = 0, ele = 0;
         
