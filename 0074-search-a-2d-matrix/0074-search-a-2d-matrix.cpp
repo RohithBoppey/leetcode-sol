@@ -14,6 +14,7 @@ public:
         
         int ri, ci;
         
+        // new 1
         while(low <= high){
             mid = low + (high - low) / 2;
             ri = mid / cols, ci = mid % cols;
