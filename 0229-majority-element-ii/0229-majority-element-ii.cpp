@@ -18,6 +18,7 @@ public:
                 c2 = 1;
                 e2 = nums[i];
             }
+            // new
             // now that c1 != 0 and c2 != 0
             else if(e1 == nums[i]){
                 c1++;
