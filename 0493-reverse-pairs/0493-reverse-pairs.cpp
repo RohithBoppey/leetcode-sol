@@ -1,11 +1,12 @@
 class Solution {
 public:
+    // new
     void merge(vector<int>& v, int low, int mid, int high){
         // we already have left and right parts sorted
         // the only function this does is merging
 
         int left_pointer = low, right_pointer = mid + 1;
-
+    
         // left - [low, mid] & right - [mid + 1, high]
 
         vector<int> temp;
