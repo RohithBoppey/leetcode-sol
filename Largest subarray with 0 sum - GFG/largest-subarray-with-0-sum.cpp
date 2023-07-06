@@ -20,7 +20,7 @@ class Solution{
         
         for(int i = 0; i < n; i++){
             curr += v[i];
-            if(curr == 0){
+            if(curr == target){
                 // that is the maximum
                 mx = i + 1;
             }else{
