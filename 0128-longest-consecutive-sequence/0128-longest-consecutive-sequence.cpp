@@ -1,34 +1,52 @@
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
-        // this is not optimal approach, just better approach
-        int n = nums.size();
+        // optimal - O(N) time
         
+        // no sorting
+        
+        // using set to skip duplicates
+        int n = nums.size();
         if(n == 0){
             return 0;
         }
         
-        // sorting to find the sequence
-        sort(nums.begin(), nums.end());
+        unordered_set<int> st;
         
-        int count = 1, last_ele = nums[0], maxCount = 1;
-        
-        for(int i = 1; i < n; i++){
-            if(nums[i] == last_ele + 1){
-                // it is in a sequence
-                count++;
-                last_ele = nums[i];
-            }else if(nums[i] == last_ele){
-                // do nothing
-            }else{
-                // reset the counter
-                count = 1;
-                last_ele = nums[i];
-            }
-            maxCount = max(maxCount, count);
+        // insertion into set
+        for(auto x: nums){
+            st.insert(x);
         }
         
-        return maxCount;
+        // for each element find if that is the starting element of the sequnce
         
+        int count = 1, maxCount = 1, curr = 0;
+        
+        for(int i = 0; i < n; i++){
+            // find if it is the starting element
+            // means prev doesnt exist
+            if(st.find(nums[i] - 1) == st.end()){
+                // doesnt exist
+                // starting of the sequence
+                // find the rest
+                
+                count = 1;
+                curr = nums[i];
+                
+                while(st.find(curr + 1) != st.end()){
+                    count++;
+                    curr++;
+                }
+                
+                // now we found sequence length
+                maxCount = max(maxCount, count);
+            }
+        }
+        
+        
+        return maxCount;
     }
 };
+
+
+
