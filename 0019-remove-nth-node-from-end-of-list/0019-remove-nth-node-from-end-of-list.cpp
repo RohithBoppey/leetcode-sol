@@ -23,6 +23,7 @@ public:
             return head->next;
         }
         
+        // new 
         while(fast->next != NULL){
             fast = fast->next;
             slow = slow->next;
