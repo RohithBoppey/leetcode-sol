@@ -1,5 +1,7 @@
 optimal approach:           
-  
+
+![WhatsApp Image 2023-07-13 at 15 28 46](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/9a90af02-5385-44b4-b478-4407cbd60ced)
+
 this approach includes fixing one pointer in a loop (i) but ensure that it is not repeating, same with low and high     
 when low + high + i index result in 0, we have found our pair       
 after that, move low and high accordingly which is not repeating
