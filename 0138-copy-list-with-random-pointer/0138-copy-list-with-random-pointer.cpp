@@ -18,37 +18,56 @@ class Solution {
 public:
     Node* copyRandomList(Node* head) {
         
-        // using hashmap to hash the pointers
-        
-        Node* temp = head;
-        
-        unordered_map<Node*, Node*> mp;
-        
-        while(temp != NULL){
-            // create a new copy of it
-            
-            Node* copy = new Node(temp->val, NULL, NULL);
-            mp[temp] = copy;
-            temp = temp->next;
+        // this solution is without extra space
+        if(head == NULL){
+            return head;
         }
         
-        // now copy is created
-        // nowe re assign based on that
+        // 1.   inserting into the immediate next
+        Node* iter = head, *front;
+        Node* copy;
         
-        temp = head;
-        
-        while(temp != NULL){
-            mp[temp]->next = mp[temp->next];
-            mp[temp]->random = mp[temp->random];
-            
-            temp = temp->next;
+        while(iter != NULL){
+            front = iter->next;
+            copy = new Node(iter->val, NULL, NULL);
+            iter->next = copy;
+            copy->next = front;
+            iter = front;
         }
         
-        return mp[head];
+        // 2.   adding the random part
+        
+        iter = head;
+        
+        while(iter != NULL){
+            if(iter->random != NULL){
+                copy = iter->next;
+                copy->random = iter->random->next;
+            }
+            iter = iter->next->next;
+        }
+        
+        
+        // 3.   breaking the current bonds and replacing 
+        
+        Node* newHead = new Node(0, NULL, NULL);
+        Node* dummy = newHead;
+        
+        iter = head;
+        
+        while(iter != NULL){
+            
+            front = iter->next->next;
+            dummy->next = iter->next;
+            iter->next = front;
+            
+            iter = front;
+            dummy = dummy->next;
+        }
+        
+        return newHead->next;
         
     }
 };
-
-
 
 
