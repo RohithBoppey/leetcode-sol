@@ -10,6 +10,9 @@ after that, move low and high accordingly which is not repeating
             
 ![WhatsApp Image 2023-07-05 at 16 41 27](https://user-images.githubusercontent.com/73538974/251131862-64c20ccc-f4a9-4982-b613-e5b90388c896.jpg)
 
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/1fc54c77-c489-4f27-8a3c-c81b353fe738)                        
+
+
 OPTIMAL CODE:
 ```
 vector<vector<int>> threeSum(vector<int>& nums) {
