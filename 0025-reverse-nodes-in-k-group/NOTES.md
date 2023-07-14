@@ -9,6 +9,10 @@ and the call should be for next only when it is not null​
 
 this is just BETTER SOLUTION, NOT OPTIMAL
 
+![WhatsApp Image 2023-07-12 at 22 33 38](https://user-images.githubusercontent.com/73538974/253046819-3071b737-e6f4-49a3-ad7c-8faec0f91e87.jpg)
+![WhatsApp Image 2023-07-12 at 22 33 38](https://user-images.githubusercontent.com/73538974/253046843-789078ef-e414-46a1-9fbe-f1bd4e6b54d5.jpg)
+
+
 ```
 class Solution {
 public:

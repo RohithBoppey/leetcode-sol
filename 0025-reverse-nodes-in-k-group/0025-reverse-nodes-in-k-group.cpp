@@ -11,48 +11,72 @@
 class Solution {
 public:
     
-    ListNode* helper(ListNode* head, int left, int k){
+    int findLen(ListNode* head){
+        ListNode* temp = head;
+        int count = 0;
         
+        while(temp != NULL){
+            temp = temp->next;
+            count++;
+        }
+        
+        return count;
+    }
+    
+    
+    ListNode* solve(ListNode* head, int left, int k){
+        
+        // this function return the reversed by k group linked list
         
         if(left < k){
-            // less than current group
-            // so return head
+            // cannot reverse, left elements are less than k
             return head;
         }
         
+        // rotate the k group from the head position
         
-        // we need to rotate the first k elements
+        ListNode* curr = head, *next, *prev = NULL;
         
         int count = 0;
-        ListNode *curr = head, *prev = NULL, *next;
         
-        while(count < k && curr != NULL){
+        while(curr != NULL && count < k){
+            // since we are required to only rotate k elements
+            
+            // 4 operations to rotate
             next = curr->next;
             curr->next = prev;
             prev = curr;
             curr = next;
+            
+            // to manage
             count++;
             left--;
         }
         
-        // once the k nodes are rotated
-        // head points to first element and prev points to the last element
-        // next points to next element
+        
+        // now the k group has been rotated
+        // the new list contains the head to be the last element pointing to NULL
+        
+        // that we are updating from the later on recursive call
         
         if(next != NULL){
-            head->next = helper(next, left, k);
+            head->next = solve(next, left, k);
         }
         
         return prev;
+        
     }
     
     ListNode* reverseKGroup(ListNode* head, int k) {
-        int currCount = 0;
-        ListNode* temp = head;
-        while(temp != NULL){
-            currCount++;
-            temp = temp->next;
+        if(head == NULL || head->next == NULL || k == 0){
+            // 0 or 1 elements
+            // nothing to rotate
+            return head;
         }
-        return helper(head, currCount, k);
+        
+        int count = findLen(head); // this function gives the len of the linked list
+        
+        return solve(head, count, k);
+        
     }
 };
