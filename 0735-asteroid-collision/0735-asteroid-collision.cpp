@@ -31,12 +31,6 @@ public:
                     // negative
                     // check upto where it can go
                     
-                    if(st.top() == abs(asteroids[i])){
-                        // remove and continue
-                        st.pop();
-                        continue;
-                    }
-                    
                     bool flag = true;
                     
                     while(!st.empty() && st.top() > 0 && st.top() <= abs(asteroids[i])){
