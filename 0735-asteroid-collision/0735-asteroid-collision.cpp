@@ -1,89 +1,109 @@
 class Solution {
 public:
-    
-    void solve(vector<int>& nums, int n){
+    vector<int> asteroidCollision(vector<int>& asteroids) {
         
-        if(n == 1 || n == 0){
-            // no more operations needed
-            return;
+        // using stacks
+        
+        int n = asteroids.size();
+        
+        if(n == 0 || n == 1){
+            return asteroids;
         }
         
-        bool isCollision = false;
         
-        int i = 0;
+        stack<int> st;
         
-        while(i < n - 1){
+        
+        for(int i = 0; i < n; i++){
             
-            // check for collision
-            if(nums[i] > 0 && nums[i + 1] < 0){
-                // collision is there
-                isCollision = true;
+            if(st.empty()){
                 
-                // make the required change
-                if(abs(nums[i]) < abs(nums[i + 1])){
-                    
-                    // remove ith element
-                    // marking
-                    nums[i] = 1001;
-                }
-                else if(abs(nums[i]) > abs(nums[i + 1])){
-                    
-                    // remove i + 1th element
-                    nums[i + 1] = 1001;
-                }
-                else{
-                    
-                    // remove both the elements
-                    nums[i] = 1001;
-                    nums[i + 1] = 1001;
-                    
-                }
-                
-                // move the two indices
-                i = i + 2;
+                // no choice but to retain
+                st.push(asteroids[i]);
                 
             }
             
             else{
-                i++;   
+                
+                // check if our number is -ve
+                if(asteroids[i] < 0){
+                    
+                    // negative
+                    // check upto where it can go
+                    
+                    if(st.top() == abs(asteroids[i])){
+                        // remove and continue
+                        st.pop();
+                        continue;
+                    }
+                    
+                    bool flag = true;
+                    
+                    while(!st.empty() && st.top() > 0 && st.top() <= abs(asteroids[i])){
+                        
+                        // the number is positive
+                        // and less than the current asteroid size
+                        
+                        if(st.top() == abs(asteroids[i])){
+                            flag = false;    
+                        }
+                        st.pop();
+                        
+                        if(flag == false){
+                            break;
+                        }
+                        
+                    }
+                    
+                    if(flag == false){
+                        continue;
+                    }
+                    
+                    if(st.empty()){
+                        
+                        // the current asteroid has cleared all
+                        // hence need to be retained
+                        st.push(asteroids[i]);
+                        
+                    }
+                    else{
+                        
+                        // stack is not empty
+                        if(st.top() < 0){
+                            
+                            // negative
+                            // so we can add it
+                            st.push(asteroids[i]);
+                        }
+                        
+                    }
+                    
+                }
+                
+                else{
+                    // positive
+                    // so we can directly add
+                    st.push(asteroids[i]);
+                    
+                }
             }
             
         }
         
-        if(isCollision == false){
-            // all collisions are done
-            return;
+        // adding the stack elements into the array
+        vector<int> res;
+        
+        int t;
+        
+        while(!st.empty()){
+            t = st.top();
+            st.pop();
+            res.push_back(t);
         }
         
-        // remove the 1001 elements from the modified array
+        reverse(res.begin(), res.end());
         
-        i = 0;
+        return res;
         
-        while(i < nums.size()){
-            if(nums[i] != 1001){
-                i++;
-            }else{
-                // else remove it
-                nums.erase(nums.begin() + i);
-            }
-        }
-        
-        n = nums.size();
-        
-        solve(nums, n);
-    }
-    
-    
-    vector<int> asteroidCollision(vector<int>& asteroids) {
-        int n = asteroids.size();
-        
-        if(n == 1 || n == 0){
-            // no direciton, is safe always
-            return asteroids;
-        }
-        
-        solve(asteroids, n);
-        
-        return asteroids;
     }
 };
