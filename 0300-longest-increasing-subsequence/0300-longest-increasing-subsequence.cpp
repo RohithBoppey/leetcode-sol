@@ -1,33 +1,29 @@
 class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
-        int n = nums.size();
-        if(n == 1){
-            return 1;
-        }
         
-        // base case is 1 because that can be included
+        int n = nums.size();
+        
+        // using dynamic programming
         vector<int> dp(n, 1);
         
-        int mx = 0; 
+        int mx = 1;
         
-        // starting from behind
+        // the base is 1
         for(int i = n - 2; i >= 0; i--){
             for(int j = i + 1; j < n; j++){
-                // comparing the right elements
-                // can only be taken if it is greater
-                
-                // j > i
-                
-                if(nums[j] > nums[i]){
-                    dp[i] = max(dp[i], 1 + dp[j]);
-                }
-                // else it is 1
-                
-                mx = max(mx, dp[i]);
+                // compare and find
+                if(nums[i] < nums[j]){
+                    // that means j can be part of subsequence or not
+                    dp[i] = max(dp[i], 1 + dp[j]);   
+                }   
             }
+            mx = max(mx, dp[i]);
         }
         
+        // return the max
         return mx;
+        
+        
     }
 };
