@@ -28,38 +28,47 @@ public:
             return head;
         }
         
-        ListNode* less = new ListNode(0), *temp1, *more = new ListNode(0), *temp2;
+        // making a new list for >= x
+        ListNode* newHead = new ListNode(0), *temp;
         
-        temp1 = less;
-        temp2 = more;
+        temp = newHead;
         
-        // populate
-        while(head != NULL){
-            if(head->val >= x){
-                // more
-                temp2->next = new ListNode(head->val);
-                temp2 = temp2->next;
-            }
+        ListNode* curr = head, *prev = NULL, *next;
+        
+        while(curr != NULL){
+            if(curr->val >= x){
+                // delete from the current list
+                if(prev == NULL){
+                    // first element is trying to be removed
+                    head = head->next;
+                }else{
+                    prev->next = curr->next; 
+                }
+                
+                // add into the new list
+                int val = curr->val;
+                
+                temp->next = new ListNode(val);
+                temp = temp->next;
+                
+                curr = curr->next;
+            }    
             
             else{
-                // less
-                temp1->next = new ListNode(head->val);
-                temp1 = temp1->next;
+                // didnt delete the current element
+                prev = curr;
+                curr = curr->next;
             }
-            head = head->next;
         }
         
+        // printLinkedList(head);
+        // printLinkedList(newHead);
         
-        // join more and less
-        // traverse 'less' and join last with more
-        
-        temp1 = less;
-        while(temp1->next != NULL){
-            temp1 = temp1->next;
+        // join the new nodes
+        if(prev == NULL){
+            return newHead->next;
         }
-        
-        temp1->next = more->next;
-        
-        return less->next;
+        prev->next = newHead->next;
+        return head;
     }
 };
