@@ -44,8 +44,9 @@ public:
 };
 ```
 
-USING DEQUE CONCEPT AND OVERLAPPING (4 STEPS): 
-DRY RUN ON [1,3,-1,-3,5,3,6,7,3,-1,-3,5]: 
+USING DEQUE CONCEPT AND OVERLAPPING (4 STEPS):         
+        
+DRY RUN ON [1,3,-1,-3,5,3,6,7,3,-1,-3,5]:       
                   
 ![image](https://user-images.githubusercontent.com/73538974/260969455-0cb81f54-8c8e-4d94-89b7-f174523b8d63.png)
 ![image](https://user-images.githubusercontent.com/73538974/260969501-26bd8494-ff75-479f-9916-30f3cce1aae2.png)
