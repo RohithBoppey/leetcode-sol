@@ -7,20 +7,20 @@ public:
         
         int p1 = 0, p2 = 0;
         
-        while(p1 < n1){
-            while(p2 < n2 && s[p1] != t[p2]){
+        while(p1 < n1 && p2 < n2){
+            if(s[p1] == t[p2]){
+                // both matched
+                p1++;
                 p2++;
             }
-            if(p2 == n2){
-                // reached the end
-                return false;
-            }else{
+            
+            else{
+                // not matched
                 p2++;
             }
-            p1++;
         }
         
-        return true;
+        return (p1 == n1) ? true: false;
         
     }
 };
