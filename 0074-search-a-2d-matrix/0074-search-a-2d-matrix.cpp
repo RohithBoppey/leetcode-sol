@@ -1,36 +1,36 @@
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
-        // find rows and cols
+        
         int rows = matrix.size();
         int cols = matrix[0].size();
         
-        // since they are in order, we can use binary search
+        // we have indexes from [0, n - 1]
+        int left = 0, right = (rows*cols) - 1, mid;
+        int row, col;
         
-        // number of indices - [0, (rows*cols) - 1]
-        
-        int low = 0, high = (rows*cols) - 1;
-        int mid;
-        
-        int ri, ci;
-        
-        // new 1
-        while(low <= high){
-            mid = low + (high - low) / 2;
-            ri = mid / cols, ci = mid % cols;
-            if(matrix[ri][ci] == target){
-                // we found the element
-                cout << "found at row: " << ri << " col: " << ci << endl;
+        while(left <= right){
+            mid = left + (right - left) / 2;
+            row = mid / cols;
+            col = mid % cols;
+            
+            if(matrix[row][col] == target){
+                // found
                 return true;
-            }else if(matrix[ri][ci] > target){
-                // reduce the high
-                high = mid - 1;
-            }else{
-                // matrix[ri][ci] < target
-                low = mid + 1;
             }
+            
+            else if(matrix[row][col] < target){
+                // modify left
+                left = mid + 1;
+            }
+            
+            else{
+                right = mid - 1;
+            }
+            
         }
         
         return false;
+        
     }
 };
