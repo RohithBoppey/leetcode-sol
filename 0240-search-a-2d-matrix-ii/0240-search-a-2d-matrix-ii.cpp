@@ -7,6 +7,7 @@ public:
         
         int low = 0, high = cols - 1;
         
+        // new
         while(low < rows && high >= 0){
             if(matrix[low][high] == target){
                 return true;
