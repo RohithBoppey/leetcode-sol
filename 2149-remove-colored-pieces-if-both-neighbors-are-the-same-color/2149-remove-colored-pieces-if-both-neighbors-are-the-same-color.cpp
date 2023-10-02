@@ -45,7 +45,7 @@ public:
             }
         }
 
-        cout << alice << " " << bob << endl;
+        // cout << alice << " " << bob << endl;
 
         // alice and bob are populated now
         while(alice != 0 && bob != 0){
@@ -61,7 +61,7 @@ public:
             // alice wins
             return true;
         }
-        
+
         return 0;
     }
 };
