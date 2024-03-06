@@ -1,5 +1,5 @@
-​+ keep 2 pointers -> slow & fast, initially at head, so they coincide
-+ move them, and if fast becomes NULL means end of the linked list => confirming no loop
++ keep 2 pointers -> slow & fast, initially at head, so they coincide
++ move them, and if fast becomes NULL means end of the linked list => confirming no loop 
 + if they coincide, loop exists
 
 ```
