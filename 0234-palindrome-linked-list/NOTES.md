@@ -28,7 +28,7 @@ public:
 };
 ```
         
-![WhatsApp Image 2024-03-22 at 12 47 32_31ef26b4](https://gist.github.com/assets/73538974/409f2005-1ed4-4664-9b9a-b95aa56d67a9)        
+![img](https://gist.github.com/assets/73538974/409f2005-1ed4-4664-9b9a-b95aa56d67a9)        
         
 OTHER INTUITION USING STACK (THE SAME CAN BE DONE USING ARRAY AS WELL) : 
 
