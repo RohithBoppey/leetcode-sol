@@ -11,70 +11,23 @@
 class Solution {
 public:
     
-    ListNode* reverse(ListNode* head){
-        
-        // 1 or 0 elements
-        
-        if(head == NULL || head->next == NULL){
-            return head;
-        }
-        
-        
-        ListNode* curr = head, *prev = NULL, *next;
-        
-        while(curr != NULL){
-            next = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = next;
-        }
-        
-        return prev;
-        
-        
-    }
-    
-    
-    
-    bool isPalindrome(ListNode* head) {
-    
-        // instead of reversing all, we can find the other half and reverse it and then compare until the rest
-        
-        if(head == NULL || head->next == NULL){
-            
-            // 0 or 1 elements only
-            
-            return true;
-            
-        }
-        
-        
-        ListNode* slow = head, *fast = head;
-        
-        
-        while(fast != NULL && fast->next != NULL){
-            
-            slow = slow->next;
-            fast = fast->next->next;
-            
-        }
-        
-        // now slow is pointing to the node to reverse
-        
-        ListNode* p2 = reverse(slow);
-        ListNode* p1 = head;
-        
-        
-        while(p2 != NULL){
-            if(p1->val != p2->val){
+    bool checkArrayPalindrome(vector<int>& v){
+        int n = v.size();
+        for(int i = 0; i < n / 2; i++){
+            if(v[i] != v[n - i - 1]){
                 return false;
             }
-            p1 = p1->next;
-            p2 = p2->next;
         }
-        
-        
         return true;
-        
+    }
+    
+    bool isPalindrome(ListNode* head) {
+        vector<int> v;
+        // pushing all into a vector and checking
+        while(head != NULL){
+            v.push_back(head->val);
+            head = head->next;
+        }
+        return checkArrayPalindrome(v);
     }
 };
