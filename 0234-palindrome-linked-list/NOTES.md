@@ -81,3 +81,59 @@ public:
         
 TC: FOR FINDING LENGTH = O(N) & PUSHING SLOW = O(N) ~ O(N)
 BUT CAN WE DO IT WITHOUT FINDING LENGTH OR ANYTHING LIKE THAT?
+        
+YES, FASTEST SOLUTION:         
+THIS WORKS SIMILARLY, BUT INSTEAD OF CACHING THE FIRST HALF, WE CAN REVERSE THE SECOND HALF, AND JUST COMPARE FIRST AND SECOND HALVES. WE NEED NOT FIND LENGTH AS WELL!!! BETTER     
+        
+```
+class Solution {
+public:
+    ListNode* reverse(ListNode* head) {
+        if(head == NULL || head->next == NULL){
+            // 0 elements or 1 element
+            // no point in reversing
+            return head;
+        }
+
+        // I will use 3 pointers to reverse
+        ListNode* curr = head, *prev = NULL, *n;
+
+        while(curr != NULL){
+            n = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = n;
+        }
+
+        return prev;
+    }
+    
+    bool isPalindrome(ListNode* head) {
+        // the main problem is reversing right, so when we find the middle element, we can actually reverse the right half, and then compare the first and reversed second half
+        
+        // so now, we need to find the middle element
+        ListNode *slow = head, *fast = head, *s, *r;
+        while(fast != NULL && fast->next != NULL){
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        
+        // when this loop breaks, slow points to middle element, so reverse second half
+        s = reverse(slow);
+        r = head;
+        
+        // s = second half reversed, r = from first
+        // we need to compare until end
+        while(s != NULL){
+            if(s->val != r->val){
+                return false;
+            }
+            s = s->next;
+            r = r->next;
+        }
+        
+        // is a palindrome
+        return true;
+    }
+};
+```
