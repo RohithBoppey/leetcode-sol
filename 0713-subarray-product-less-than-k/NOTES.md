@@ -3,16 +3,16 @@
 Find all in : [here](https://github.com/RohithBoppey/leetcode-sol/blob/master/REPORTS/SLIDING%20WINDOW.md)  
   
 PROCESS:    
-      
-![image](https://gist.github.com/assets/73538974/6f04a16c-9ec7-49d4-a8c4-3c941f2f7aaf)
-    
+  
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/a8d052b5-37d0-4cef-a059-661f4b40133c)    
+  
 WHENEVER NEW ELEMENT COMES IN J, WE MULTIPLY =>     
 BUT THE LOGIC HERE IS THAT: WE ARE MISSING THE SUBARRAY OF THE NUMBER ITSELF =>  
     
-![image](https://gist.github.com/assets/73538974/b1562d0d-ad2b-4fef-81a5-8ea56b6c0471)
-![image](https://gist.github.com/assets/73538974/de893a84-b104-40e8-9287-90356bdf8e87)
-![image](https://gist.github.com/assets/73538974/524cbfea-d19f-4961-b449-6ff2f2b5d848)
-![image](https://gist.github.com/assets/73538974/7f13a7ff-5a97-4ce5-9b56-3b4fa2dfce3e)
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/67b152f0-af0d-4294-aba0-6d90c7839fb6)
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/6f17dea2-5a22-4673-abe2-f450e26a6cab)
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/5ac5d51b-ae3b-4522-baa1-5ad9a37ccb1b)
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/c9cb1770-019c-48e4-be3e-f3827d6b06e9)
       
 ```
 class Solution {
