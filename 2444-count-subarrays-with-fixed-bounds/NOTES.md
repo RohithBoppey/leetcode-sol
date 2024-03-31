@@ -7,7 +7,16 @@ WE CAN GO LEFT UNTIL WE FIND A CULPRIT index --- it is either < mn or > ms & als
 ![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/ae341620-8b73-4b32-9bae-376ba7a4068d)      
 ![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/3c623a1b-5a0b-43fa-a393-1eef8a4e9a58)
 ![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/6c4c1b9f-59a4-47ac-a486-87168629d040)
+
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/ab1510ec-acf4-4091-8ff5-af691789f7a4)
+    
++ THE ONLY CONDITION IS THAT, USING SLIDING WINDOW, WE NEED TO CHECK IF ALL THE NUMBERS ARE BETWEEN mn & ms
++ THERE WILL BE NO SUBARRAYS WHICH PASS THROUGH CULPRINT index
++ SIMILAR TO OTHER SOLUTION
       
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/30f24080-e2a6-4bb9-9c67-5ad458339001)      
+      
+
 ```
 class Solution {
 public:
