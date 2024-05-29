@@ -1,37 +1,30 @@
 class Solution {
 public:
+    // the idea is simple, for a current index
+    // on the head, water is there or not depends on -> leftmax seen so far and rightmax seen so far
     int trap(vector<int>& height) {
-        
-        // depends on left max and right max
-        
         int n = height.size();
-        vector<int> left(n);
-        vector<int> right(n);
+        int water = 0;
+        vector<int> left(n, 0), right(n, 0);
         
-        // populating left and right
-        
-        int totalWater = 0;
-        
-        // left
+        // populate left right
         left[0] = height[0];
         for(int i = 1; i < n; i++){
             left[i] = max(left[i - 1], height[i]);
         }
         
-        // right
-        right[n - 1] = height[n - 1];
+        right[n-1] = height[n-1];
         for(int i = n - 2; i >= 0; i--){
             right[i] = max(right[i + 1], height[i]);
         }
         
-        // constrained by min
-        int water = 0;
+        int h, w;
         for(int i = 0; i < n; i++){
-            water = min(left[i], right[i]) - height[i];
-            totalWater += water;
+            h = min(left[i], right[i]) - height[i];
+            w = 1;
+            water += h * w;
         }
         
-        return totalWater;
-        
+        return water;
     }
 };
