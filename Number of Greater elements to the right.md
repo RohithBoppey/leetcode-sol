@@ -2,7 +2,7 @@
 + The idea in here is: for the configuration [5,8,10,6] -> when dealing with stack length only, we are missing out on the case of 5 -> it will give only 8,10 as greater elements, but not 6
 + So inorder to tackle that - I am pushing whatever components that we have removed -> back, so essentially, stack at i contains all elements
 + BUT TLE is coming
-+ So apparently should be solved using (Inversion Merge Sort)[]
++ So apparently should be solved using [Inversion Merge Sort]()
 
 ```
 class Solution{
