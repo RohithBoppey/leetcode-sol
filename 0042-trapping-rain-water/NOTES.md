@@ -2,8 +2,7 @@
 ![image](https://user-images.githubusercontent.com/73538974/253258267-536bef1c-389d-4e46-b56f-da2362339bd3.png)
 
 ```
-int trap(vector<int>& height) {
-        
+int trap(vector<int>& height) {      
         // depends on left max and right max
         
         int n = height.size();
@@ -36,4 +35,4 @@ int trap(vector<int>& height) {
         return totalWater;
         
     }
-```​
+```
