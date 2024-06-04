@@ -1,103 +1,62 @@
 class Solution {
 public:
+    stack<int> st;
+    vector<int> v;
+    int n;
+    
     vector<int> asteroidCollision(vector<int>& asteroids) {
-        
-        // using stacks
-        
-        int n = asteroids.size();
-        
-        if(n == 0 || n == 1){
-            return asteroids;
-        }
-        
-        
-        stack<int> st;
-        
-        
+        // if they move in the same direction, direct stack
+        // or else go on until they get blasted
+        // 1 means right, -1 means left
+        n = asteroids.size();
+        int t, c, blast;
         for(int i = 0; i < n; i++){
-            
+            c = asteroids[i];
             if(st.empty()){
-                
-                // no choice but to retain
-                st.push(asteroids[i]);
-                
-            }
-            
-            else{
-                
-                // check if our number is -ve
-                if(asteroids[i] < 0){
-                    
-                    // negative
-                    // check upto where it can go
-                    
-                    bool flag = true;
-                    
-                    while(!st.empty() && st.top() > 0 && st.top() <= abs(asteroids[i])){
-                        
-                        // the number is positive
-                        // and less than the current asteroid size
-                        
-                        if(st.top() == abs(asteroids[i])){
-                            flag = false;    
-                        }
-                        st.pop();
-                        
-                        if(flag == false){
+                st.push(c);
+            }else{
+                t = st.top();
+                if(t < 0 && c > 0){
+                    // then no problem
+                    // left and right
+                    st.push(c);
+                }else if(t > 0 && c < 0){
+                    // top is going right & current is left
+                    // then they are colliding
+                    blast = 0;
+                    while(!st.empty() && st.top() <= abs(c) && st.top() > 0){
+                        if(st.top() == abs(c)){
+                            blast = 1;
                             break;
                         }
-                        
+                        st.pop(); 
                     }
-                    
-                    if(flag == false){
-                        continue;
-                    }
-                    
-                    if(st.empty()){
-                        
-                        // the current asteroid has cleared all
-                        // hence need to be retained
-                        st.push(asteroids[i]);
-                        
-                    }
-                    else{
-                        
-                        // stack is not empty
-                        if(st.top() < 0){
-                            
-                            // negative
-                            // so we can add it
-                            st.push(asteroids[i]);
+                    if(blast == 0){
+                        if(st.empty()){
+                            st.push(c);
+                        }else{
+                            if(st.top() < abs(c)){
+                                st.push(c);
+                            }
                         }
-                        
+                    }else{
+                        st.pop();
                     }
-                    
-                }
-                
-                else{
-                    // positive
-                    // so we can directly add
-                    st.push(asteroids[i]);
-                    
+                }else {
+                    // both in one direction
+                    // either left or right
+                    st.push(c);
                 }
             }
-            
         }
-        
-        // adding the stack elements into the array
-        vector<int> res;
-        
-        int t;
         
         while(!st.empty()){
-            t = st.top();
+            v.push_back(st.top());
             st.pop();
-            res.push_back(t);
         }
         
-        reverse(res.begin(), res.end());
+        reverse(v.begin(), v.end());
         
-        return res;
-        
+        return v;
     }
 };
