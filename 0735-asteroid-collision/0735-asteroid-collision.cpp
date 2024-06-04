@@ -16,33 +16,21 @@ public:
                 st.push(c);
             }else{
                 t = st.top();
-                if(t < 0 && c > 0){
-                    // then no problem
-                    // left and right
-                    st.push(c);
-                }else if(t > 0 && c < 0){
+                if(t > 0 && c < 0){
                     // top is going right & current is left
                     // then they are colliding
-                    blast = 0;
-                    while(!st.empty() && st.top() <= abs(c) && st.top() > 0){
-                        if(st.top() == abs(c)){
-                            blast = 1;
-                            break;
-                        }
+                    while(!st.empty() && st.top() < abs(c) && st.top() > 0){
                         st.pop(); 
                     }
-                    if(blast == 0){
-                        if(st.empty()){
-                            st.push(c);
-                        }else{
-                            if(st.top() < abs(c)){
-                                st.push(c);
-                            }
-                        }
+                    if(st.empty() || st.top() < 0){
+                        st.push(c);
                     }else{
-                        st.pop();
+                        if(st.top() == abs(c)){
+                            st.pop();
+                        }
                     }
-                }else {
+                }
+                else {
                     // both in one direction
                     // either left or right
                     st.push(c);
