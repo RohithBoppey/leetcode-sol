@@ -25,10 +25,9 @@ public:
 ```
     
 + This uses the idea of [Sum of Subarray minimums](https://leetcode.com/problems/sum-of-subarray-minimums/), but instead of just min => we do min & max and then subtract them
-+ `Σ(max - min)` for every subarray can be translated. Can be combined.
-![WhatsApp Image 2024-06-06 at 21 22 08_ab8b8113](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/92cfaae1-276a-4c26-b75a-0a7a897a918c)
-
-    
++ `Σ(max - min)` for every subarray can be translated. Can be combined.        
+![WhatsApp Image 2024-06-06 at 21 22 08_ab8b8113](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/92cfaae1-276a-4c26-b75a-0a7a897a918c)        
+        
 ```c++
 class Solution {
 public:
