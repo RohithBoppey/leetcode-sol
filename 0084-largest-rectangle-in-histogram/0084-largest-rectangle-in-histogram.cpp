@@ -1,96 +1,70 @@
 class Solution {
 public:
-    void printVector(vector<int> v){
-        for(auto x: v){
-            cout << x << " ";
+    
+    int n;
+    stack<int> st;
+    vector<int> left, right;
+    
+    void printV(vector<int>& v){
+        for(auto c: v){
+            cout << c << " ";
         }
         cout << endl;
     }
     
-    
-    void findNearestSmallerLeft(vector<int>& heights, vector<int>& ans, int n){
-        stack<int> st;
-
+    // these 2 functions are slightly modified
+    void NSL(vector<int>& v){
+        st = stack<int>();
+        int c;
         for(int i = 0; i < n; i++){
+            c = v[i];
+            while(!st.empty() && v[st.top()] >= c){
+                st.pop();
+            }
             if(st.empty()){
-                ans[i] = (-1);
+               left[i] = 0; 
+            }else{
+                left[i] = st.top() + 1;
             }
-            else{
-                if(heights[st.top()] < heights[i]){
-                    ans[i] = (st.top());
-                }else{
-                    // <=
-                    while(!st.empty() && heights[st.top()] >= heights[i]){
-                        st.pop();
-                    }
-
-                    if(st.empty()){
-                        ans[i] = (-1);
-                    }else{
-                        ans[i] = (st.top());
-                    }
-
-                }
-            }
-
-            // storing index
             st.push(i);
         }
-
     }
     
-    void findNearestSmallerRight(vector<int>& heights, vector<int>& ans, int n){
-
-        stack<int> st;
-
-        for(int i = n-1; i >= 0; i--){
+    void NSR(vector<int>& v){
+        st = stack<int>();
+        int c;
+        for(int i = n - 1; i >= 0; i--){
+            c = v[i];
+            while(!st.empty() && v[st.top()] >= c){
+                st.pop();
+            }
             if(st.empty()){
-                ans[i] = (n);
+               right[i] = n - 1; 
+            }else{
+                right[i] = st.top() - 1;
             }
-            else{
-                if(heights[st.top()] < heights[i]){
-                    ans[i] = (st.top());
-                }else{
-                    // <=
-                    while(!st.empty() && heights[st.top()] >= heights[i]){
-                        st.pop();
-                    }
-
-                    if(st.empty()){
-                        ans[i] = (n);
-                    }else{
-                        ans[i] = (st.top());
-                    }
-
-                }
-            }
-
             st.push(i);
         }
-
     }
     
     int largestRectangleArea(vector<int>& heights) {
-        int n = heights.size();
-        vector<int> left(n, -1);
-        vector<int> right(n, n);
+        n = heights.size();
+        left.resize(n, 0);
+        right.resize(n, 0);
         
-//         fill the left and right
-        findNearestSmallerLeft(heights, left, n);
-        findNearestSmallerRight(heights, right, n);
+        NSL(heights);
+        NSR(heights);
         
-        // reverse(right.begin(), right.end());
+        // printV(left);
+        // printV(right);
         
-        // printVector(left);
-        // printVector(right);
+        // left & right contains max amount of spanning that it can do 
         
-        int mx = 0;
-        
+        int ans = 0, area = 0;
         for(int i = 0; i < n; i++){
-            mx = max(mx, (right[i] - left[i] - 1)*heights[i]);
+            area = (right[i] - left[i] + 1)*(heights[i]);
+            ans = max(ans, area);
         }
-        
-        return mx;  
-        
+        return ans;
     }
 };
