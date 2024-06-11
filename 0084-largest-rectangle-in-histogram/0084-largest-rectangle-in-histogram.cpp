@@ -54,12 +54,7 @@ public:
         
         NSL(heights);
         NSR(heights);
-        
-        // printV(left);
-        // printV(right);
-        
-        // left & right contains max amount of spanning that it can do 
-        
+                
         int ans = 0, area = 0;
         for(int i = 0; i < n; i++){
             area = (right[i] - left[i] + 1)*(heights[i]);
