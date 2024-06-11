@@ -1,5 +1,7 @@
 The logic lies in how much we can span left and right -> the same can be solved using [my prev solution](https://leetcode.com/submissions/detail/896492557/) as well.    
+            
 ![WhatsApp Image 2024-06-11 at 23 15 14_add81a64](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/3a694dab-7ec2-469d-b721-cf4ee0f10e6f)    
+            
 ![WhatsApp Image 2024-06-11 at 23 15 37_ef57f649](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/aca80cd5-0883-4dbb-a9e0-ffcac409214a)    
     
 ```c++
