@@ -1,37 +1,31 @@
 class Solution {
 public:
+    
+    priority_queue<pair<int,int>> pq;
+    int n;
+    
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        
-        vector<int> result;
-        int n = nums.size();
-        
-        // using deque to store index
-        
-        deque<int> dq; // to store index
-        
-        for(int i = 0; i < n; i++){
-            
-            // make space for new element by removing which are not in the range of index 
-            while(!dq.empty() && dq.front() < i - (k - 1)){
-                dq.pop_front();
-            }
-            
-            // if the current index is more, overlap the rest
-            while(!dq.empty() && nums[dq.back()] < nums[i]){
-                // since overlapping
-                dq.pop_back();
-            }
-            
-            // push now
-            dq.push_back(i);
-            
-            // if the window constaint matches, start pushing into answer
-            if(i >= k - 1){
-                result.push_back(nums[dq.front()]);
-            }
-            
+        // using priority queue solution
+        n = nums.size();
+        int i = 0, j = 0;
+        int c, v;
+        vector<int> ans;
+        while(j < n){
+            c = nums[j];
+            pq.push({c, j});
+            // the current index -> top should be in the range [j, j - k + 1]
+            if(j - i + 1 < k){
+                // nothing to do
+            }else{
+                while(!pq.empty() && pq.top().second < j - k + 1){
+                    pq.pop();
+                }
+                v = pq.top().first;
+                ans.push_back(v);
+                i++;
+           }
+            j++;
         }
-        
-        return result;
+        return ans;
     }
 };
