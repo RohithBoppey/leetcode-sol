@@ -1,5 +1,8 @@
 The idea is similar to what we did in the [Max Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/), but we want to construct a level wise one. Refer the diagrams.    
-    
+
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/4c1f5d63-bc3c-42a4-88d4-673f79ec52b5)
+![image](https://github.com/RohithBoppey/leetcode-sol/assets/73538974/3b8859bb-4156-49f3-99ba-88889f7a9ba0)
+        
 ```c++
 class Solution {
 public:
