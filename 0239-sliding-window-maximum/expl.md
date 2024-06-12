@@ -8,7 +8,7 @@ PRIORITY QUEUE DRY RUN ON : [1,3,-1,-3,5,3,6,7,3,-1,-3,5]
 ![image](https://user-images.githubusercontent.com/73538974/260931109-d92a8853-79a6-4b42-8151-8bb025b0bbb7.png)
                   
 PRIORITY QUEUE CODE:
-```
+```c++
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
@@ -59,7 +59,7 @@ DRY RUN ON [1,3,-1,-3,5,3,6,7,3,-1,-3,5]:
 
                   
 CODE:
-```
+```c++
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
