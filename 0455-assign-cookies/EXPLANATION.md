@@ -10,7 +10,10 @@ Editing these test cases:
 [1,3,3,4,5]
 [1,1,2,2,3,4]
 ```
+  
+![WhatsApp Image 2024-11-06 at 00 40 00_bf5320aa](https://github.com/user-attachments/assets/c7ff23ed-956e-4798-bedc-bba065a21331)  
 
+  
 ```c++
 class Solution {
 public:
