@@ -6,6 +6,7 @@ Collection of LeetCode questions solved!
 ## Array
 |  |
 | ------- |
+| [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
 ## Two Pointers
 |  |
@@ -14,9 +15,14 @@ Collection of LeetCode questions solved!
 ## Greedy
 |  |
 | ------- |
+| [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
 ## Sorting
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
 <!---LeetCode Topics End-->
