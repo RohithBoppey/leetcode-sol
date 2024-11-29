@@ -56,4 +56,14 @@ public:
 
     }
 };
-```​
+```
+
+BETTER SOLUTION USING DP:
+HOW TO FIND DP? REPEATED SUBPROBLEMS, OVERLAPPING, MULTIPLE POSSIBLE WAYS - AND IN THE TREE, EVEN IF ONE PATH CAN GIVE US THE ANSWER, THAT IS IT        
+![image](https://github.com/user-attachments/assets/d0683c40-11f8-49d6-b729-589bceff54ab)        
+ANOTHER WAY IS BY BOTTOM UP, SO FOR A CERTAIN POSITION "i" CHECK IF WE CAN REACH THE SPOT FROM PREVIOUS ONES - `if ans[j] == true and j + nums[j] >= i` MEANS WE REACHED A SPOT WHERE WE CAN REACH AND FROM THAT POSITION WE CAN REACH THE CURRENT i as well.    
+![image](https://github.com/user-attachments/assets/2ae8bee1-13af-4591-a9ea-fbc1dcb02cf2)        
+TRICK SOLUTION IS THIS: CONSIDERING MAX REACHABLE - FOR THIS SOLUTION, CONSIDER THE MAX REACHABLE FROM A POSITION -> i.e. `i + nums[i]`, and keep marking that, if `i < maxReachable`, then false, else true
+![image](https://github.com/user-attachments/assets/007b780c-3ad5-40d1-834c-64275c4c8710)        
+
+
