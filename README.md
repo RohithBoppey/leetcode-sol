@@ -12,6 +12,7 @@ Collection of LeetCode questions solved!
 ## Two Pointers
 |  |
 | ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
 ## Greedy
 |  |
@@ -31,6 +32,7 @@ Collection of LeetCode questions solved!
 ## Linked List
 |  |
 | ------- |
+| [0019-remove-nth-node-from-end-of-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0203-remove-linked-list-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0203-remove-linked-list-elements) |
 ## Recursion
 |  |
