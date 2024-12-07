@@ -1,37 +1,40 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
+        
         int n = s.size();
-        if(n == 0){
-            return 0;
-        }
 
-        int i = 0, j = 0;
-        int res = 0;
         unordered_map<char, int> mp;
-        while(j < n){
-            // right limit reaches the end
-            mp[s[j]]++;
-            // check window size
-            if(j - i + 1 == mp.size()){
-                // all are unique
-                res = max(res, j - i + 1);
-                j++;
-            }else{
-                // mostly due to what case? 
-                // window size > mp.size();
-                while(j - i + 1 > mp.size()){
-                    // until there are duplicate elements in the system
-                    mp[s[i]]--;
-                    if(mp[s[i]] == 0){
-                        mp.erase(s[i]);
+        int mx = 0;
+        int ws = 0;
+
+        int start = 0, end = 0;
+        while(end < n){
+            // insert the position in the end 
+            mp[s[end]]++;
+
+            // check if the window size is equal to the unique count (keys) in the mp
+            ws = end - start + 1;
+            if(ws == mp.size()){
+                // all the letters in the window are unique, and in the map as well, no duplicates are found
+                mx = max(mx, ws);
+            }
+
+            else{
+                // one thing which is clear is that always ws >= mp.size()
+                while(mp.size() != ws){
+                    mp[s[start]]--;
+                    if(mp[s[start]] == 0){
+                        mp.erase(s[start]);
                     }
-                    i++;
+                    start++;
+                    ws = end - start + 1;
                 }
-                j++;
-            }   
+            }
+
+            end++;
         }
 
-        return res;
+        return mx;
     }
 };
