@@ -50,4 +50,20 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
+## Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
