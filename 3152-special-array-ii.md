@@ -1,4 +1,5 @@
-![Uploading WhatsApp Image 2024-12-09 at 16.55.29_75c1a8df.jpg…]()
+![image](https://github.com/user-attachments/assets/61664883-2b95-46a1-abf8-5a8798a87acd)
+
 ```c++
 class Solution {
 public:
