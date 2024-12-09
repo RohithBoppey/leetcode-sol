@@ -1,0 +1,63 @@
+class Solution {
+public:
+    int findBq(vector<int>& v, int dp, int k){
+        // days denote the days passed
+        // idea is to find how many bouquets can we make after dp days have passed
+        // k needs to be adjacent need to be adjacent
+        int count = 0;
+        int n = v.size();
+        
+        int i = 0, j = 0;
+        int curr = 0;
+        while(i < n){
+            if(v[i] <= dp){
+                // found the first one, find how many are there to the right
+                curr = 0;
+                while(i < n && v[i] <= dp){
+                    curr++;
+                    i++;
+                }
+                count += curr / k;
+            }
+            i++;    
+        }
+
+        return count;
+    }
+
+    int minDays(vector<int>& v, int m, int k) {
+        
+        long long int n = v.size();
+
+        long long int fl = (long long int) m *  (long long int) k;
+        
+        if(n < fl){
+            // not enough flowers, cannot make it
+            return -1;
+        }
+
+        int low = INT_MAX, high = INT_MIN;
+
+        for(int i = 0; i < n; i++){
+            low = min(low, v[i]);
+            high = max(high, v[i]);
+        }
+
+        // low and high are the max days required for a flower to bloom
+        int mid;
+        while(low < high){
+            mid = low + (high - low) / 2;
+            int bq = findBq(v, mid, k);
+
+            if(bq >= m){
+                // can make more bouquets than required, so can reduce the length if we want
+                high = mid;
+            }else{
+                // cannot make enough buoquets, definitely should increase the days required for blooming
+                low = mid + 1;
+            }
+        }
+
+        return low;
+    }
+};
