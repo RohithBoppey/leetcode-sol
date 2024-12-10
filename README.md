@@ -10,6 +10,7 @@ Collection of LeetCode questions solved!
 | [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
 | [0907-koko-eating-bananas](https://github.com/RohithBoppey/leetcode-sol/tree/master/0907-koko-eating-bananas) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/RohithBoppey/leetcode-sol/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/RohithBoppey/leetcode-sol/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [3427-special-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/3427-special-array-ii) |
 ## Two Pointers
@@ -74,6 +75,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0907-koko-eating-bananas](https://github.com/RohithBoppey/leetcode-sol/tree/master/0907-koko-eating-bananas) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/RohithBoppey/leetcode-sol/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/RohithBoppey/leetcode-sol/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [3427-special-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/3427-special-array-ii) |
 ## Prefix Sum
