@@ -20,3 +20,78 @@ Various Kinds of problems:
 - Problem is to put x items in the bag such that the value inside the bag is maximum and sum(items) < capacity/W
 - 0-1 knapsack: We can only put one element of the array inside the bag until the conditions are met. Post that is added, move to the next element in the array.
 - Unbounded knapsack: 0-1 knapsack + unlimited instances of the same item can be placed inside the bag. Use the same arr[i] element many number of times until the conditions are met.
+
+Problem Statement: https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card
+
+#### Solving Knapsack problem using Recursion
+- The reason we took from the last is that, we always want to narrow down the input -> and order doesn't matter that much in here, because either way, we are checking all entries.
+```c++
+int solve(vector<int>& wt, vector<int>& val, int C, int n){
+      // base condition: either there are no elements to put in the bag or 
+      // else there is no capacity in the bag to put in a new element
+      
+      // considering n - 1 is the current, can do from the start, but put i as the start 
+      
+      if(n == 0 || C == 0){
+          // for this configuration only, the max profit that we can generate is 0
+          return 0;
+      }
+      
+      // we can take or not take
+      int take = val[n - 1] + solve(wt, val, C - wt[n - 1], n - 1);
+      int not_take = solve(wt, val, C, n - 1);
+      
+      
+      // when can I take, and when should I skip
+      if(wt[n - 1] <= C){
+          // I can take or else skip, so for this configuration, give me the best profit and I will return that
+          return max(take, not_take);
+      }
+      
+      // I have no other way, but to not take this input, so directly return the max profit that I can obtain by not taking
+      return not_take;
+      
+  }
+  
+  int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
+      int n = wt.size();
+      return solve(wt, val, capacity, n);
+  }
+```
+Using start logic, that we are familiar with: 
+```c++
+int solve(vector<int>& wt, vector<int>& val, int C, int n){
+    
+        // base condition: either there are no elements to put in the bag or 
+        // else there is no capacity in the bag to put in a new element
+        
+        // considering n - 1 is the current, can do from the start, but put i as the start 
+        
+        if(n == 0 || C == 0){
+            // for this configuration only, the max profit that we can generate is 0
+            return 0;
+        }
+        
+        // we can take or not take
+        int take = val[n - 1] + solve(wt, val, C - wt[n - 1], n - 1);
+        int not_take = solve(wt, val, C, n - 1);
+        
+        
+        // when can I take, and when should I skip
+        if(wt[n - 1] <= C){
+            // I can take or else skip, so for this configuration, give me the best profit and I will return that
+            return max(take, not_take);
+        }
+        
+        // I have no other way, but to not take this input, so directly return the max profit that I can obtain by not taking
+        return not_take;
+        
+        
+    }
+    
+    int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
+        int n = wt.size();
+        return solve(wt, val, capacity, n);
+    }
+```
+- This will definitely fail and give you TLE because this is not the best optimized solution, there are repetitions that we can solve.
