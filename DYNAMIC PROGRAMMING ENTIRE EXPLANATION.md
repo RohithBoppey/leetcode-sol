@@ -60,38 +60,38 @@ int solve(vector<int>& wt, vector<int>& val, int C, int n){
 ```
 Using start logic, that we are familiar with: 
 ```c++
-int solve(vector<int>& wt, vector<int>& val, int C, int n){
-    
-        // base condition: either there are no elements to put in the bag or 
-        // else there is no capacity in the bag to put in a new element
-        
-        // considering n - 1 is the current, can do from the start, but put i as the start 
-        
-        if(n == 0 || C == 0){
-            // for this configuration only, the max profit that we can generate is 0
-            return 0;
-        }
-        
-        // we can take or not take
-        int take = val[n - 1] + solve(wt, val, C - wt[n - 1], n - 1);
-        int not_take = solve(wt, val, C, n - 1);
-        
-        
-        // when can I take, and when should I skip
-        if(wt[n - 1] <= C){
-            // I can take or else skip, so for this configuration, give me the best profit and I will return that
-            return max(take, not_take);
-        }
-        
-        // I have no other way, but to not take this input, so directly return the max profit that I can obtain by not taking
-        return not_take;
-        
-        
-    }
-    
-    int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
-        int n = wt.size();
-        return solve(wt, val, capacity, n);
-    }
+// Function to return max value that can be put in knapsack of capacity.
+int solve(vector<int>& wt, vector<int>& val, int C, int n, int start){
+
+  // base condition: either there are no elements to put in the bag or 
+  // else there is no capacity in the bag to put in a new element
+  
+  // considering n - 1 is the current, can do from the start, but put i as the start 
+  
+  if(start >= n || C == 0){
+      // for this configuration only, the max profit that we can generate is 0
+      return 0;
+  }
+  
+  // we can take or not take
+  int take = val[start] + solve(wt, val, C - wt[start], n, start + 1);
+  int not_take = solve(wt, val, C, n, start + 1);
+  
+  
+  // when can I take, and when should I skip
+  if(wt[start] <= C){
+      // I can take or else skip, so for this configuration, give me the best profit and I will return that
+      return max(take, not_take);
+  }
+  
+  // I have no other way, but to not take this input, so directly return the max profit that I can obtain by not taking
+  return not_take;  
+}
+
+int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
+  int n = wt.size();
+  int start = 0;
+  return solve(wt, val, capacity, n, start);
+}
 ```
 - This will definitely fail and give you TLE because this is not the best optimized solution, there are repetitions that we can solve.
