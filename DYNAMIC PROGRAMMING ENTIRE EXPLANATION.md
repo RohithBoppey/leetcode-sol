@@ -21,7 +21,7 @@ Various Kinds of problems:
 - 0-1 knapsack: We can only put one element of the array inside the bag until the conditions are met. Post that is added, move to the next element in the array.
 - Unbounded knapsack: 0-1 knapsack + unlimited instances of the same item can be placed inside the bag. Use the same arr[i] element many number of times until the conditions are met.
 
-Problem Statement: https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card
+Problem Statement: [GFG Problem Statement](https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
 
 #### Solving Knapsack problem using Recursion
 - The reason we took from the last is that, we always want to narrow down the input -> and order doesn't matter that much in here, because either way, we are checking all entries.
@@ -95,3 +95,55 @@ int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
 }
 ```
 - This will definitely fail and give you TLE because this is not the best optimized solution, there are repetitions that we can solve.
+
+#### Solving using memoization
+- Alternative to top down appraoch (matrix building from top to bottom) -> memoization & easy appraoch
+- Always try to approach the problem using recursion -> then to memoization rather than using top down approach
+- Adding dp[][] whereever recursion is being used & in return statements.
+```c++
+
+// Function to return max value that can be put in knapsack of capacity.
+int solve(vector<int>& wt, vector<int>& val, int C, int n, vector<vector<int>>& dp){
+  // base condition: either there are no elements to put in the bag or 
+  // else there is no capacity in the bag to put in a new element
+  
+  // considering n - 1 is the current, can do from the start, but put i as the start 
+  
+  if(n == 0 || C == 0){
+      // for this configuration only, the max profit that we can generate is 0
+      return 0;
+  }
+  
+  // if already visited
+  if(dp[n][C] != -1){
+      return dp[n][C];
+  }
+  
+  // Option 1: Do not take the current item
+  int not_take = solve(wt, val, C, n - 1, dp);
+
+  // Option 2: Take the current item (only if its weight is <= capacity)
+  int take = 0;
+  if (wt[n - 1] <= C) {
+      take = val[n - 1] + solve(wt, val, C - wt[n - 1], n - 1, dp);
+  }
+
+  // Store the maximum of the two options in dp
+  dp[n][C] = max(take, not_take);
+  return dp[n][C];
+          
+}
+
+int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
+  int n = wt.size();
+  
+  vector<vector<int>> dp(1001, vector<int>(1001, -1));
+  return solve(wt, val, capacity, n, dp);
+}
+```
+#### Solving using Top-Down Approach
+- The initialization for top down approach is different: initialize first row and column and build the other logic based on that
+  ![image](https://github.com/user-attachments/assets/cb468849-2323-4dfd-84f2-a7690b8c01f2)
+- In the top down, we do not have recursive call at all, but rather the for loop after building the base conditions (first row and first column)
+- `Always use either memoization or top down approach - stick with one approach`
+  
