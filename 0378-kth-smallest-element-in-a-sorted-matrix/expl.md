@@ -3,6 +3,8 @@ WHENEVER THERE IS A 'K' in the problem, ALWAYS THINK OF `PRIORITY QUEUE` AND THE
 This approach would have worked if even if the matrix is not sorted, we are not using the logic behind searching, etc..
 
 The function that will solve this: Find number of numbers that are less than equal to mid -> K & this K is supposed to be the given least K value. 
+![WhatsApp Image 2024-12-31 at 00 44 26_d4fdb793](https://github.com/user-attachments/assets/22a9ccf6-1762-4496-8fbc-dd804ca86d69)
+
 ```c++
 class Solution {
 public:
