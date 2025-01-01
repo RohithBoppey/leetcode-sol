@@ -147,6 +147,20 @@ int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
 - The initialization for top down approach is different: initialize first row and column and build the other logic based on that
   ![image](https://github.com/user-attachments/assets/cb468849-2323-4dfd-84f2-a7690b8c01f2)
 - In the top down, we do not have recursive call at all, but rather the for loop after building the base conditions (first row and first column)
+```
+Input Explanation
+c 4
+val 1 2 3
+wt 4 5 1
+----------
+dp[n + 1][c + 1] = dp[4][5]
+
+0 0 0 0 0
+0 0 0 0 1
+0 0 0 0 1
+0 3 3 3 3
+
+```
 - `Always use either memoization or top down approach - stick with one approach`
 ```c++
 class Solution {
