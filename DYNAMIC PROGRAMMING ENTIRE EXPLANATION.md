@@ -206,5 +206,87 @@ class Solution {
 ![WhatsApp Image 2025-01-01 at 21 27 09_ea25dbaf](https://github.com/user-attachments/assets/a3a2bedb-7efd-4c89-883a-fb8bbd861af8)
 ![WhatsApp Image 2025-01-01 at 21 27 09_bd8ebc6c](https://github.com/user-attachments/assets/861f80d7-06d6-4c1f-af47-ff31daf2162a)
 
+## Subset Sum Problem
+Base case: 
+- if my target == 0, that means the subset I took is a valid subset, can return true
+- if my start position > n, that means we cannot do anything, so return false
+
+```c++
+class Solution {
+  public:
+  
+    int n;
+
+    bool solve(vector<int>& arr, int target, int start, vector<vector<int>>& dp){
+        if(target == 0){
+            return true;
+        }
+        
+        if(start >= n){
+            return false;
+        }
+        
+        if(dp[start][target] != -1){
+            return dp[start][target];
+        }
+        
+        // either take or not take
+        // take only when possible
+        int take, notTake;
+        take = (arr[start] <= target) ? solve(arr, target - arr[start], start + 1, dp) : false;
+        notTake = solve(arr, target, start + 1, dp);
+        
+        return dp[start][target] = take || notTake;
+    }
+
+    bool isSubsetSum(vector<int>& arr, int target) {
+        // code here
+        n = arr.size();
+        
+        vector<vector<int>> dp(n + 1, vector<int>(target + 1, -1));
+        
+        return solve(arr, target, 0, dp);
+    }
+};
+
+```
+Using the top-down approach: 
+```c++
+class Solution {
+  public:
+    bool isSubsetSum(vector<int>& arr, int target) {
+        // code here
+        
+        int n = arr.size();
+        
+        vector<vector<int>> dp(n + 1, vector<int>(target + 1, false));
+        
+        // first column ->> when target = 0, the subset can be constructed easily -> {}, so all rows of the first column contains true
+        for(int i = 0; i <= n; i++){
+            dp[i][0] = 1;
+        }
+        
+        // processing part
+        int take, notTake;
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= target; j++){
+                
+                // can take or not take
+                // take only when the current element weight is less than target
+                take = (arr[i - 1] <= j) ? dp[i - 1][j - arr[i - 1]] : false;
+                notTake = dp[i - 1][j];
+                
+                dp[i][j] = take || notTake;
+            }
+        }
+        
+        
+        
+        return dp[n][target];
+        
+    }
+};
+```
+
 
 
