@@ -24,6 +24,7 @@ Various Kinds of problems:
 Problem Statement: [GFG Problem Statement](https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
 
 #### Solving Knapsack problem using Recursion
+![image](https://github.com/user-attachments/assets/2c781b86-6fc0-4557-8c6f-2364a79d3f35)      
 - The reason we took from the last is that, we always want to narrow down the input -> and order doesn't matter that much in here, because either way, we are checking all entries.
 ```c++
 int solve(vector<int>& wt, vector<int>& val, int C, int n){
@@ -141,9 +142,55 @@ int knapSack(int capacity, vector<int> &val, vector<int> &wt) {
   return solve(wt, val, capacity, n, dp);
 }
 ```
+
 #### Solving using Top-Down Approach
 - The initialization for top down approach is different: initialize first row and column and build the other logic based on that
   ![image](https://github.com/user-attachments/assets/cb468849-2323-4dfd-84f2-a7690b8c01f2)
 - In the top down, we do not have recursive call at all, but rather the for loop after building the base conditions (first row and first column)
 - `Always use either memoization or top down approach - stick with one approach`
-  
+```c++
+class Solution {
+  public:
+    // Function to return max value that can be put in knapsack of capacity.
+    int knapSack(int c, vector<int> &val, vector<int> &wt) {
+        // code here
+        
+        int n = wt.size();
+        vector<vector<int>> dp(n + 1, vector<int>(c + 1, 0));
+        
+        // initialisation 
+        // if n == 0 or else c == 0, max profit we can obtain is 0
+        
+        for(int i = 0; i <= c; i++){
+            dp[0][i] = 0;
+        }
+        
+        for(int i = 0; i <= n; i++){
+            dp[i][0] = 0;
+        }
+        
+        // processing
+        int take, notTake;
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= c; j++){
+                
+                // for each step, we can take or not take
+                // take only if the current weight is 0
+                take = (wt[i - 1] <= j) ? (val[i - 1] + dp[i - 1][j - wt[i - 1]]) : 0;
+                notTake = dp[i - 1][j];
+                
+                dp[i][j] = max(take, notTake);
+            }
+        }
+        
+        
+        return dp[n][c];
+    }
+};
+
+```
+![WhatsApp Image 2025-01-01 at 21 27 09_ea25dbaf](https://github.com/user-attachments/assets/a3a2bedb-7efd-4c89-883a-fb8bbd861af8)
+![WhatsApp Image 2025-01-01 at 21 27 09_bd8ebc6c](https://github.com/user-attachments/assets/861f80d7-06d6-4c1f-af47-ff31daf2162a)
+
+
+
