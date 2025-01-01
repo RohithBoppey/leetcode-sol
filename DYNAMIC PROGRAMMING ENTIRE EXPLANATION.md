@@ -207,6 +207,7 @@ class Solution {
 ![WhatsApp Image 2025-01-01 at 21 27 09_bd8ebc6c](https://github.com/user-attachments/assets/861f80d7-06d6-4c1f-af47-ff31daf2162a)
 
 ## Subset Sum Problem
+[Link](https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
 Base case: 
 - if my target == 0, that means the subset I took is a valid subset, can return true
 - if my start position > n, that means we cannot do anything, so return false
