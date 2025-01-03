@@ -355,3 +355,85 @@ class Solution {
 };
 
 ```
+
+Top Down Solution:
+```c++
+class Solution {
+  public:
+  
+    int n;
+    
+    void print2(vector<vector<int>>& dp){
+        for(auto &x: dp){
+            for(auto &y: x){
+                cout << y << " ";
+            }
+            cout << endl;
+        }
+    }
+    
+    
+    int solve(vector<int>& arr, int target, vector<vector<int>>& dp){
+        
+        // initialisation        
+        // n == 0
+        for(int i = 0; i <= target; i++){
+            dp[0][i] = 0;
+        }
+        
+        // target sum = 0 -> 1 subset exists
+        // for(int i = 0; i <= n; i++){
+        //     dp[i][0] = 1;
+        // }
+       
+        dp[0][0] = 1;
+        
+        // processing
+        int take, notTake;
+        for(int i = 1; i <= n; i++){
+            for(int j = 0; j <= target; j++){
+             // can take or not take
+             // take only when the current element is less than the limit
+                take = (arr[i - 1] <= j) ? dp[i - 1][j - arr[i - 1]] : 0;
+                notTake = dp[i - 1][j];
+                
+                // such sum can exist in both the cases, so +
+                dp[i][j] = take + notTake;
+                
+            }
+        }
+        
+        // print2d(dp);
+        
+        return dp[n][target];
+    }
+  
+  
+    int countPartitions(vector<int>& arr, int d) {
+        // Code here
+        
+        // going with tabulation method
+        n = arr.size();
+        
+        int sum = 0;
+        
+        for(auto &x: arr){
+            sum += x;
+        }
+        
+        int target = (sum + d) / 2;
+        
+        if((sum + d) % 2 == 1){
+            // odd sum, cannot split into 2 sub arrays
+            return 0;
+        }
+        
+        vector<vector<int>> dp(n + 1, vector<int>(target + 1, 0));
+        
+        return solve(arr, target, dp);
+    }
+};
+```
+![WhatsApp Image 2025-01-03 at 22 42 27_24bf1453](https://github.com/user-attachments/assets/7e7d916a-e9eb-4eb2-b37c-e97f4a163b7b)
+
+
