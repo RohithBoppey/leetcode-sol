@@ -292,3 +292,66 @@ class Solution {
 [Problem Link](https://leetcode.com/problems/partition-equal-subset-sum/submissions/1494274553/)       
 Explanation: [Link](https://github.com/RohithBoppey/leetcode-sol/blob/master/0416-partition-equal-subset-sum/0416-partition-equal-subset-sum.cpp)
 
+## Partition into 2 subsets & find min difference between them
+```c++
+class Solution {
+
+  public:
+  
+    int n;
+  
+    bool solve(vector<int>& nums, int start, int target, vector<vector<int>>& dp){
+        if(dp[start][target] != -1){
+            return dp[start][target];
+        }
+
+        if(start >= n){
+            // cannot proceed further
+            return (target == 0) ? true : false;
+        }   
+
+        // processing
+        // can take or cannot take
+        int take, notTake;
+
+        // only take if my current val can fit in the bag
+        take = (nums[start] <= target) ? solve(nums, start + 1, target - nums[start], dp) : false;
+        notTake = solve(nums, start + 1, target, dp);
+
+        return dp[start][target] = take || notTake; 
+    }
+  
+    int minDifference(vector<int>& nums) {
+        // Your code goes here
+        
+        n = nums.size();
+        
+        if(n == 1){
+            // cannot split into 2 subsets, so return the ele
+            return nums[0];
+        }
+        
+        int sum = 0;
+        for(int x: nums){
+            sum += x;
+        }
+
+        // solve for only the half of the range
+        int target = sum / 2;
+        vector<vector<int>> dp(n + 1, vector<int>(target + 1, -1));
+        
+        // now only solve for the S1 range -> 1 to range / 2
+        int mn = INT_MAX;
+        for(int i = 1; i <= target; i++){
+            if(solve(nums, 0, i, dp)){
+                // the subset is present
+                mn = min(mn, sum - 2*i);
+            }
+        }
+
+        return mn;
+        
+    }
+};
+
+```
