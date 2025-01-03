@@ -1,36 +1,61 @@
 class Solution {
 public:
-    int ans;
+
     int n;
 
-    void solve(vector<int>& nums, int target, int start, int curr){
-        // cout << start << " " << curr << endl;
+    int solve(vector<int>& arr, int target, vector<vector<int>>& dp){
         
-        if(curr == target && start == n){
-            ans++;
-        }
-
-        if(start >= n){
-            // cannot move further
-            return;
+        // initialisation        
+        // n == 0
+        for(int i = 0; i <= target; i++){
+            dp[0][i] = 0;
         }
         
-
-        // every position can have + or - before the number
-        // if(nums[start] == 0){
-        //     // can skip the number
-        //     solve(nums, target, start + 1, curr);
-        //     return;
+        // target sum = 0 -> 1 subset exists
+        // for(int i = 0; i <= n; i++){
+        //     dp[i][0] = 1;
         // }
-        solve(nums, target, start + 1, curr + nums[start]);
-        solve(nums, target, start + 1, curr - nums[start]);
-
+       
+        dp[0][0] = 1;
+        
+        // processing
+        int take, notTake;
+        for(int i = 1; i <= n; i++){
+            for(int j = 0; j <= target; j++){
+             // can take or not take
+             // take only when the current element is less than the limit
+                take = (arr[i - 1] <= j) ? dp[i - 1][j - arr[i - 1]] : 0;
+                notTake = dp[i - 1][j];
+                
+                // such sum can exist in both the cases, so +
+                dp[i][j] = take + notTake;
+                
+            }
+        }
+        
+        // print2d(dp);
+        
+        return dp[n][target];
     }
 
+
     int findTargetSumWays(vector<int>& nums, int target) {
+        
         n = nums.size();
-        ans = 0;
-        solve(nums, target, 0, 0);
-        return ans;
+
+        int sum = 0;
+        for(auto &x: nums){
+            sum += x;
+        }
+
+        target = abs(target);
+        int t = sum + target;
+
+        if(sum < target) return 0;
+        if(t % 2) return 0;
+
+        vector<vector<int>> dp(n + 1, vector<int>(1001, 0));
+
+        return solve(nums, t / 2, dp);
     }
 };
