@@ -435,5 +435,365 @@ class Solution {
 };
 ```
 ![WhatsApp Image 2025-01-03 at 22 42 27_24bf1453](https://github.com/user-attachments/assets/7e7d916a-e9eb-4eb2-b37c-e97f4a163b7b)
+---
+# **Unbounded Knapsack Problems: **
+- The main difference is that in these kinds of problems, the elements can repeat and need not diminish, so the only difference is for moving into the subproblem. `dp[i][j = wt[i - 1]` is the condition, this will keep going until it is not possible.
+
+## Classic Rod Cutting Problem
+[GFG Link](https://www.geeksforgeeks.org/problems/rod-cutting0840/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
+
+Top Down solution: 
+```c++
+class Solution {
+  public:
+    int n;
+  
+    void print2d(vector<vector<int>>& v){
+        for(auto &x: v){
+            for(auto y: x){
+                cout << y << " ";
+            }
+            cout << endl;
+        }
+    }
+  
+    // 3 5 8 9 10 17 17 20
+    // 1 5 8 9 10 17 17 20
+    int cutRod(vector<int> &price) {
+        // code here
+        n = price.size();
+        
+        // dp[array_size + 1][rod_length + 1]
+        vector<vector<int>> dp(n + 1, vector<int>(n + 1, 0));
+        
+        // this array means the rod length -> weight of the object that is put in the knapsack
+        vector<int> array(n + 1);
+        for(int i = 0; i <= n; i++){
+            array[i] = i + 1;
+        }
+        
+        // when the rod length is 0, max profit obtained is 0
+        for(int i = 0; i <= n; i++){
+            dp[i][0] = 0;
+        }
+        
+        // when the array length is 0, there are no length wise costs at all, so profit obtained is 0
+        for(int i = 0; i <= n; i++){
+            dp[0][i] = 0;
+        }
+        
+        // processing
+        int take, notTake;
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= n; j++){
+                
+                // is there a condition? 
+                // cut the rod and add the price only when the given element (rod length) <= the actual rod length given
+                take = (array[i - 1] <= j) ? price[i - 1] + dp[i][j - array[i - 1]] : 0;
+                notTake = dp[i - 1][j];
+                
+                dp[i][j] = max(take, notTake);
+                
+            }
+        }
+        
+        // print2d(dp);
+        
+        return dp[n][n];
+        
+        
+        
+    }
+};
+```
+
+Similar concept for the coin change concept: 
+1. Min Number of coins
+```c++
+class Solution {
+public:
+    int n;
+
+    void print2d(vector<vector<long>>& v){
+        for(auto &x: v){
+            for(auto y: x){
+                cout << y << " ";
+            }
+            cout << endl;
+        }
+    }
+
+    int coinChange(vector<int>& coins, int amount) {
+        
+        n = coins.size();
+
+        vector<vector<long>> dp(n + 1, vector<long>(amount + 1, -1));
+
+        // initialisation
+        // slightly tricky
+
+        // if we have no elements, it requires INF elements to match the coin amount
+        for(int i = 0; i <= amount; i++){
+            dp[0][i] = INT_MAX;
+        }
+
+        // if the sum required is 0, then no matter the size of the array is, we can always have 0 coins to match the sum
+        for(int i = 0; i <= n; i++){
+            dp[i][0] = 0;
+        }
 
 
+        // processing
+        long take, notTake;
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= amount; j++){
+
+                // add the coin amount only if it is greater than the coin requirement
+                // just the amount gets decreased now, but not the array size
+                // since unbounded knapsack concept, can still divide using that certain element
+                take = (coins[i - 1] <= j) ? (long)(1 + dp[i][j - coins[i - 1]]) : INT_MAX;
+                notTake = dp[i - 1][j];
+
+                dp[i][j] = min(take, notTake);
+
+            }
+        }
+
+        // print2d(dp);
+
+        return (dp[n][amount] >= INT_MAX) ? -1 : dp[n][amount];
+
+    }
+};
+```
+2. How many number of ways can we split the coins
+```c++
+class Solution {
+public:
+
+    int n;
+
+    void print2d(vector<vector<long>>& v){
+        for(auto &x: v){
+            for(auto y: x){
+                cout << y << " ";
+            }
+            cout << endl;
+        }
+    }
+
+    int change(int amount, vector<int>& coins) {
+        n = coins.size();
+
+        vector<vector<long>> dp(n + 1, vector<long>(amount + 1, 0));
+
+        // initialisation
+ 
+        // if there are no elements, then no way to fill the sum, so fill with 0
+        for(int i = 0; i <= amount; i++){
+            dp[0][i] = 0;
+        }
+
+
+        // if required sum = 0, then there is only way to get that amount -> {}, so fill with 1
+        for(int i = 0; i <= n; i++){
+            dp[i][0] = 1;
+        }
+
+        // processing
+        int take, notTake;
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= amount; j++){
+
+                // take only when the value of the coin is less than the required limit
+                take = (coins[i - 1] <= j) ? dp[i][j - coins[i - 1]] : 0;
+                notTake = dp[i - 1][j];
+
+                dp[i][j] = (long) take + notTake;
+
+            }
+        }
+
+        // print2d(dp);
+
+        return dp[n][amount];
+
+    }
+};
+```
+---
+# Longest Common Subsequence Type problems: 
+![image](https://github.com/user-attachments/assets/69377f66-79ed-49cd-b70d-94f8d9a99f44)
+
+## Longest Common Subsequence
+
+[Leetcode Link](https://leetcode.com/problems/longest-common-subsequence/submissions/1499832405/)
+
+Recursive solution (Gives you TLE) ❌:
+```c++
+class Solution {
+public:
+
+    int solve(string& x, string& y, int l1, int l2){
+        if(l1 == 0 || l2 == 0){
+            // we cannot generate any common substring
+            return 0;
+        }
+
+        // processing
+        if(x[l1 - 1] ==  y[l2 - 1]){
+            // if they are equal -> THEY MUST BE INCLUDED IN THE SUBARRAY
+            return 1 + solve(x, y, l1 - 1, l2 - 1);
+        }
+
+        // else
+        // now we can either remove one from that, or one from this
+        int o1 = solve(x, y, l1 - 1, l2);
+        int o2 = solve(x, y, l1, l2 - 1);
+
+        // for the current configuration, give me the max found
+        return max(o1, o2);
+
+    }
+
+    int longestCommonSubsequence(string text1, string text2) {
+        // solving it recursively
+        int l1 = text1.size();
+        int l2 = text2.size();
+
+        // starting from behind
+        return solve(text1, text2, l1, l2);
+
+    }
+};
+```
+
+Recursive solution (Gives you TLE) - logic from the start, putting start = 0 ❌:
+```c++
+class Solution {
+public:
+
+    int solve(string& x, string& y, int l1, int l2, int start1, int start2){
+        if(start1 >= l1 || start2 >= l2){
+            // we cannot generate any common substring
+            return 0;
+        }
+
+        // processing
+        if(x[start1] ==  y[start2]){
+            // if they are equal -> THEY MUST BE INCLUDED IN THE SUBARRAY
+            return 1 + solve(x, y, l1, l2, start1 + 1, start2 + 1);
+        }
+
+        // else
+        // now we can either remove one from that, or one from this
+        int o1 = solve(x, y, l1, l2, start1 + 1, start2);
+        int o2 = solve(x, y, l1, l2, start1, start2 + 1);
+
+        // for the current configuration, give me the max found
+        return max(o1, o2);
+
+    }
+
+    int longestCommonSubsequence(string text1, string text2) {
+        // solving it recursively
+        int l1 = text1.size();
+        int l2 = text2.size();
+
+        // starting from behind
+        return solve(text1, text2, l1, l2, 0, 0);
+
+    }
+};
+```
+
+Recursion + memoization approach: 
+```c++
+class Solution {
+public:
+
+    int solve(string& x, string& y, int l1, int l2, int start1, int start2,
+    vector<vector<int>>& dp){
+        if(start1 >= l1 || start2 >= l2){
+            // we cannot generate any common substring
+            return dp[start1][start2] = 0;
+        }
+
+        // check if this subproblem is already seen or not
+        if(dp[start1][start2] != -1){
+            // already seen
+            return dp[start1][start2];
+        }
+
+        // processing
+        if(x[start1] ==  y[start2]){
+            // if they are equal -> THEY MUST BE INCLUDED IN THE SUBARRAY
+            return dp[start1][start2] = 1 + solve(x, y, l1, l2, start1 + 1, start2 + 1, dp);
+        }
+
+        // else
+        // now we can either remove one from that, or one from this
+        int o1 = solve(x, y, l1, l2, start1 + 1, start2, dp);
+        int o2 = solve(x, y, l1, l2, start1, start2 + 1, dp);
+
+        // for the current configuration, give me the max found
+        return dp[start1][start2] = max(o1, o2);
+
+    }
+
+    int longestCommonSubsequence(string text1, string text2) {
+        // solving it recursively
+        int l1 = text1.size();
+        int l2 = text2.size();
+
+        vector<vector<int>> dp(l1 + 1, vector<int>(l2 + 1, -1));
+
+        // starting from behind
+        return solve(text1, text2, l1, l2, 0, 0, dp);
+
+    }
+};
+```
+
+Top Down approach (Memoization): 
+```c++
+class Solution {
+public:
+    int longestCommonSubsequence(string text1, string text2) {
+        int l1 = text1.size();
+        int l2 = text2.size();
+
+        vector<vector<int>> dp(l1 + 1, vector<int>(l2 + 1, 0));
+        
+        // initialisation
+        // if l1 == 0 or l2 == 0, the common subsequence length = 0
+        // already done in the declaration part
+
+        // processing
+        for(int i = 1; i <= l1; i++){
+            for(int j = 1; j <= l2; j++){
+
+                // check whether it is matching or not matching
+                if(text1[i - 1] == text2[j - 1]){
+                    // matching
+                    // MUST INCLUDE - so remove those
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                }
+
+                else{
+                    // not matching
+                    // can be either of 2 cases
+                    int first, second;
+                    first = dp[i - 1][j];
+                    second = dp[i][j - 1];
+
+                    dp[i][j] = max(first, second);
+                }
+
+            }   
+        }
+
+        return dp[l1][l2];
+    }
+};
+```
