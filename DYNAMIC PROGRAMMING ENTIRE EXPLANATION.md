@@ -797,3 +797,46 @@ public:
     }
 };
 ```
+## Longest Common Substring
+[GFG Link](https://www.geeksforgeeks.org/problems/longest-common-substring1452/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
+```c++
+class Solution {
+  public:
+    int longestCommonSubstr(string& text1, string& text2) {
+        // your code here
+        int l1 = text1.size();
+        int l2 = text2.size();
+        
+        vector<vector<int>> dp(l1 + 1, vector<int>(l2 + 1, 0));
+        
+        // initialisation
+        // if l1 == 0 or l2 == 0, the common subsequence length = 0
+        // already done in the declaration part
+
+        // processing
+        int mx = 0;
+        for(int i = 1; i <= l1; i++){
+            for(int j = 1; j <= l2; j++){
+
+                // check whether it is matching or not matching
+                if(text1[i - 1] == text2[j - 1]){
+                    // matching
+                    // MUST INCLUDE - so remove those
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                    mx = max(mx, dp[i][j]);
+                }
+
+                else{
+                    // not matching
+                    // can be either of 2 cases
+                    dp[i][j] = 0;
+                }
+
+            }   
+        }
+
+        return mx;
+    }
+};
+
+```
