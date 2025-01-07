@@ -841,9 +841,71 @@ class Solution {
 
 ```
 
-## Printing Longest Common Subsequence
-The idea is to 
-
+## Printing Longest common subsequence
+![image](https://github.com/user-attachments/assets/ecc16520-725b-4000-bf1d-1838bd172d09)
+The idea is to fill the LCS array with lengths, and if we can see that i and j are equal -> that means we MUST have taken that account into consideration.
+Else -> we must have come to that point from a maximum length.
 ```c++
+class Solution {
+public:
+    int longestCommonSubsequence(string text1, string text2) {
+        int l1 = text1.size();
+        int l2 = text2.size();
 
+        vector<vector<int>> dp(l1 + 1, vector<int>(l2 + 1, 0));
+        
+        // initialisation
+        // if l1 == 0 or l2 == 0, the common subsequence length = 0
+        // already done in the declaration part
+
+        // processing
+        for(int i = 1; i <= l1; i++){
+            for(int j = 1; j <= l2; j++){
+
+                // check whether it is matching or not matching
+                if(text1[i - 1] == text2[j - 1]){
+                    // matching
+                    // MUST INCLUDE - so remove those
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                }
+
+                else{
+                    // not matching
+                    // can be either of 2 cases
+                    int first, second;
+                    first = dp[i - 1][j];
+                    second = dp[i][j - 1];
+
+                    dp[i][j] = max(first, second);
+                }
+
+            }   
+        }
+
+        // printing the LCS part
+        int i = l1, j = l2;
+        string res = "";
+        while(i > 0 && j > 0){
+            if(text1[i - 1] == text2[j - 1]){
+                // we are taking that element
+                res += text1[i - 1];
+                i--;
+                j--;
+            } else{
+                // one of them is greater, move in that direction
+                if(dp[i][j - 1] > dp[i - 1][j]){
+                    j--;
+                }else{
+                    i--;
+                }
+            }
+        }
+
+        reverse(res.begin(), res.end());
+        
+        cout << res << endl;
+
+        return dp[l1][l2];
+    }
+};
 ```
