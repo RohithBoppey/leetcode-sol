@@ -842,7 +842,7 @@ class Solution {
 ```
 
 ## Printing Longest common subsequence
-![image](https://github.com/user-attachments/assets/ecc16520-725b-4000-bf1d-1838bd172d09)
+![image](https://github.com/user-attachments/assets/ecc16520-725b-4000-bf1d-1838bd172d09)            
 The idea is to fill the LCS array with lengths, and if we can see that i and j are equal -> that means we MUST have taken that account into consideration.
 Else -> we must have come to that point from a maximum length.
 ```c++
