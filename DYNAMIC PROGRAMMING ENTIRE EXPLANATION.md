@@ -840,3 +840,10 @@ class Solution {
 };
 
 ```
+
+## Printing Longest Common Subsequence
+The idea is to 
+
+```c++
+
+```
