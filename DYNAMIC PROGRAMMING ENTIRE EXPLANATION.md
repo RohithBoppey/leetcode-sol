@@ -909,3 +909,92 @@ public:
     }
 };
 ```
+## Printing Shortest common supersequence
+- Slight modification from printing the subsequence
+- When matched, we need just once right? Else, we need to add the missing part from left, as well as right
+```c++
+class Solution {
+public:
+
+    string solve(string text1, string text2) {
+        int l1 = text1.size();
+        int l2 = text2.size();
+
+        vector<vector<int>> dp(l1 + 1, vector<int>(l2 + 1, 0));
+        
+        // initialisation
+        // if l1 == 0 or l2 == 0, the common subsequence length = 0
+        // already done in the declaration part
+
+        // processing
+        for(int i = 1; i <= l1; i++){
+            for(int j = 1; j <= l2; j++){
+
+                // check whether it is matching or not matching
+                if(text1[i - 1] == text2[j - 1]){
+                    // matching
+                    // MUST INCLUDE - so remove those
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                }
+
+                else{
+                    // not matching
+                    // can be either of 2 cases
+                    int first, second;
+                    first = dp[i - 1][j];
+                    second = dp[i][j - 1];
+
+                    dp[i][j] = max(first, second);
+                }
+
+            }   
+        }
+
+        // printing the LCS part
+        int i = l1, j = l2;
+        string res = "";
+        while(i > 0 && j > 0){
+            if(text1[i - 1] == text2[j - 1]){
+                // we are taking that element
+                res += text1[i - 1];
+                i--;
+                j--;
+            } else{
+                // one of them is greater, move in that direction
+                if(dp[i][j - 1] > dp[i - 1][j]){
+                    res += text2[j - 1];
+                    j--;
+                }else{
+                    res += text1[i - 1];
+                    i--;
+                }
+            }
+        }
+
+        while(i>0){
+            res += text1[i-1];
+            i--;
+        }
+        while(j>0){
+            res += text2[j-1];
+            j--;
+        }
+
+        reverse(res.begin(), res.end());
+
+        return res;
+    }
+
+    string shortestCommonSupersequence(string str1, string str2) {
+        
+        string common = solve(str1, str2);
+        if(common.length() == 0){
+            return str1 + str2;
+        }
+
+       return common;
+
+    }
+
+};
+```
