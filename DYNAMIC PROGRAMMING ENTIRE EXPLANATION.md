@@ -998,3 +998,49 @@ public:
 
 };
 ```
+## Longest Repeating Subsequence 
+[GFG Link](https://www.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
+
+So in the same string, you need to find the length of the biggest subsequence which is appearing twice in the array
+
+```c++
+class Solution {
+  public:
+  
+    int l;
+  
+    // solve using top down appraoch
+  
+    int LongestRepeatingSubsequence(string &s) {
+        // Code here
+        
+        l = s.size();
+        
+        vector<vector<int>> dp(l + 1, vector<int>(l + 1, 0));
+        
+        
+        for(int i = 1; i <= l; i++){
+            for(int j = 1; j <= l; j++){
+                
+                // if the letter matches
+                if(s[i - 1] == s[j - 1] && i != j){
+                    // here there is a cross matching between the letters
+                    // meaning the same subsequence is present in two strings, but at different places
+                    // take it
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                }else{
+                    
+                    // the max can occur at 2 cases - can remove one letter from either and proceed
+                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+                    
+                }
+                
+            }
+        }
+        
+        
+        return dp[l][l];
+        
+    }
+};
+```
