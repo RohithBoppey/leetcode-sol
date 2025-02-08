@@ -1044,3 +1044,101 @@ class Solution {
     }
 };
 ```
+
+# MCM type questions
+
+## Matrix Chain Multiplication: 
+Q: Find the brackets order so that the cost of mul would be minimum. 
+[GFG Link](https://www.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
+The key trick in here is to just find out the i & j -> which is the starting, ending positions for the problem and the idea includes breaking the problem into subproblem by iterating a `k` - another problem is finding the limits for this, this should do the job
+
+<!-- IMAGE LINK GOES IN HERE !--> 
+![WhatsApp Image 2025-02-08 at 23 28 03_ec57ea63](https://github.com/user-attachments/assets/834f5925-939c-40e5-9ffe-a0af3fb9a586)
+![WhatsApp Image 2025-02-08 at 23 28 21_f9147978](https://github.com/user-attachments/assets/eae9e5bf-8aab-46ae-8259-b19b9064363b)
+
+```c++
+
+class Solution {
+  public:
+  
+    int solve(vector<int>& arr, vector<vector<int>>& dp, int i, int j){
+        
+        if(i >= j){
+            // matrix itself is not being built
+            return 0;
+        }
+        
+        if(dp[i][j] != -1){
+            return dp[i][j];
+        }
+        
+        
+        // now solve the problem into 2 subproblems
+        // solve(i, k) & solve (k + 1, j)
+        
+        
+        int mn = INT_MAX;
+        
+        
+        // k range: move it from values where the matrix is possible
+        // in our case, k can be i (or 0), but cannot be at j because all of the matrices will be on one side and the rest is not a matrix
+        
+        for(int k = i; k <= j - 1; k++){
+            
+            int ans = 
+            solve(arr, dp, i, k) +
+            solve(arr, dp, k + 1, j) + 
+            
+            // this is the extra cost thatfor AB * CD operation
+            arr[i] * arr[k + 1] * arr[j + 1];
+            
+            // find the min
+            mn = min(mn, ans);
+        }
+        
+        return dp[i][j] = mn;
+        
+    }
+  
+  
+    int matrixMultiplication(vector<int> &arr) {
+        // code here
+        
+        int n = arr.size();
+        
+        if(n == 2){
+            // no matrix mul is possible
+            return 0;
+        }
+        
+        
+        // that means (n - 1) matrices are present
+        
+        /*
+        
+        [2, 1, 3, 4]
+        convention: starting from 0
+        A[i] = arr[i] * arr[i + 1] is the convention -> starting from 0
+        
+        so: 
+        A0 = 2 * 1
+        A1 = 1 * 3
+        .
+        .
+        
+        */
+        
+        vector<vector<int>> dp(101, vector<int>(101, -1));
+        
+        // provide the starting and ending values - i and j for the matrix within 
+        // in our case, matrix can start with i=0 and end with j = n - 2
+        solve(arr, dp, 0, n - 2);
+        
+        return dp[0][n - 2];
+        
+    }
+};
+```
+
+
+
