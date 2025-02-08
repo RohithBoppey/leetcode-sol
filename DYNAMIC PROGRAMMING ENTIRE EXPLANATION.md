@@ -1140,5 +1140,80 @@ class Solution {
 };
 ```
 
+# Palindrome Partioning Problem 
+Just give the count of the variable - [GFG](https://www.geeksforgeeks.org/problems/palindromic-patitioning4845/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
+Give the variables as well - [Leetcode](https://leetcode.com/problems/palindrome-partitioning/description/)
+
+Simple solution using the above logic - working but giving TLE in GFG (not sure why) ❌
+```c++
+class Solution {
+  public:
+  
+    // check if the string is palindrome or not
+    int palindrome(string& s, int i, int j) {
+        // using a while loop check
+        int n = s.size();
+        
+        while(i < j){
+            // cout << s[i] << "vs" << s[j] << endl;
+            if(s[i] != s[j]){
+                return 0;
+            }
+            i++;
+            j--;
+        }
+        
+        return 1;
+    }
+  
+    int solve(string& s, vector<vector<int>>& dp, int i, int j){
+        
+        if(i >= j){
+            // meaning there is just a single string and is a palindrome in itself
+            return 0;
+        }
+        
+        if(dp[i][j] != -1){
+            // already know the min number of cuts
+            return dp[i][j];
+        }
+        
+        // check if the substring in i to j range is a palindrome or not
+        // if yes -> no cuts needed, return 0;
+        
+        if(palindrome(s, i, j)){
+            return dp[i][j] = 0;
+        }
+        
+        // else find the number of cuts required
+        int mn = INT_MAX;
+        for(int k = i; k < j; k++){
+            
+            // because I am making one cut in here
+            int ans = 1 + solve(s, dp, i, k) + solve(s, dp, k + 1, j);
+            mn = min(ans, mn);
+        }
+        
+        return dp[i][j] = mn;
+        
+    }
+  
+  
+    int palindromicPartition(string &s) {
+        // code here
+        
+        int n = s.size(); 
+        
+        // the parameters for i and j in here are from 0 to n  - 1
+        vector<vector<int>> dp(1001, vector<int>(1001, -1));
+        
+        solve(s, dp, 0, n - 1);
+        
+        return dp[0][n - 1];
+    }
+};
+```
+
+
 
 
