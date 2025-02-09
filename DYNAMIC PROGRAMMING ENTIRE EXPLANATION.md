@@ -1,4 +1,4 @@
-![WhatsApp Image 2025-02-09 at 18 12 17_542679a9](https://github.com/user-attachments/assets/7ab6e062-8a70-492f-a451-f24b4f09147b)What is Dynamic Programming? -> Enhanced version of Recursion -> So understanding all approaches of a problem: Recursive, Top Down, Bottom Up, Memoized version.
+understanding all approaches of a problem: Recursive, Top Down, Bottom Up, Memoized version.
 ![image](https://github.com/user-attachments/assets/b1ca11dc-b2d0-4ec2-aabe-9d2465828348)
 
 How to identify DP/Recursion? All ways can be applicable for Recursion & DP:
