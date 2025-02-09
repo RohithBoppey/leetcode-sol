@@ -1,4 +1,4 @@
-What is Dynamic Programming? -> Enhanced version of Recursion -> So understanding all approaches of a problem: Recursive, Top Down, Bottom Up, Memoized version.
+![WhatsApp Image 2025-02-09 at 18 12 17_542679a9](https://github.com/user-attachments/assets/7ab6e062-8a70-492f-a451-f24b4f09147b)What is Dynamic Programming? -> Enhanced version of Recursion -> So understanding all approaches of a problem: Recursive, Top Down, Bottom Up, Memoized version.
 ![image](https://github.com/user-attachments/assets/b1ca11dc-b2d0-4ec2-aabe-9d2465828348)
 
 How to identify DP/Recursion? All ways can be applicable for Recursion & DP:
@@ -1213,7 +1213,244 @@ class Solution {
     }
 };
 ```
+Working solution: 
+![WhatsApp Image 2025-02-09 at 18 11 08_ee2590d3](https://github.com/user-attachments/assets/4d5b3613-d9f2-478e-aaef-4a4496811f0b)
+![WhatsApp Image 2025-02-09 at 18 11 27_5166dcb6](https://github.com/user-attachments/assets/fb00d12f-5256-4bbb-b877-ee754407f1d1)
 
+```c++
 
+class Solution {
+  public:
+    vector<vector<int>> dp;
+    
+    bool isPalindrome(string& str, int left, int right) {
+        // int left = 0;
+        // int right = str.length() - 1;
 
+        while (left < right) {
+            if (str[left] != str[right]) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+  
+    int SolveMCM(string s, int i, int j){
+        if(i>=j) return 0;
+        if(dp[i][j]!= -1) return dp[i][j];
+        if(isPalindrome(s, i, j) == true) return 0;
+
+        int mini = INT_MAX, left, right;
+        for(int k=i; k<j; k++){
+            // int temp = 1 + SolveMCM(s, i, k) + SolveMCM(s, k+1, j);
+            
+            if(isPalindrome(s, i, k)==true){ 
+                int temp = 1 + SolveMCM(s, k+1, j);
+                
+            // if(dp[i][k]!=-1){
+            //     left = dp[i][k];
+            // }
+            // else{
+            //     left = SolveMCM(s, i, k);
+            //     dp[i][k] = left;
+            // }
+
+            // if(dp[k+1][j]!=-1){
+            //     right = dp[k+1][j];
+            // }
+            // else{
+            //     right = SolveMCM(s, k+1, j);
+            //     dp[k+1][j] = right;
+            // }
+            // int temp = 1 + left+ right;
+
+            mini = min(mini, temp);
+            dp[i][j]= mini;
+            }
+        }
+
+        return dp[i][j];
+    }
+  
+    int palindromicPartition(string &s) {
+        // code here
+        
+        int n = s.size();
+        dp.resize(n+1, vector<int>(n+1, -1));
+        return SolveMCM(s, 0, n-1);
+    }
+};
+```
+## Boolean Paranthesis - no of ways to get true as answer:
+**Hardest Problem so far -> exists on the base of Matrix Mul only, but complex understanding is needed**
+[GFG](https://www.geeksforgeeks.org/problems/boolean-parenthesization5610/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
+
+![WhatsApp Image 2025-02-09 at 18 11 47_5adf2c7f](https://github.com/user-attachments/assets/f9196d9f-7fa9-40ae-a668-9b1ceea9ecd9)
+![WhatsApp Image 2025-02-09 at 18 12 17_ee2eea02](https://github.com/user-attachments/assets/2b8c40e9-16c4-49f9-8c96-4bc581efa9d4)
+
+```c++
+class Solution {
+  public:
+  
+    vector<vector<vector<int>>> dp;
+  
+    int solve(string& s, int i, int j, int condn){
+        
+        if(i > j){
+            // empty string -> no ways to make it true
+            return 0;
+        }
+        
+        if(i == j){
+            // only one single character is present
+            // if true, then check for true and same for false as well
+            if(condn == 1){
+                return s[i] == 'T';
+            }else{
+                return s[i] == 'F';
+            }
+        }
+        
+        if(dp[i][j][condn] != -1){
+            return dp[i][j][condn];
+        }
+        
+        
+        // gather all the possibilites
+        int lt, lf, rt, rf;
+        
+        // move only from operator to operator in the k
+        
+        int ans = 0;
+        
+        for(int k = i + 1; k < j; k = k + 2){
+            lt = solve(s, i, k - 1, 1);
+            lf = solve(s, i, k - 1, 0);
+            rt = solve(s, k + 1, j, 1);
+            rf = solve(s, k + 1, j, 0);
+            
+            // based on the operator do the needful 
+            
+            if(s[k] == '&'){
+                if(condn == 1){
+                    ans += lt * rt;
+                }else{
+                    ans += (lf * rf) + (lt * rf) + (lf * rt);
+                }
+            }
+            
+            else if(s[k] == '|'){
+                if(condn == 0){
+                    ans += lf * rf;
+                }else{
+                    ans += (lt * rt) + (lt * rf) + (lf * rt);
+                }
+            }
+            
+            else{
+                // ^ XOR
+                if(condn == 0){
+                    ans += (lt * rt) + (lf * rf);
+                }else{
+                    ans += (lt * rf) + (lf * rt);
+                }
+            }
+        }
+        
+        
+        return dp[i][j][condn] = ans;
+    }
+  
+  
+    int countWays(string s) {
+        // code here
+        
+        int n = s.size();
+        
+        // using 3d array for dp
+        // initialzing
+        dp.resize(101, vector<vector<int>>(101, vector<int>(2, -1)));
+        
+        // the possible values for i and j are 0 and n - 1
+        return solve(s, 0, n - 1, 1);
+    }
+};
+```
+
+## Scramble String
+[Leetcode Problem Link](https://leetcode.com/problems/scramble-string/description/)
+![WhatsApp Image 2025-02-09 at 18 12 40_be1a321d](https://github.com/user-attachments/assets/06476a97-fd8a-4b99-9e1b-1639113103c1)
+
+```c++
+class Solution {
+public:
+
+    unordered_map<string, int> mp;
+
+    bool solve(string a, string b){
+        // if one string is empty or single letter -> leaf node
+
+        int n = a.size();
+
+        string key = a + "_" + b;
+
+        if(mp.find(key) != mp.end()){
+            // key found
+            return mp[key];
+        }
+
+        // stop if they are equal
+        if(a == b){
+            // they are scrambled
+            return mp[key] = true;
+        }
+
+        // processing now
+        // so either swapping is happened or no swap is there
+
+        bool cond1, cond2;
+        bool flag = false;
+
+        for(int i = 0; i <= n - 2; i++){
+            // swapping -> so compare first 2 with the last 3 in the second string
+            cond1 = (
+                solve(a.substr(0, i + 1), b.substr(n - i - 1, i + 1))
+                &&
+                solve(a.substr(i + 1, n - i - 1), b.substr(0, n - i - 1))
+                );
+
+            // no swapping -> compare first 2 with first 2 in second
+            cond2 = (
+                solve(a.substr(0, i + 1), b.substr(0, i + 1)) 
+                &&
+                solve(a.substr(i + 1, n - i - 1), b.substr(i + 1, n - i - 1))
+                );
+
+            if(cond1 || cond2){
+                // found a scrambled string out of these 2 conditions
+                flag = true;
+                break;
+            }
+        }
+
+        mp[key] = flag;
+        return flag;
+
+    }
+
+    bool isScramble(string s1, string s2) {
+        int n = s1.size();
+
+        if(n != s2.size()) {
+            return false;
+        }
+
+        mp.clear();
+
+        return solve(s1, s2);
+    }
+};
+```
 
