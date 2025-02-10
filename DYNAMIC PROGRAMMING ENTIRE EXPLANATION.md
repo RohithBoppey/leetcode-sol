@@ -1454,3 +1454,71 @@ public:
 };
 ```
 
+## Egg Dropping Problem: 
+[GFG Problem](https://www.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
+
+![WhatsApp Image 2025-02-10 at 22 52 28_17ee88f8](https://github.com/user-attachments/assets/814a1c27-af01-402e-b23e-aa2d0ccd55a0)
+![WhatsApp Image 2025-02-10 at 22 52 49_527f4494](https://github.com/user-attachments/assets/c9be98d8-7e90-4adc-a089-f51df613ace2)
+
+
+```c++
+class Solution {
+  public:
+    // Function to find minimum number of attempts needed in
+    // order to find the critical floor.
+    vector<vector<int>> dp;
+    
+    int solve(int eggs, int floors) {
+        // your code here
+        if(eggs == 1){
+            // eggs = 0 is not possible
+            // worst case, you have to check all the floors
+            return dp[eggs][floors] = floors;
+        }
+        
+        if(floors <= 1){
+            // only require 1 input
+            // if break -> threshold, else no answer -> still a valid way
+            return dp[eggs][floors] = floors;
+        }
+        
+        if(dp[eggs][floors] != -1){
+            return dp[eggs][floors];
+        }
+        
+        // in the for loop, check for all the floors, but recursively
+        int br, nobr, temp;
+        int mn = INT_MAX;
+        for(int k = 1; k <= floors; k++){
+            // at the kth floor, can break or not
+            
+            // if the eggs break, check the lower subproblem
+            br = dp[eggs - 1][k - 1] != -1 ? dp[eggs-1][k-1] : solve(eggs - 1, k - 1);
+            
+            // if the egg is not breaking, you are left with same number of eggs, and check the above number of floors
+            nobr = dp[eggs][floors - k] != -1 ? dp[eggs][floors-k] : solve(eggs, floors - k);
+            
+            // we are dealing with the worst case, so out of them, we need to chose the max one
+            temp = max(br, nobr);
+            
+            // this is counted as one operation right? 
+            mn = min(1 + temp, mn);
+            
+        }
+        
+        return dp[eggs][floors] = mn;
+        
+        
+    }
+    
+    int eggDrop(int n, int k){
+        dp.resize(101, vector<int>(101, -1));
+        
+        return solve(n, k);
+    }
+    
+};
+```
+
+
+
