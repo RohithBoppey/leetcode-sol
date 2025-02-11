@@ -1520,5 +1520,55 @@ class Solution {
 };
 ```
 
+# Tree Problems with DP: 
+## Diameter of the tree with 2 nodes
+[GFG](https://www.geeksforgeeks.org/problems/diameter-of-binary-tree/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
 
+![WhatsApp Image 2025-02-11 at 22 58 46_37802689](https://github.com/user-attachments/assets/edf68c86-29fd-41a6-a869-54badc129e97)
+![WhatsApp Image 2025-02-11 at 22 59 10_bdc78e2f](https://github.com/user-attachments/assets/009003a8-5246-44f3-a23e-a3f15e02c120)
+![WhatsApp Image 2025-02-11 at 22 59 31_18d18edf](https://github.com/user-attachments/assets/49f2a311-1d57-4e9d-8299-56b261c3c2bc)
+![WhatsApp Image 2025-02-11 at 22 59 50_f772ff9a](https://github.com/user-attachments/assets/0ce749ef-a211-409e-87f2-48abbfc87984)
+
+```c++
+
+class Solution {
+  public:
+  
+    int ans;
+  
+    int solve(Node* root){
+        if(root == NULL){
+            // there is no node, cannot return any diameter
+            return 0;
+        }
+        
+        // hypothesis step
+        // the below does this
+        // someone you got the left diameter and right diameter
+        int left = solve(root->left);
+        int right = solve(root->right);
+        
+        // once that is known, either this can be the diameter step
+        int can = 1 + left + right;
+        
+        // if this is the not diameter, then the node is responsible to return the max diameter found so far
+        int cannot = 1 + max(left, right);
+        
+        // now with our global answer, compare all the YES possibilities
+        ans = max(can, ans);
+        
+        // i should return cannot so that the parent call can use this result
+        return cannot;
+        
+    }
+  
+    int diameter(Node* root) {
+        // Your code here
+        ans = INT_MIN;
+        solve(root);
+        
+        return ans - 1;
+    }
+};
+```
 
