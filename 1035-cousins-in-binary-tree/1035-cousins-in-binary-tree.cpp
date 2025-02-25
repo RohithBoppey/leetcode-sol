@@ -15,53 +15,58 @@ public:
         // trying to skip the level information
         // but still require parent and node information
 
-        queue<pair<TreeNode*,int>> q;
-        q.push({root, -1});
+        queue<TreeNode*> q;
+        q.push(root);
         
         // using the level wise operation logic 
         TreeNode* node;
-        int parent;
 
-        int xp = -1, xl, yp = -1, yl;
-        int i = 0;
-        
+        // check whether the values are present or not
+
         while(!q.empty()){
             // find the number of nodes to process
+            // this eliminates the need for parent
+            int isA = false, isB = false;
             int n = q.size();
+            // check if both exist in the same level or not
             while(n--){
-                auto f = q.front();
+                auto node = q.front();
                 q.pop();
-                node = f.first;
-                parent = f.second;
 
-                if(node->val == x){
-                    xp = parent;
-                    xl = i;
-                }
-                if(node->val == y){
-                    yp = parent;
-                    yl = i;
-                }
+                // check whether the A and B is present or not
+                // they can be present in different levels as well
+                isA = (node->val == x) ? true : isA;
+                isB = (node->val == y) ? true : isB;
 
-                if(xp != -1 && yp != -1){
-                    // both are found
-                    break;
+                // can check if they are siblings or not
+                // meaning they have the same parent
+                if(node->left != NULL && node->right != NULL){
+                    if(
+                        node->left->val == x && node->right->val == y
+                        || 
+                        node->right->val == x && node->left->val == y
+                        ){
+                        // they are siblings
+                        return false;
+                    }
                 }
 
                 // push the left and right nodes
                 if(node->left){
-                    q.push({node->left, node->val});
+                    q.push(node->left);
                 }
                 if(node->right){
-                    q.push({node->right, node->val});
+                    q.push(node->right);
                 }
             }
-            i++;
+
+            // if both are present
+            if (isA && isB){
+                return true;
+            }
+
         }
 
-        cout << xp << xl << yp << yl;
-        return (xp != yp) && (xl == yl);
-
-
+        return false;
     }
 };
