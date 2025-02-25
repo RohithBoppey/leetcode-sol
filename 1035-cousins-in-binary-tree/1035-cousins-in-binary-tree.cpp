@@ -12,55 +12,56 @@
 class Solution {
 public:
     bool isCousins(TreeNode* root, int x, int y) {
-        // making seperate variables for both x and y & when both are done, break the loop
-        // x
-        int xp, xl = -1;
-        // y
-        int yp, yl = -1;
+        // trying to skip the level information
+        // but still require parent and node information
 
-        // level, value & parent
-        queue<pair<int, pair<TreeNode*, int>>> q;
+        queue<pair<TreeNode*,int>> q;
+        q.push({root, -1});
+        
+        // using the level wise operation logic 
+        TreeNode* node;
+        int parent;
 
-        q.push({1, {root, -1}});
-
-        int l, p;
-        TreeNode* node; 
-
+        int xp = -1, xl, yp = -1, yl;
+        int i = 0;
+        
         while(!q.empty()){
-            
-            auto t = q.front();
-            q.pop();
+            // find the number of nodes to process
+            int n = q.size();
+            while(n--){
+                auto f = q.front();
+                q.pop();
+                node = f.first;
+                parent = f.second;
 
-            l = t.first;
-            node = t.second.first;
-            p = t.second.second;
+                if(node->val == x){
+                    xp = parent;
+                    xl = i;
+                }
+                if(node->val == y){
+                    yp = parent;
+                    yl = i;
+                }
 
-            // if it matches our target, compare
-            if(node->val == x){
-                xl = l;
-                xp = p;
-            }
+                if(xp != -1 && yp != -1){
+                    // both are found
+                    break;
+                }
 
-            if(node->val == y){
-                yl = l;
-                yp = p;
+                // push the left and right nodes
+                if(node->left){
+                    q.push({node->left, node->val});
+                }
+                if(node->right){
+                    q.push({node->right, node->val});
+                }
             }
-
-            if(xl != -1 && yl != -1){
-                // both variables are found
-                // can break the while loop
-                break;
-            }
-
-            // push the left and right nodes
-            if(node->left){
-                q.push({l + 1, {node->left, node->val}});
-            }
-            if(node->right){
-                q.push({l + 1, {node->right, node->val}});
-            }
+            i++;
         }
 
-        return (xl == yl) && (yp != xp);
+        cout << xp << xl << yp << yl;
+        return (xp != yp) && (xl == yl);
+
+
     }
 };
