@@ -85,8 +85,8 @@ public:
 };
 ```
 
-Single pass, requires moodifying (not easy to understand) ❌
-![image](https://github.com/user-attachments/assets/bb0613bd-d035-464e-aa88-d62091f95a3f)
+Single pass, requires moodifying (not easy to understand) ❌        
+![image](https://github.com/user-attachments/assets/bb0613bd-d035-464e-aa88-d62091f95a3f)        
 ```c++
 /**
  * Definition for a binary tree node.
