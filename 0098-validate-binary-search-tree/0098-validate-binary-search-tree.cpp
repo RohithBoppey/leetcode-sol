@@ -11,17 +11,51 @@
  */
 class Solution {
 public:
-    bool solve(TreeNode* root, TreeNode* mx, TreeNode* mn){
+
+    bool solve(TreeNode* root, long l, long h){
+
         if(root == NULL){
             return true;
         }
-        if((mx != NULL && mx->val >= root->val) || (mn != NULL && mn->val <= root->val)){
+
+        cout << root->val << endl;
+
+        long val = root->val;
+        // check if the selected node is under limits or not
+        int valid = (val >= l && val <= h);
+        if(!valid){
+            // not present in limits
             return false;
         }
-        return solve(root->left, mx, root) && solve(root->right, root, mn);
+
+        // the node itself is valid
+        // check for left and right
+        
+        if(!solve(root->left, l, val - 1)){
+            return false;
+        }
+
+
+        if(!solve(root->right, val + 1, h)){
+            return false;
+        }
+
+        return true;
+
     }
-    
+
     bool isValidBST(TreeNode* root) {
-        return solve(root, NULL, NULL);
+        
+        // set limits for a certain node appraoch
+        long low = INT_MIN, high = INT_MAX;
+        
+        // if there is a single node, allow it
+        if(!root->left && !root->right){
+            // singe node
+            return true;
+        }
+
+        return solve(root, low, high);
+
     }
-}; 
+};
