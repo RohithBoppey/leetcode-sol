@@ -4,7 +4,7 @@ few key moments to note:
 
 ![WhatsApp Image 2025-02-27 at 19 55 03_1a182e8e](https://github.com/user-attachments/assets/ed00d560-5754-46ff-97d1-d37c422f3a69)
 
-```
+```c++
 class Solution {
 public:
     int lenLongestFibSubseq(vector<int>& arr) {
