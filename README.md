@@ -49,6 +49,7 @@ Collection of LeetCode questions solved!
 | [0416-partition-equal-subset-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0905-length-of-longest-fibonacci-subsequence) |
+| [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 ## Linked List
 |  |
@@ -59,6 +60,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0203-remove-linked-list-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0203-remove-linked-list-elements) |
+| [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 ## Hash Table
 |  |
 | ------- |
@@ -127,6 +129,7 @@ Collection of LeetCode questions solved!
 ## Math
 |  |
 | ------- |
+| [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
 ## Combinatorics
 |  |
@@ -157,4 +160,8 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
+## Memoization
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
