@@ -5,8 +5,15 @@
 - In the coin change problem, you have a case where `there is no solution`. Hence you are required to traverse all the possibilities for that question.
 - But in this question, you need not check all, but rather, you can choose to go greedily because: `you have 1 in the coins array!`. So atleast if all solutions fail, then 1 comes to the rescue. `SOLUTION WILL EXIST in this question`
 - so recursively keep subtracting the questions until you get to the 0 part.
-- **so in a way, if the array contains 1, then the question can be solved greedily!!!**
-
+--- 
+**When to use greedy and when to use DP?**:
+```
+Conclusion: Is Greedy Always Valid?
+If 1 is present, we can always make any amount, but greedy is not guaranteed to be optimal.
+If the coin set follows a canonical system (like Fibonacci or U.S. coins), greedy works.
+If the coin set is arbitrary (e.g., {1, 3, 4}), greedy may fail, and DP is needed.
+🔹 For Fibonacci, greedy works. For general coin change, DP is the safest approach. 🚀
+```
 ```c++
 class Solution {
 public:
