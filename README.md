@@ -52,6 +52,7 @@ Collection of LeetCode questions solved!
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
+| [1250-longest-common-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1250-longest-common-subsequence) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 ## Linked List
 |  |
@@ -74,6 +75,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
+| [1250-longest-common-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1250-longest-common-subsequence) |
 ## Sliding Window
 |  |
 | ------- |
