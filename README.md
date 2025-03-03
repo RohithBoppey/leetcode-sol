@@ -20,12 +20,14 @@ Collection of LeetCode questions solved!
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/RohithBoppey/leetcode-sol/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/RohithBoppey/leetcode-sol/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/RohithBoppey/leetcode-sol/tree/master/2265-partition-array-according-to-given-pivot) |
 | [3427-special-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/3427-special-array-ii) |
 ## Two Pointers
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/RohithBoppey/leetcode-sol/tree/master/2265-partition-array-according-to-given-pivot) |
 ## Greedy
 |  |
 | ------- |
@@ -173,4 +175,8 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0070-climbing-stairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
+## Simulation
+|  |
+| ------- |
+| [2265-partition-array-according-to-given-pivot](https://github.com/RohithBoppey/leetcode-sol/tree/master/2265-partition-array-according-to-given-pivot) |
 <!---LeetCode Topics End-->
