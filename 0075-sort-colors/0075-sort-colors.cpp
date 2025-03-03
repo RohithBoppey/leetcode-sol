@@ -1,43 +1,28 @@
 class Solution {
 public:
+    int n;
+
     void sortColors(vector<int>& nums) {
-        int n = nums.size();
-        int low = 0, mid = 0, high = n - 1;
-        
-        if(n == 1){
-            return;
-        }
-        
-        // we are setting up low and high
-//         while(nums[low] == 0){
-//             low++;
-//         }
-        
-//         while(nums[high] == 2){
-//             high--;
-//         }
-        
-//         mid = low;
-//         while(nums[mid] == 1){
-//             mid++;
-//         }
-        
-        // now we have the boundaries
-        // we need to solve
-        
-        while(mid <= high){
-            if(nums[mid] == 0){
-                swap(nums[mid], nums[low]);
-                low++;
-                mid++;
-            }else if(nums[mid] == 1){
-                mid++;
+        n=nums.size();
+        int i=0, j=0, k=n-1;
+
+        // j is the current looper in the array
+        while(j<=k){
+            if(nums[j]==0){
+                // 0 to i-1 should be 0, swap with i
+                swap(nums[i],nums[j]);
+                i++;
+                j++;
+            }else if(nums[j]==1){
+                j++;
             }else{
-                // 2
-                swap(nums[high], nums[mid]);
-                high--;
+                // k
+                // since k+1 to j everything should be 2
+                swap(nums[j],nums[k]);
+                k--;
             }
         }
-        
+
+        return;
     }
 };
