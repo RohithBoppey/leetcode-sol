@@ -14,6 +14,7 @@ Collection of LeetCode questions solved!
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0416-partition-equal-subset-sum) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
+| [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0907-koko-eating-bananas](https://github.com/RohithBoppey/leetcode-sol/tree/master/0907-koko-eating-bananas) |
@@ -126,6 +127,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
+| [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
 | [0907-koko-eating-bananas](https://github.com/RohithBoppey/leetcode-sol/tree/master/0907-koko-eating-bananas) |
 | [0924-fair-candy-swap](https://github.com/RohithBoppey/leetcode-sol/tree/master/0924-fair-candy-swap) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
@@ -174,6 +176,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
+| [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
 ## Memoization
 |  |
 | ------- |
@@ -183,4 +186,20 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [2265-partition-array-according-to-given-pivot](https://github.com/RohithBoppey/leetcode-sol/tree/master/2265-partition-array-according-to-given-pivot) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
+## Segment Tree
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
+## Merge Sort
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
+## Ordered Set
+|  |
+| ------- |
+| [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
 <!---LeetCode Topics End-->
