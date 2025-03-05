@@ -144,6 +144,7 @@ Collection of LeetCode questions solved!
 | [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
 | [1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k](https://github.com/RohithBoppey/leetcode-sol/tree/master/1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k) |
+| [2649-count-total-number-of-colored-cells](https://github.com/RohithBoppey/leetcode-sol/tree/master/2649-count-total-number-of-colored-cells) |
 ## Combinatorics
 |  |
 | ------- |
