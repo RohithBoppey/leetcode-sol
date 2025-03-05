@@ -1,92 +1,102 @@
 class Solution {
 public:
-    // new
-    void merge(vector<int>& v, int low, int mid, int high){
-        // we already have left and right parts sorted
-        // the only function this does is merging
+    int ans, n;
 
-        int left_pointer = low, right_pointer = mid + 1;
-    
-        // left - [low, mid] & right - [mid + 1, high]
+    void combine(vector<int>& v, int low, int mid, int high){
+        // now the left and right parts in this vector are already sorted, just combine them
+        // copy back in the array in place
 
-        vector<int> temp;
-
-        while(left_pointer <= mid && right_pointer <= high){
-            // is a valid index
-            if(v[left_pointer] <= v[right_pointer]){
-                temp.push_back(v[left_pointer]);
-                left_pointer++;
-            }else{
-                temp.push_back(v[right_pointer]);
-                right_pointer++;
-            }
-        }
-
-        // copying the remaining elements
-        while(left_pointer <= mid){
-            temp.push_back(v[left_pointer]);
-            left_pointer++;
-        }
-
-        while(right_pointer <= high){
-            temp.push_back(v[right_pointer]);
-            right_pointer++;
-        }
-
-        // copying back
-        for(int i = low; i <= high; i++){
-            v[i] = temp[i - low];
-        }
-    }
-    
-    int findCount(vector<int>& v, int low, int mid, int high){
-        // now you have left and right arrays without sorting
-        int count = 0;
-        int left_pointer = low, right_pointer = mid + 1;
-        for(left_pointer = low; left_pointer <= mid; left_pointer++){
-            // move right to the correct position
-            while(right_pointer <= high && (long long int) v[left_pointer] > (long long int) 2 * v[right_pointer]){
-                right_pointer++;
-            }
-            
-            // add the persisting count
-            count += right_pointer - (mid + 1);
-        }
-        return count;
-    }
-    
-    int helper(vector<int>& v, int low, int high){
         if(low >= high){
-            // single element
-            return 0;
+            // already in place
+            return;
         }
 
-        int mid = low + ((high - low) / 2);
-        // sorting left one, sorting right one, and then merging
+        int lp = low, rp = mid + 1;
+        vector<int> t;
 
-        // should return the count
-        int count = 0;
-        
-        // sorting left
-        count += helper(v, low, mid);
-        // sorting right
-        count += helper(v, mid + 1, high);
-    
-        count += findCount(v, low, mid, high);
-        
-        // merging left and right
-        merge(v, low, mid, high);
-        
-        return count;
+        while(lp <= mid && rp <= high){
+            if(v[lp] <= v[rp]){
+                // move left
+                t.push_back(v[lp]);
+                lp++;
+            }
+            else{  
+                // move right
+                t.push_back(v[rp]);
+                rp++;
+            }
+        }
+
+        // remaining
+        while(lp <= mid){
+            t.push_back(v[lp]);
+            lp++;
+        }
+
+        while(rp <= high){
+            t.push_back(v[rp]);
+            rp++;
+        }
+
+        // now copy back in the original array
+        // COPY FROM LOW TO HIGH - but the t is relative
+        for(int i = low; i <= high; i++){
+            v[i] = t[i - low];
+        }
+
     }
 
-    int mergeSort(vector<int> &v){
-        int n = v.size();
-        int low = 0, high = n - 1;
-        return helper(v, low, high);
+    void findCount(vector<int>& v, int low, int mid, int high){
+        // we have 2 sorted arrays here before combining, so use that logic
+        int lp = low, rp = mid + 1;
+
+        while (lp <= mid) {
+            while (rp <= high && (long long)v[lp] > 2LL * v[rp]) {
+                rp++;
+            }
+            ans += (rp - (mid + 1)); // Count valid pairs for v[lp]
+            lp++;
+        }
     }
-    
+
+    void mergeSort(vector<int>& v, int low, int high){
+        // this function will split into left & right, sort them individually and then merge back into the main array
+        // at the end, you will be having the fully sorted array from low to high
+
+        if(low >= high){
+            // nothing to sort
+            return;
+        }
+
+        int mid = low + (high - low) / 2;
+
+        // sort left
+        mergeSort(v, low, mid);
+
+        // sort right
+        mergeSort(v, mid + 1, high);
+
+        // add to the count
+        findCount(v, low, mid, high);
+
+        // combine both the sorted parts -> copy into the array
+        combine(v, low, mid, high);
+
+    }
+
+
     int reversePairs(vector<int>& nums) {
-        return mergeSort(nums);
+        // using merge sort logic to sort the array
+        ans = 0;
+        n = nums.size();
+
+        mergeSort(nums, 0, n - 1);
+
+        // for(auto x: nums){
+        //     cout << x << " ";
+        // }
+        // cout << endl;
+
+        return ans;
     }
 };
