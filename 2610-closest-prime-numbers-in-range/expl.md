@@ -50,6 +50,9 @@ public:
 };
 ```
 
+![WhatsApp Image 2025-03-07 at 20 39 34_6d557241](https://github.com/user-attachments/assets/ab92687f-91eb-46a1-8547-4b17d71688ea)
+![WhatsApp Image 2025-03-07 at 20 39 51_7b042688](https://github.com/user-attachments/assets/18f02b34-a0d7-465d-96ba-08e27ea64e26)
+
 2. Using *`Sieve of Eratosthenes`* Approach:    
 Use this approach when primes are required in between [low, high] or some limits.
 
