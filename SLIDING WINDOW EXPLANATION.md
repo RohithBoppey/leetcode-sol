@@ -1,4 +1,8 @@
 
+
+Sliding window template problems: https://leetcode.com/problems/frequency-of-the-most-frequent-element/solutions/1175088/C++-Maximum-Sliding-Window-Cheatsheet-Template!/
+Once all problems are done, come back to this problem: https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/description/?envType=daily-question&envId=2025-03-10
+
 Sliding window template: 
 In this case - https://www.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1, the window size is the same: given pattern, so when the window size is met, we are just proceeding forward, if not matched, do nothing. 
 - If not matched, do nothing
