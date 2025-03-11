@@ -5,6 +5,10 @@ In this step, all the valid substrings starting from position i has been generat
 The same can be seen for the next i as well
 
 Understood the base logic, but should deep dive it again: 
+![WhatsApp Image 2025-03-12 at 00 36 47_8c37151a](https://github.com/user-attachments/assets/40ac3cee-bff9-49f7-ac14-921861cbfeba)
+![WhatsApp Image 2025-03-12 at 00 36 47_10ef0756](https://github.com/user-attachments/assets/a5fc7fce-15d8-457e-a12b-60e90288abc0)
+![WhatsApp Image 2025-03-12 at 00 36 48_a160811f](https://github.com/user-attachments/assets/9f13873b-a28f-4851-914e-603c8856afbf)
+
 
 ```c++
 class Solution {
