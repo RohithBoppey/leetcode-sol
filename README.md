@@ -80,6 +80,7 @@ Collection of LeetCode questions solved!
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0924-fair-candy-swap](https://github.com/RohithBoppey/leetcode-sol/tree/master/0924-fair-candy-swap) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [2186-count-vowel-substrings-of-a-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## String
@@ -89,6 +90,7 @@ Collection of LeetCode questions solved!
 | [1170-shortest-common-supersequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1250-longest-common-subsequence) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [2186-count-vowel-substrings-of-a-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## Sliding Window
 |  |
