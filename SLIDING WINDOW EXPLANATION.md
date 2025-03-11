@@ -61,6 +61,6 @@ class Solution {
 ```
 
 Perfect Template for tricky sliding window problems: 
-https://github.com/RohithBoppey/leetcode-sol/blob/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii/expl.md  
-https://github.com/RohithBoppey/leetcode-sol/blob/master/1460-number-of-substrings-containing-all-three-characters/expl.md
-https://github.com/RohithBoppey/leetcode-sol/blob/master/2186-count-vowel-substrings-of-a-string/expl.md
+= https://github.com/RohithBoppey/leetcode-sol/blob/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii/expl.md  
+- https://github.com/RohithBoppey/leetcode-sol/blob/master/1460-number-of-substrings-containing-all-three-characters/expl.md
+- https://github.com/RohithBoppey/leetcode-sol/blob/master/2186-count-vowel-substrings-of-a-string/expl.md
