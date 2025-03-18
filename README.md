@@ -26,6 +26,7 @@ Collection of LeetCode questions solved!
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/RohithBoppey/leetcode-sol/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2308-divide-array-into-equal-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/2308-divide-array-into-equal-pairs) |
+| [2478-longest-nice-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/2478-longest-nice-subarray) |
 | [2665-minimum-time-to-repair-cars](https://github.com/RohithBoppey/leetcode-sol/tree/master/2665-minimum-time-to-repair-cars) |
 | [3427-special-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/3427-special-array-ii) |
 ## Two Pointers
@@ -101,6 +102,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [2478-longest-nice-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/2478-longest-nice-subarray) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## Tree
 |  |
@@ -240,4 +242,5 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [2308-divide-array-into-equal-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/2308-divide-array-into-equal-pairs) |
+| [2478-longest-nice-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/2478-longest-nice-subarray) |
 <!---LeetCode Topics End-->
