@@ -1,8 +1,9 @@
-Simple Traversing Approach: 
+![image](https://github.com/user-attachments/assets/ab8712ab-a706-4520-8be2-27302931e778)Simple Traversing Approach: 
 
 
 DFS: 
 [GFG Link](https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
+![image](https://github.com/user-attachments/assets/5ea96c7c-1aee-4965-8c2d-34b34e7aa3ef)
 
 ```c++
 class Solution {
@@ -51,6 +52,7 @@ class Solution {
 ```
 
 BFS solution: 
+[GFG Link](https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
 
 ```c++
 class Solution {
