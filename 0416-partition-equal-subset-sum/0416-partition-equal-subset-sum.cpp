@@ -1,88 +1,56 @@
 class Solution {
 public:
 
-    int n;
-
-    bool solveRec(vector<int>& nums, int start, int target, vector<vector<int>>& dp){
-        if(target == 0){
-            // the selected subset exists
-            return true;
+    void print2d(vector<vector<int>>& dp){
+        for(auto &y: dp){
+            for(auto &x: y){
+                cout << x << " ";
+            }
+            cout << endl;
         }
-
-        if(start >= n){
-            // cannot proceed further
-            return false;
-        }   
-
-        if(dp[start][target] != -1){
-            return dp[start][target];
-        }
-
-        // processing
-        // can take or cannot take
-        int take, notTake;
-
-        // only take if my current val can fit in the bag
-        take = (nums[start] <= target) ? solveRec(nums, start + 1, target - nums[start], dp) : false;
-        notTake = solveRec(nums, start + 1, target, dp);
-
-        return dp[start][target] = take || notTake; 
     }
 
+    bool checkIfSumExists(int sum, vector<vector<int>>& dp, vector<int>& nums, int n){
+        // using tabulation 
 
-    bool solveIter(vector<int>& nums, int target, vector<vector<int>>& dp){
-
-        // initialisation the proper base cases
-        for(int i = 0; i <= target; i++){
-            dp[0][i] = 0;
-        }
-        
-        for(int i = 0; i <= n; i++){
+        // init
+        for(int i = 1; i <= n; i++){
+            // when sum = 0, such arr is possible to construct
             dp[i][0] = 1;
         }
 
-        // now process
-        int take, notTake;
+        // processing
+        int can, cannot;
         for(int i = 1; i <= n; i++){
-            for(int j = 1; j <= target; j++){
+            for(int j = 1; j <= sum; j++){
+                // check can and cannot
 
-                // can take or not take
-                take = (nums[i - 1] <= j) ? dp[i - 1][j - nums[i - 1]] : false;
-                notTake = dp[i - 1][j];
+                // take current element only when the capacity is left
+                can = (nums[i - 1] <= j) ? dp[i - 1][j - nums[i - 1]] : 0;
+                
+                // if the element is not taken, sum wont change
+                cannot = dp[i - 1][j];
 
-                dp[i][j] = take || notTake;
+                dp[i][j] = can || cannot;
             }
         }
 
-        
-        return dp[n][target];
+        // print2d(dp);
 
+        return dp[n][sum];
     }
 
     bool canPartition(vector<int>& nums) {
-        
-        // lets solve using both the DP appraoches learnt
-        // simply do sum / 2 and check whether the subset sum is feasible or not
+        int n = nums.size();
 
-        n = nums.size();
-        
+        // finding the sum of the array
         int sum = 0;
-        for(auto x: nums){
+        for(auto& x: nums){
             sum += x;
         }
-        if(sum % 2 == 1) return false; // cannot divide into 2 subsets of equal sum
-        
-        int target = sum / 2;
-        vector<vector<int>> dp(n + 1, vector<int>(target + 1, -1));
-        
-        // // 1. recursive solution
-        // int start = 0;
-        // // check whether such sum exists or not
-        // return solveRec(nums, start, target, dp);
 
+        vector<vector<int>> dp(n + 1, vector<int>((sum / 2) + 1));
 
-        // 2. Iterative Top Down solution
-        return solveIter(nums, target, dp);
-
+        return (sum % 2) ? 0 : checkIfSumExists(sum / 2, dp, nums, n);
     }
 };
