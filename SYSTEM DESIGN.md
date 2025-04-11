@@ -5,7 +5,16 @@ Topics: OOPS, SOLID Principles, Design Patterns
 
 ![image](https://github.com/user-attachments/assets/aa893d8e-ff49-4356-a32d-03fc9f11b067)
 
+## Solid Principles
+
 These are used to create reliable and maintainable and scalable software code. 
+
+| Single responsibility Principle | Any function or class should only be responsible for a single function                                                                            |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| Open Closed Principle           | Code should be open for extension, but not for modification (Shapes - Circle, Rectangle \| Area example)                                          |
+| Liskov Substitution Principle   | Use inheritance only when subclass can replace the parent class ; Use more abstraction to prevent errors                                          |
+| Interface Segregation Principle | User should only use the interfaces he want to (Vehicle - Car, Boat)                                                                              |
+| Dependency Inversion Principle  | Higher level modules should not depend on lower level modules implementation (Orders, Payment Gateway - can change this without modifying others) |
 
 1. Single Responsibility - Every single thing - class, method, function should only serve a single puprpose. Separation of concerns -> increase modularity.
 ```python
