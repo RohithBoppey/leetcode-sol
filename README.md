@@ -173,6 +173,7 @@ Collection of LeetCode questions solved!
 | [1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k](https://github.com/RohithBoppey/leetcode-sol/tree/master/1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k) |
 | [2610-closest-prime-numbers-in-range](https://github.com/RohithBoppey/leetcode-sol/tree/master/2610-closest-prime-numbers-in-range) |
 | [2649-count-total-number-of-colored-cells](https://github.com/RohithBoppey/leetcode-sol/tree/master/2649-count-total-number-of-colored-cells) |
+| [2998-count-symmetric-integers](https://github.com/RohithBoppey/leetcode-sol/tree/master/2998-count-symmetric-integers) |
 ## Combinatorics
 |  |
 | ------- |
@@ -257,4 +258,8 @@ Collection of LeetCode questions solved!
 | ------- |
 | [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/RohithBoppey/leetcode-sol/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/RohithBoppey/leetcode-sol/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+## Enumeration
+|  |
+| ------- |
+| [2998-count-symmetric-integers](https://github.com/RohithBoppey/leetcode-sol/tree/master/2998-count-symmetric-integers) |
 <!---LeetCode Topics End-->
