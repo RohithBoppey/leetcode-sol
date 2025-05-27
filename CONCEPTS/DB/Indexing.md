@@ -1,0 +1,2 @@
+- We know that Indexing would make our query execution faster, but how is it happening? 
+- [Ref](https://www.atlassian.com/data/databases/how-does-indexing-work)
