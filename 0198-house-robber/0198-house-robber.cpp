@@ -1,27 +1,35 @@
 class Solution {
 public:
-    int solve(vector<int>& nums, vector<int>& profit, int start, int n){
-        if(start >= n){
-            return 0;
-        }
-        if(profit[start] != -1){
-            // already cal
-            return profit[start];
-        }
-        
-        // need to cal
-        return profit[start] = max(
-            nums[start] + solve(nums, profit, start + 2, n),
-            solve(nums, profit, start + 1, n)
-        );
-    }
-    
     int rob(vector<int>& nums) {
-        int n = nums.size();
         
-        // start position is 0
-        vector<int> profit(n + 1, -1);
-        solve(nums, profit, 0, n);
-        return profit[0];
+        int n = nums.size();
+        if(n == 1){
+            return nums[0];
+        }
+
+        // idea: to store max amount that can be robbed starting from the house i
+        vector<int> r(n, 0);
+        r[n - 1] = nums[n - 1]; // can only rob this 1 store
+        r[n - 2] = max(r[n - 1], nums[n - 2]);
+
+        int c = r[n - 2]; // running pointer to store max
+
+        if(n == 2){
+            return c;
+        }
+
+        int rb, nrb;
+        for(int i = n - 3; i >= 0; i--){
+            // at any point, i can rob or not rob
+            rb = nums[i] + r[i + 2];
+            nrb = c;
+
+            c = max(rb, nrb);
+
+            r[i] = c;
+        }
+
+        return c;
+
     }
 };
