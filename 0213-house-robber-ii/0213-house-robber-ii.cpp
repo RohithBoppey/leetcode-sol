@@ -1,59 +1,47 @@
 class Solution {
 public:
-    int solve(vector<int>& nums, int start, int &n, vector<int>& profit){   
-        if(start >= n){
-            // the amount he can rob starting from start is 0
-            // coz there are no houses
-            return 0;
-        }    
-        
-        if(profit[start] != -1){
-            // already calculated
-            return profit[start];
-        }
-        
-        // now he can either take or not take
-        return profit[start] = max(
-            nums[start] + solve(nums, start + 2, n, profit),
-            solve(nums, start + 1, n, profit)
-        );
-    }
-    
-    int HouseRob(vector<int>& nums) {
-        // 1D dynamic programming
-        // profit[i] shows max profit starting from pos i
-        
-        int n = nums.size();
+
+    // returns the max amount he can rob, when start and end positions are given
+    int solve(vector<int>& nums, int start, int end){
+        int n = end - start + 1;
         if(n == 1){
-            // can only rob that house
-            return nums[0];
+            return nums[start];
         }
-        
-        // start from 0 and find
-        vector<int> profit(n, -1);
-        return solve(nums, 0, n, profit);
+
+        // idea: to store max amount that can be robbed starting from the house i
+        vector<int> r(n, 0);
+        r[n - 1] = nums[end]; // can only rob this 1 store
+        r[n - 2] = max(nums[end], nums[end - 1]);
+
+        int c = r[n - 2]; // running pointer to store max
+
+        if(n == 2){
+            return c;
+        }
+
+        int rb, nrb;
+        // start from 2 places behind
+        for(int i = end - 2; i >= start; i--){
+            // at any point, i can rob or not rob
+            rb = nums[i] + r[i - start + 2];
+            nrb = c;
+
+            c = max(rb, nrb);
+
+            r[i - start] = c;
+        }
+
+        return c;
+
     }
-    
+
     int rob(vector<int>& nums) {
-        // given there is a circle
-        // first and last one are adjacent
-        
-        // so should either be in 0 to n -1 
-        // or 1 to n
-        
-        int n = nums.size();
-        if(n == 1){
-            return nums[0];
-        }
-        
-        vector<int> firstSet(nums.begin(), nums.end() - 1);
-        vector<int> secondSet(nums.begin() + 1, nums.end());
-        
-        return max(
-            HouseRob(firstSet),
-            HouseRob(secondSet)
-        );
+        int k = nums.size();
+        if(k == 1) return nums[0];
+        if(k == 2) return max(nums[0], nums[1]);
+
+        int a = solve(nums, 0, k - 2);
+        int b = solve(nums, 1, k - 1);
+        return max(a, b);
     }
 };
-
-
