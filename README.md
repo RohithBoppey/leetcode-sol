@@ -6,6 +6,7 @@ Collection of LeetCode questions solved!
 ## Array
 |  |
 | ------- |
+| [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
 | [0045-jump-game-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
@@ -38,6 +39,7 @@ Collection of LeetCode questions solved!
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0075-sort-colors](https://github.com/RohithBoppey/leetcode-sol/tree/master/0075-sort-colors) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
@@ -53,6 +55,7 @@ Collection of LeetCode questions solved!
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/RohithBoppey/leetcode-sol/tree/master/0075-sort-colors) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
