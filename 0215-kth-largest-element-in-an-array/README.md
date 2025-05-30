@@ -1,41 +1,21 @@
-![WhatsApp Image 2023-08-14 at 14 52 46](https://user-images.githubusercontent.com/73538974/260409917-b811b5a8-762f-4caf-8450-0c1d15824f7f.jpg)
-      
-DRY RUN:      
-      
-![image](https://user-images.githubusercontent.com/73538974/260418538-d446ff82-1978-4522-b862-ed7116747c10.png)
-![image](https://user-images.githubusercontent.com/73538974/260418573-8e4461eb-0dfe-4123-acc0-2d751c93e5f9.png)
-![image](https://user-images.githubusercontent.com/73538974/260418607-577d8d88-db07-445e-a03a-bc9295c78d45.png)
-![image](https://user-images.githubusercontent.com/73538974/260418706-f8702c29-3870-4ebc-9b8b-4c2c689454e1.png)
-![image](https://user-images.githubusercontent.com/73538974/260418816-24f75ab6-faeb-4126-92af-26590d91a964.png)
-![image](https://user-images.githubusercontent.com/73538974/260418840-0077058d-abc1-418d-99ad-9c803a7bef91.png)
-      
-CODE:     
-      
-```
-class Solution {
-public:
-    int findKthLargest(vector<int>& nums, int k) {
-        
-        // using the concept of min heap
-        // at some point only k elements needs to be present 
-        // so that we can return in O(N) time
-        
-        priority_queue<int, vector<int>, greater<int>> q;
-        
-        // always maintain k elements
-        
-        int n = nums.size();
-        
-        for(int i = 0; i < n; i++){
-            q.push(nums[i]); // it will readjust
-            if(q.size() > k){
-                // remove the first lesser elements
-                q.pop();
-            }
-        }
-        
-        return q.top();
-        
-    }
-};
-```
+<h2><a href="https://leetcode.com/problems/kth-largest-element-in-an-array">215. Kth Largest Element in an Array</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the</em> <code>k<sup>th</sup></code> <em>largest element in the array</em>.</p>
+
+<p>Note that it is the <code>k<sup>th</sup></code> largest element in the sorted order, not the <code>k<sup>th</sup></code> distinct element.</p>
+
+<p>Can you solve it without sorting?</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+<pre><strong>Input:</strong> nums = [3,2,1,5,6,4], k = 2
+<strong>Output:</strong> 5
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> nums = [3,2,3,1,2,4,5,5,6], k = 4
+<strong>Output:</strong> 4
+</pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= k &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
+</ul>
