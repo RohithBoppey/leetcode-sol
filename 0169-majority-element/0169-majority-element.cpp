@@ -1,24 +1,27 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
+        // using the moore's voting algorithm 
+        int count = 0, element = 0;
         int n = nums.size();
-        
-        // new
-        // using the moore's voting algorithm - to find the majority element
-        int count = 0, ele = 0;
-        
+
         for(int i = 0; i < n; i++){
-            if(count == 0){
-                count++;
-                ele = nums[i];
-            }else if(ele == nums[i]){
+            if(element == nums[i]){
                 count++;
             }else{
                 count--;
+                count = (count < 0) ? 0 : count;
             }
+
+            if(count == 0){
+                // change the number
+                count = 1;
+                element = nums[i];
+            }
+            
         }
-        
-        // since it is given for sure that such an element exists
-        return ele;
+
+        return element;
+
     }
 };
