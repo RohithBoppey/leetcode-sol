@@ -12,6 +12,7 @@ Collection of LeetCode questions solved!
 | [0045-jump-game-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
+| [0074-search-a-2d-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/RohithBoppey/leetcode-sol/tree/master/0075-sort-colors) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0153-find-minimum-in-rotated-sorted-array) |
@@ -170,6 +171,7 @@ Collection of LeetCode questions solved!
 | [0033-search-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/RohithBoppey/leetcode-sol/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/RohithBoppey/leetcode-sol/tree/master/0069-sqrtx) |
+| [0074-search-a-2d-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0074-search-a-2d-matrix) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0374-guess-number-higher-or-lower](https://github.com/RohithBoppey/leetcode-sol/tree/master/0374-guess-number-higher-or-lower) |
@@ -226,6 +228,7 @@ Collection of LeetCode questions solved!
 ## Matrix
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0074-search-a-2d-matrix) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 ## Backtracking
 |  |
