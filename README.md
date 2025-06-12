@@ -121,6 +121,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0014-longest-common-prefix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0014-longest-common-prefix) |
 | [1170-shortest-common-supersequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1250-longest-common-subsequence) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
@@ -332,4 +333,8 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0682-baseball-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0682-baseball-game) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
