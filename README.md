@@ -7,6 +7,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
+| [0035-search-insert-position](https://github.com/RohithBoppey/leetcode-sol/tree/master/0035-search-insert-position) |
 | [0045-jump-game-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
@@ -163,6 +164,7 @@ Collection of LeetCode questions solved!
 ## Binary Search
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/RohithBoppey/leetcode-sol/tree/master/0035-search-insert-position) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
 | [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
