@@ -1,7 +1,7 @@
 Classic standard problem,, easy to solve. 
 Handle just the equal to condition and when low and high are equal -> loop gets exited, but you should return the index
 
-```
+```c++
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
