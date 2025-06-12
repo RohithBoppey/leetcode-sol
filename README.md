@@ -165,6 +165,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0035-search-insert-position](https://github.com/RohithBoppey/leetcode-sol/tree/master/0035-search-insert-position) |
+| [0374-guess-number-higher-or-lower](https://github.com/RohithBoppey/leetcode-sol/tree/master/0374-guess-number-higher-or-lower) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
 | [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
@@ -302,4 +303,8 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
+## Interactive
+|  |
+| ------- |
+| [0374-guess-number-higher-or-lower](https://github.com/RohithBoppey/leetcode-sol/tree/master/0374-guess-number-higher-or-lower) |
 <!---LeetCode Topics End-->
