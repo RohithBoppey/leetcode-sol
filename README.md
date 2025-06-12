@@ -257,6 +257,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
 | [0169-majority-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0169-majority-element) |
+| [0191-number-of-1-bits](https://github.com/RohithBoppey/leetcode-sol/tree/master/0191-number-of-1-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0215-kth-largest-element-in-an-array) |
 | [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
 | [0948-sort-an-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0948-sort-an-array) |
@@ -304,6 +305,7 @@ Collection of LeetCode questions solved!
 ## Bit Manipulation
 |  |
 | ------- |
+| [0191-number-of-1-bits](https://github.com/RohithBoppey/leetcode-sol/tree/master/0191-number-of-1-bits) |
 | [0338-counting-bits](https://github.com/RohithBoppey/leetcode-sol/tree/master/0338-counting-bits) |
 | [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/RohithBoppey/leetcode-sol/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
 | [2308-divide-array-into-equal-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/2308-divide-array-into-equal-pairs) |
