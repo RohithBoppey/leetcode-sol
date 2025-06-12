@@ -1,40 +1,43 @@
 class Solution {
 public:
+    unordered_map<char, int> mp;
+
+    int ws(int& i, int& j){
+        return j - i + 1;
+    }
+
+    int ms(){
+        return mp.size();
+    }
+
     int lengthOfLongestSubstring(string s) {
-        
+        int i = 0, j = 0; // pointers required for traversal;
+        int ans = 0;
         int n = s.size();
 
-        unordered_map<char, int> mp;
-        int mx = 0;
-        int ws = 0;
+        while(j < n){
+            cout << s[j] << endl;
+            mp[s[j]]++;
 
-        int start = 0, end = 0;
-        while(end < n){
-            // insert the position in the end 
-            mp[s[end]]++;
-
-            // check if the window size is equal to the unique count (keys) in the mp
-            ws = end - start + 1;
-            if(ws == mp.size()){
-                // all the letters in the window are unique, and in the map as well, no duplicates are found
-                mx = max(mx, ws);
-            }
-
-            else{
-                // one thing which is clear is that always ws >= mp.size()
-                while(mp.size() != ws){
-                    mp[s[start]]--;
-                    if(mp[s[start]] == 0){
-                        mp.erase(s[start]);
+            if(ws(i, j) > ms()){
+                // some duplicate character is there
+                while(i <= j && ws(i, j) > ms()){
+                    mp[s[i]]--;
+                    if(mp[s[i]] == 0){
+                        // erase
+                        mp.erase(s[i]);
                     }
-                    start++;
-                    ws = end - start + 1;
+                    i++;
                 }
+            }else{
+                // no duplicates are there
+                ans = max(ans, ms());
             }
 
-            end++;
+            j++;
+
         }
 
-        return mx;
+        return ans;
     }
 };
