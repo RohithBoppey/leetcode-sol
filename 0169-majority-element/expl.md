@@ -14,8 +14,34 @@ whenever the key is the same, we increment the count, or else we decrement the c
 ​              
 ![image](https://user-images.githubusercontent.com/73538974/249498379-a7a09da9-4e91-4194-b8b8-ef514c0618a4.png)
 ​
-​
-​
-​
-​
-​
+**Moore's voting algorithm:**
+```c++
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        // using the moore's voting algorithm 
+        int count = 0, element = 0;
+        int n = nums.size();
+
+        for(int i = 0; i < n; i++){
+            if(element == nums[i]){
+                count++;
+            }else{
+                count--;
+                count = (count < 0) ? 0 : count;
+            }
+
+            if(count == 0){
+                // change the number
+                count = 1;
+                element = nums[i];
+            }
+            
+        }
+
+        return element;
+
+    }
+};
+```
+​​
