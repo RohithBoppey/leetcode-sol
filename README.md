@@ -7,6 +7,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
+| [0033-search-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/RohithBoppey/leetcode-sol/tree/master/0035-search-insert-position) |
 | [0045-jump-game-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
@@ -164,6 +165,7 @@ Collection of LeetCode questions solved!
 ## Binary Search
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/RohithBoppey/leetcode-sol/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/RohithBoppey/leetcode-sol/tree/master/0069-sqrtx) |
 | [0374-guess-number-higher-or-lower](https://github.com/RohithBoppey/leetcode-sol/tree/master/0374-guess-number-higher-or-lower) |
