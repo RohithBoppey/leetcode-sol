@@ -101,10 +101,12 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0203-remove-linked-list-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0203-remove-linked-list-elements) |
+| [0206-reverse-linked-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0206-reverse-linked-list) |
 ## Recursion
 |  |
 | ------- |
 | [0203-remove-linked-list-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0203-remove-linked-list-elements) |
+| [0206-reverse-linked-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0206-reverse-linked-list) |
 | [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 ## Hash Table
 |  |
