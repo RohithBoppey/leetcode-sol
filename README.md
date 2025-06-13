@@ -7,6 +7,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0033-search-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/RohithBoppey/leetcode-sol/tree/master/0035-search-insert-position) |
 | [0045-jump-game-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0045-jump-game-ii) |
@@ -53,6 +54,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0075-sort-colors](https://github.com/RohithBoppey/leetcode-sol/tree/master/0075-sort-colors) |
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
