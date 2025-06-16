@@ -19,6 +19,7 @@ Collection of LeetCode questions solved!
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0169-majority-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0169-majority-element) |
+| [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/RohithBoppey/leetcode-sol/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0213-house-robber-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0215-kth-largest-element-in-an-array) |
@@ -59,6 +60,7 @@ Collection of LeetCode questions solved!
 | [0026-remove-duplicates-from-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0075-sort-colors](https://github.com/RohithBoppey/leetcode-sol/tree/master/0075-sort-colors) |
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
+| [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/RohithBoppey/leetcode-sol/tree/master/2265-partition-array-according-to-given-pivot) |
@@ -227,6 +229,7 @@ Collection of LeetCode questions solved!
 | [0062-unique-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0062-unique-paths) |
 | [0069-sqrtx](https://github.com/RohithBoppey/leetcode-sol/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0070-climbing-stairs) |
+| [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
 | [0909-stone-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0909-stone-game) |
 | [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
