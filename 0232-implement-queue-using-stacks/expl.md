@@ -1,4 +1,4 @@
-​- 2 stacks are given
+​- two stacks are given
 - idea: one main stack, one helper stack
 - always insert into s1 stack no matter what
 - while popping or topping, we use the s1 stack for help
