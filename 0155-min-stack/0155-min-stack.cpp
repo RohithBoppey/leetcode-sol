@@ -1,44 +1,32 @@
 class MinStack {
 public:
-    
-    // declaring 2 stacks - main and min
-    stack<int> main;
-    stack<int> mn;
-    
+    stack<int> mn, main;
+
     MinStack() {
-        // nothing to do
-        // since they are already empty
+        
     }
     
     void push(int val) {
-        // direct push into main stack
         main.push(val);
-        
-        // logic while pushing into min stack
         if(mn.empty() || mn.top() >= val){
-            // ours would be the new min
             mn.push(val);
         }
     }
     
     void pop() {
-        int t = main.top();
+        int val = main.top();
         main.pop();
-        
-        // remove only when the top is coinciding
-        if(t == mn.top()){
+        if(!mn.empty() && mn.top() == val){
             mn.pop();
         }
     }
     
     int top() {
-        int t = main.top();
-        return t;
+        return main.top();
     }
     
     int getMin() {
-        int t = mn.top();
-        return t;
+        return mn.top();
     }
 };
 
