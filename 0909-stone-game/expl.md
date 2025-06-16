@@ -5,6 +5,54 @@
 - hence Alice's win is guaranteed
 - so doing `return True` will also work
 
+**Ideal solution**
+- instead of maintaining track of both alice and bob counts
+- only focus on the max difference that can be achieved between Alice - Bob
+- this can be done by: at any left, right: the net gain would be (selecting + proceeding)
+
+```c++
+class Solution {
+public:
+    vector<vector<int>> dp;
+
+    void print2d(vector<vector<int>>& dp){
+        for(auto &x: dp){
+            for(auto &y: x){
+                cout << y << " ";
+            }
+            cout << endl;
+        }
+    }
+
+    int solve(vector<int>& p, int left, int right){
+        if(left > right){
+            // nothing
+            return 0;
+        }
+
+        if(dp[left][right] != -1){
+            return dp[left][right];
+        }
+
+        // at any point, can pick from left or right
+        int l = p[left] - solve(p, left + 1, right);
+        int r = p[right] - solve(p, left, right - 1);
+
+        return dp[left][right] = max(l, r);
+    }
+
+    bool stoneGame(vector<int>& piles) {
+        // the idea is to use a function which can determine how much more tokens can Alice have at the end
+        int n = piles.size(); 
+        dp.resize(n, vector<int>(n, -1));
+        solve(piles, 0, n - 1) > 0;
+        // print2d(dp);
+        return dp[0][n - 1];
+    }
+};
+```
+
+
 **Complete intuition (MY APPROACH)**: 
 - at any point, I am checking whether Alice can win or not
 - for that, I am storing alice count, bob count, turn, left pointer and right pointer
