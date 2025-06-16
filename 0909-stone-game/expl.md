@@ -1,4 +1,11 @@
-Complete intuition game: 
+**O(1) solution**
+- Alice will win no matter what
+- The reason is that if alice wants, she can choose the entire even element subset => {0,2,4,...} or the odd element subset => {1,3,5,...}
+- and in the question given that one part of the array is greater than another
+- hence Alice's win is guaranteed
+- so doing `return True` will also work
+
+**Complete intuition (MY APPROACH)**: 
 - at any point, I am checking whether Alice can win or not
 - for that, I am storing alice count, bob count, turn, left pointer and right pointer
 - at any point, the person can take the array from the left or the right
