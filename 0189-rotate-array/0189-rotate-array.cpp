@@ -1,13 +1,11 @@
 class Solution {
 public:
-    void rotate(vector<int>& nums, int k)
-	{
-		k = k%nums.size();
-		if(k == 0 || nums.size() == 1) return;
-		vector<int> v;
-		for(int i = nums.size()-k; i < nums.size(); ++i) v.push_back(nums[i]);
-		int e = nums.size() -1;
-		for(int i = nums.size()-k-1; i>=0; --i,--e) nums[e] = nums[i];
-		for(int i = 0; i < v.size(); ++i) nums[i] = v[i];        
-	}
+    void rotate(vector<int>& nums, int k) {
+        // without extra space
+        int n = nums.size();
+        k = k % n;
+        reverse(nums.begin(), nums.begin() + n - k);
+        reverse(nums.begin() + n - k, nums.end());
+        reverse(nums.begin(), nums.end());
+    }
 };
