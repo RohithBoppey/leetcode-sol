@@ -1,39 +1,54 @@
 class Solution {
 public:
+    vector<vector<int>> dp;
+    int n;
 
-    unordered_map<string, bool> memo;
-
-    bool solve(vector<int>& p, int f, int l, int turn, int ac, int bc){
-        if(f > l){
-            // reached the end
-            return (ac > bc) ? true : false; 
+    void print2d(vector<vector<int>>& dp){
+        for(auto &x: dp){
+            for(auto &y: x){
+                cout << y << " ";
+            }
+            cout << endl;
         }
-
-        // check from the tree
-        string key = to_string(f) + "-" + to_string(l) + "-" + to_string(turn);
-        if(memo.find(key) != memo.end()){
-            return memo[key];
-        }
-
-        // did not reach the end
-        // at any point, we can take the pile from first or last
-        bool left = false, right = false;
-        if(turn == 0){
-            // alice turn
-            left = solve(p, f + 1, l, !turn, ac + p[f], bc);
-            right = solve(p, f, l - 1, !turn, ac + p[l], bc);
-        }else{
-            // bob turn
-            left = solve(p, f + 1, l, !turn, ac, bc + p[f]);
-            right = solve(p, f, l - 1, !turn, ac, bc + p[l]);
-        }
-
-        // either from left or right, is Alice able to win?
-        return memo[key] = left || right; 
     }
 
-    bool stoneGame(vector<int>& p) {
-        int n = p.size(); 
-        return solve(p, 0, n - 1, 0, 0, 0);   
+    int maxAliceStones(vector<int>& p, int l, int r){
+        if (l > r){
+            // alice gets no stones
+            return 0;
+        }
+
+        if (dp[l][r] != -1){
+            return dp[l][r];
+        }
+
+        // processing
+        // at any point, can take from start or end
+        int sz = r - l + 1;
+
+        // alice can only pick if there is even number of elements in the subarray
+        int left, right, isEven;
+        isEven = !(sz % 2);
+
+        left = isEven ? p[l] : 0;
+        right = isEven ? p[r] : 0;
+
+        return dp[l][r] = max(left + maxAliceStones(p, l + 1, r), right + maxAliceStones(p, l, r - 1));
+    }
+
+    bool stoneGame(vector<int>& piles) {
+        // in this approach, only consider the alice counts
+        n = piles.size(); 
+        dp.resize(n, vector<int>(n, -1));
+
+        // the max number of tokens that Alice can pick, and it should be majority
+        int sum = 0;
+        for(auto &x: piles){
+            sum += x;
+        }
+
+        // if alice has majority stones that means she passed
+        maxAliceStones(piles, 0, n - 1);
+        return dp[0][n - 1] > sum / 2;
     }
 };
