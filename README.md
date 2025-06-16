@@ -88,6 +88,7 @@ Collection of LeetCode questions solved!
 | [0045-jump-game-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/RohithBoppey/leetcode-sol/tree/master/0198-house-robber) |
@@ -221,6 +222,7 @@ Collection of LeetCode questions solved!
 ## Math
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0062-unique-paths) |
 | [0069-sqrtx](https://github.com/RohithBoppey/leetcode-sol/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
@@ -232,6 +234,7 @@ Collection of LeetCode questions solved!
 ## Combinatorics
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0062-unique-paths) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
 ## Number Theory
 |  |
