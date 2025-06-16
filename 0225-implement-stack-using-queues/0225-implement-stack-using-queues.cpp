@@ -1,15 +1,17 @@
 class MyStack {
 public:
-    queue<int> q1, q2;
+    queue<int> q1, q2; 
 
-    MyStack() {}
-
-    void push(int x) {
-        // push into the non-empty queue
-        !q1.empty() ? q1.push(x) : q2.push(x); 
+    MyStack() {
+        
     }
-
-    // Transfer all except 'sz' elements from q2 to q1
+    
+    void push(int x) {
+        // push into whichever is not empty
+        !q2.empty() ? q2.push(x) : q1.push(x);
+    }
+    
+    // transfer all the entries from q2 into q1
     int transfer(queue<int>& q1, queue<int>& q2, int sz = 0) {
         int last = -1;
         while (q2.size() > sz) {
@@ -25,27 +27,23 @@ public:
     }
 
     int pop() {
-        // pull all elements from one queue to another queue
-        int last; 
-        if(q1.empty()){
-            last = transfer(q1, q2, 1);
-        }else{
-            last = transfer(q2, q1, 1);
-        }
-        return last;
+        return q1.empty() ? transfer(q1, q2, 1) : transfer(q2, q1, 1);
     }
-
+    
     int top() {
-        int last; 
-        if(q1.empty()){
-            last = transfer(q1, q2);
-        }else{
-            last = transfer(q2, q1);
-        }
-        return last;
+        return q1.empty() ? transfer(q1, q2) : transfer(q2, q1);
     }
-
+    
     bool empty() {
-        return q1.empty() && q2.empty();
+        return q2.empty() && q1.empty();
     }
 };
+
+/**
+ * Your MyStack object will be instantiated and called as such:
+ * MyStack* obj = new MyStack();
+ * obj->push(x);
+ * int param_2 = obj->pop();
+ * int param_3 = obj->top();
+ * bool param_4 = obj->empty();
+ */
