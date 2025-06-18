@@ -1,6 +1,13 @@
+# Short recap in steps
+- there should be some kind of lag between the index and the previous
+- this can be achieved by using a curr variable
+- so the idea is: in the first iteration, go from left to right & and multiply the current index with the previously found product so far
+- that way: `[1,2,3,4]` after left, this would become: `[1,1,2,6]`
+- this can be done using: `ans[i] *= curr && curr *= nums[i]` -- multiplying with the curr onto ans, and making the curr ready for the next element
+- same logic for the right
+
+
 # Better understanding: 
-
-
 The idea is simple, the only tricky case in here is handling 0: 
 - if there is one zero, only that gets the whole product of the array, all the other elements gets 0
 - if zeroCount > 1, then all are 0
