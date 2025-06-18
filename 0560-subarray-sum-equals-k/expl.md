@@ -4,6 +4,33 @@
 - so that also means `running sum - asked k = some sum which is already present in the map`
 - so I'm maintaining map and count for the sum
 - hence, for each i, calculating the prefix sum, finding the diff and if present, add to ans | and at the end, add this prefixSum found so far back into the map 
+- also see that there is a base condition for 0, since 0 can be formed by empty array, fill mp[0]++ at the start
+
+```c++
+class Solution {
+public:
+    int n;
+    unordered_map<int, int> mp;
+
+    int subarraySum(vector<int>& nums, int k) {
+        n = nums.size(); 
+
+        // there is a base condititon that if k is 0, return atleast a empty subarray
+        mp[0]++;
+
+        int curr = 0, ans = 0;
+        for(auto &x: nums){
+            curr += x;
+            ans += mp[curr - k];
+            mp[curr]++;
+        }
+
+        return ans;
+
+    }
+};
+```
+
 
 using prefix sum and hashmap concept, since there are negatives, it is not possible to use sliding window       
 ![image](https://user-images.githubusercontent.com/73538974/251375072-85ff4990-6bcb-408f-b2db-33a85e90b63b.png)
@@ -52,7 +79,7 @@ for [Largest Subarray Length with sum K](https://practice.geeksforgeeks.org/prob
 ![(76) Largest Subarray with Zero Sum  Amazon  MMT 00-09-51](https://user-images.githubusercontent.com/73538974/251382519-23da7207-4599-4466-9790-68205f1ade8e.png)
 
 GENERAL FUNCTION: 
-```
+```c++
 /*You are required to complete this function*/
 
 class Solution{
