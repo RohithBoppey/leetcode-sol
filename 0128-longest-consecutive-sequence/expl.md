@@ -4,9 +4,122 @@
 // need to be in O(n) time                  
 
 ![WhatsApp Image 2023-07-06 at 11 34 27](https://user-images.githubusercontent.com/73538974/251359031-b56c7226-9426-41ab-85b9-eeb71b53846b.jpg)
+
+- one basic approach is using an ordered_map just to find the order of elements: like 1,2,3,4 as keys and check if that key exists or not
+
+```c++
+class Solution {
+public:
+    int n;
+    map<int, int> mp;
+
+    int longestConsecutive(vector<int>& nums) {
+        n = nums.size(); 
+        int ans = 0;
+        for(auto &x: nums){
+            mp[x]++;
+        }    
+
+        int start = INT_MIN, next = INT_MIN;
+        int val;
+        for(auto &it: mp){
+            // cout << it.first << endl;
+            val = it.first;
+            if(start == INT_MIN || next == INT_MIN){
+                // started just now, base condition
+                start = val;
+                next = val + 1;
+                ans = 1; // since default is one
+            }else{ 
+                if(val == next){
+                    // next element found
+                    ans = max(ans, next - start + 1);
+                    next++;
+                }else{
+                    start = val;
+                    next = val + 1;
+                }
+            }
+        }
+
+        return ans;
+    }
+};
+```
+
+- but for optimal solution, we will have to use set as the insertion and lookup is nearly O(1)
+- TLE solution because we are not considering if it is the start of the sequence or not
+```c++
+class Solution {
+public:
+    int n;
+    set<int> st;
+
+    int longestConsecutive(vector<int>& nums) {
+        n = nums.size(); 
+        int start = -1, end = -1, val;
+        
+        for(auto &x: nums){
+            // for each element check in the set, first insert
+            st.insert(x);
+        }
+
+        int ans = 0;
+
+        for(auto &x: nums){
+            // find how much can we reach further
+            start = x;
+            end = x;
+            while(st.find(end) != st.end()){
+                end++;
+            }
+            ans = max(ans, end - start);
+        }
+        
+        return ans;
+    }
+};
+```
+- Working solution without TLE, etc.
+```c++
+class Solution {
+public:
+    int n;
+    set<int> st;
+
+    int longestConsecutive(vector<int>& nums) {
+        n = nums.size(); 
+        int start = -1, end = -1, val;
+        
+        for(auto &x: nums){
+            // for each element check in the set, first insert
+            st.insert(x);
+        }
+
+        int ans = 0;
+
+        for(auto &x: st){
+            // if not start of the sequence, continue
+            if(st.find(x - 1) != st.end()){
+                continue;
+            }
+            
+            // find how much can we reach further
+            start = x;
+            end = x;
+            while(st.find(end) != st.end()){
+                end++;
+            }
+            ans = max(ans, end - start);
+        }
+        
+        return ans;
+    }
+};
+```
             
 for the better working solution, we can use this:       
-```
+```c++
 int longestConsecutive(vector<int>& nums) {
       // this is not optimal approach, just better approach
       int n = nums.size();
