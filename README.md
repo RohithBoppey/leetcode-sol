@@ -35,6 +35,7 @@ Collection of LeetCode questions solved!
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
 | [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
+| [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [0682-baseball-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0682-baseball-game) |
 | [0792-binary-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0792-binary-search) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
@@ -68,6 +69,7 @@ Collection of LeetCode questions solved!
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
 | [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
+| [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/RohithBoppey/leetcode-sol/tree/master/2265-partition-array-according-to-given-pivot) |
 ## Greedy
@@ -90,6 +92,7 @@ Collection of LeetCode questions solved!
 | [0347-top-k-frequent-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
+| [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0924-fair-candy-swap](https://github.com/RohithBoppey/leetcode-sol/tree/master/0924-fair-candy-swap) |
 | [0948-sort-an-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0948-sort-an-array) |
@@ -161,6 +164,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0219-contains-duplicate-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0219-contains-duplicate-ii) |
+| [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/RohithBoppey/leetcode-sol/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2478-longest-nice-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/2478-longest-nice-subarray) |
@@ -215,6 +219,7 @@ Collection of LeetCode questions solved!
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
 | [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
+| [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [0792-binary-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0792-binary-search) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0907-koko-eating-bananas](https://github.com/RohithBoppey/leetcode-sol/tree/master/0907-koko-eating-bananas) |
@@ -263,6 +268,7 @@ Collection of LeetCode questions solved!
 | [0215-kth-largest-element-in-an-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0948-sort-an-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0948-sort-an-array) |
