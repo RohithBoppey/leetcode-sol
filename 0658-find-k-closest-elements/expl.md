@@ -1,3 +1,8 @@
+- can use binary search to find the closest value (make sure you put the right conditions for low and high) 
+- 
+
+
+
 - kind of bucket sort solution
 - we know the difference lies between this and this value (based on min in the array)
 - then fill the array with diff[i]
