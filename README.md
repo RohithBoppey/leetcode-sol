@@ -18,6 +18,7 @@ Collection of LeetCode questions solved!
 | [0075-sort-colors](https://github.com/RohithBoppey/leetcode-sol/tree/master/0075-sort-colors) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0088-merge-sorted-array) |
+| [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0169-majority-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
@@ -129,6 +130,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0169-majority-element) |
 | [0219-contains-duplicate-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0219-contains-duplicate-ii) |
 | [0242-valid-anagram](https://github.com/RohithBoppey/leetcode-sol/tree/master/0242-valid-anagram) |
@@ -387,4 +389,8 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0909-stone-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0909-stone-game) |
+## Union Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
