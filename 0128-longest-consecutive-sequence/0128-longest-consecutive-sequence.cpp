@@ -1,52 +1,37 @@
 class Solution {
 public:
+    int n;
+    map<int, int> mp;
+
     int longestConsecutive(vector<int>& nums) {
-        // optimal - O(N) time
-        
-        // no sorting
-        
-        // using set to skip duplicates
-        int n = nums.size();
-        if(n == 0){
-            return 0;
-        }
-        
-        unordered_set<int> st;
-        
-        // insertion into set
-        for(auto x: nums){
-            st.insert(x);
-        }
-        
-        // for each element find if that is the starting element of the sequnce
-        
-        int count = 1, maxCount = 1, curr = 0;
-        
-        for(int i = 0; i < n; i++){
-            // find if it is the starting element
-            // means prev doesnt exist
-            if(st.find(nums[i] - 1) == st.end()){
-                // doesnt exist
-                // starting of the sequence
-                // find the rest
-                
-                count = 1;
-                curr = nums[i];
-                
-                while(st.find(curr + 1) != st.end()){
-                    count++;
-                    curr++;
+        n = nums.size(); 
+        int ans = 0;
+        for(auto &x: nums){
+            mp[x]++;
+        }    
+
+        int start = INT_MIN, next = INT_MIN;
+        int val;
+        for(auto &it: mp){
+            // cout << it.first << endl;
+            val = it.first;
+            if(start == INT_MIN || next == INT_MIN){
+                // started just now, base condition
+                start = val;
+                next = val + 1;
+                ans = 1; // since default is one
+            }else{ 
+                if(val == next){
+                    // next element found
+                    ans = max(ans, next - start + 1);
+                    next++;
+                }else{
+                    start = val;
+                    next = val + 1;
                 }
-                
-                // now we found sequence length
-                maxCount = max(maxCount, count);
             }
         }
-        
-        
-        return maxCount;
+
+        return ans;
     }
 };
-
-
-
