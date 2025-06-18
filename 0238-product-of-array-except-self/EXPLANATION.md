@@ -121,7 +121,7 @@ public:
 -------------------------------
 
 CRAPPY SOLUTION:    
-```
+```c++
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
