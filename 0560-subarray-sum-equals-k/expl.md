@@ -1,3 +1,10 @@
+- imagine there are 2 subarrays p1, and p2 and with sum and p1 is a subarray of p2
+- now for us to find out the subarray sum equal to k or not, I'm playing with the difference in this
+- imagine there exists: `p2s - p1s = k` (k is the sum asked in the question), ps2 is the running prefix sum and p1s is some old prefix sum
+- so that also means `running sum - asked k = some sum which is already present in the map`
+- so I'm maintaining map and count for the sum
+- hence, for each i, calculating the prefix sum, finding the diff and if present, add to ans | and at the end, add this prefixSum found so far back into the map 
+
 using prefix sum and hashmap concept, since there are negatives, it is not possible to use sliding window       
 ![image](https://user-images.githubusercontent.com/73538974/251375072-85ff4990-6bcb-408f-b2db-33a85e90b63b.png)
 
