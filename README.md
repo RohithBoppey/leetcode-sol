@@ -21,6 +21,7 @@ Collection of LeetCode questions solved!
 | [0088-merge-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0088-merge-sorted-array) |
 | [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/RohithBoppey/leetcode-sol/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/RohithBoppey/leetcode-sol/tree/master/0198-house-robber) |
@@ -67,6 +68,7 @@ Collection of LeetCode questions solved!
 | [0075-sort-colors](https://github.com/RohithBoppey/leetcode-sol/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/RohithBoppey/leetcode-sol/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
 | [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
@@ -215,6 +217,7 @@ Collection of LeetCode questions solved!
 | [0074-search-a-2d-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0074-search-a-2d-matrix) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/RohithBoppey/leetcode-sol/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0374-guess-number-higher-or-lower](https://github.com/RohithBoppey/leetcode-sol/tree/master/0374-guess-number-higher-or-lower) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
