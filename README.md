@@ -181,6 +181,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0100-same-tree) |
+| [0102-binary-tree-level-order-traversal](https://github.com/RohithBoppey/leetcode-sol/tree/master/0102-binary-tree-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -203,6 +204,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0100-same-tree) |
+| [0102-binary-tree-level-order-traversal](https://github.com/RohithBoppey/leetcode-sol/tree/master/0102-binary-tree-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -213,6 +215,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0100-same-tree) |
+| [0102-binary-tree-level-order-traversal](https://github.com/RohithBoppey/leetcode-sol/tree/master/0102-binary-tree-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
