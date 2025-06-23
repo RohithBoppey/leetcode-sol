@@ -1,31 +1,19 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        int n = prices.size();
-        
-        int mx = -1;
-        
-        int p, mp = 0;
-        
-        // the idea is to find the max number possible (SO FAR)
-        for(int i = n - 1; i >= 0; i--){
-            if(mx == -1){
-                mx = prices[i];
-            }else{
-                // not empty
-                if(mx > prices[i]){
-                    // bigger price
-                    p = mx - prices[i];
-                    mp = max(p, mp);
-                }else{
-                    // smaller price
-                    mx = prices[i];
-                }
-            }         
+        int n = prices.size(); 
+
+        vector<int> sell(n, 0);
+
+        int mx = 0;
+        sell[n - 1] = prices[n - 1];
+
+        // now populate the sell array based on the max amount you can sell
+        for(int i = n - 2; i >= 0; i--){
+            sell[i] = max(sell[i + 1], prices[i]);
+            mx = max(mx, sell[i] - prices[i]);
         }
-        
-        return mp;
+
+        return mx;
     }
 };
-
-
