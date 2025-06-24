@@ -1,45 +1,66 @@
 class Solution {
 public:
-    bool checkInclusion(string s1, string s2) {
-        unordered_map<char, int> mp;
-        for(auto x: s1){
-            mp[x]++;
-        }
-        
-//         using the concept of sliding window
-//         window size = s1.size();
-        int k = s1.size(), i = 0, j = 0;
-        int n = s2.size();
-        int count = mp.size();
-        while(j < n){
-            if(mp.find(s2[j]) != mp.end()){
-//                 means that is found
-                mp[s2[j]]--;
-                if(mp[s2[j]] == 0){
-                    count--;
-                }
+    // maintaining 2 freq
+    vector<int> f1;
+    vector<int> f2;
+
+    bool checkIfSame(){
+        for(int i = 0; i < 26; i++){
+            if(f1[i] != f2[i]){
+                return false;
             }
-            if(j - i + 1 < k){
-                j++;
-            }else if(j - i + 1 == k){
-//                 window size matched
-//                 should remove from the back
-//                 remove from i
-                if(count == 0){
+        }
+        return true; 
+    }
+
+    bool checkInclusion(string s1, string s2) {
+        f1.resize(26, 0);
+        f2.resize(26, 0);
+
+        // populate
+        for(auto &ch: s1){
+            f1[ch - 'a']++;
+        }
+
+        // using sliding window
+        int i = 0, j = 0;
+        
+        /*
+        since s1 and s2 min condition is given: ------------------------
+        string mn = (s1.size() <= s2.size()) ? s1 : s2; 
+        string mx = (mn == s1) ? s2 : s1;
+
+        // cout << mn << " " << mx << endl;
+
+        // always use min string length to compare
+        int mns = mn.size(); 
+        int n = mx.size(); 
+        
+        */
+
+        int n = s2.size();
+
+        while(j < n){
+            // expand until mns reached
+            f2[s2[j] - 'a']++;
+
+            if(j - i + 1 < s1.size()){
+                // should expand
+            }else{ 
+                // size met
+                // hence always move right maintaining this
+                if(checkIfSame()){
                     return true;
                 }
-                if(mp.find(s2[i]) != mp.end()){
-//                     found, add back the frequency
-                    mp[s2[i]]++;
-                    if(mp[s2[i]] == 1){
-                        count++;
-                    }
-                }
+                // not same, move right, so move i
+                f2[s2[i] - 'a']--;
                 i++;
-                j++;
             }
+            j++;
         }
         
         return false;
+
+
     }
 };
