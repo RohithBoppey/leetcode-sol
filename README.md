@@ -203,6 +203,7 @@ Collection of LeetCode questions solved!
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
@@ -240,6 +241,7 @@ Collection of LeetCode questions solved!
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
@@ -332,6 +334,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0098-validate-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Divide and Conquer
 |  |
