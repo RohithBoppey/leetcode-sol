@@ -1,47 +1,48 @@
 class Solution {
 public:
+    vector<int> freq;
+
+    int maxFreq(){
+        int mx = 0;
+        for(int i = 0; i < 26; i++){
+            mx = max(mx, freq[i]);
+        }
+        return mx; 
+    }
+
     int characterReplacement(string s, int k) {
-        // SLIDING WINDOW PROBLEM
-        
-        int n = s.size();
-        
-        int res = 0;
-        
-        int i = 0, j = 0, sz = 0, mx = 0;
-        
-        vector<int> freq(26, 0);
-        
+        int n = s.size(); 
+
+        // using sliding window approach to solve this problem
+        // idea: move window if the number of replacements required is greater than the given limit
+
+        int i = 0, j = 0;
+
+        freq.resize(26, 0);
+        int mx = -1;
+        // always store the max freq;
+
+        int ans = 0;
+
         while(j < n){
             freq[s[j] - 'A']++;
             mx = max(mx, freq[s[j] - 'A']);
-        
-            sz = j - i + 1;
-            
-            // checking whether we can use the current window size or not
-            // LOGIC IS: if(curr - max < k) {we can use it} else {remove}
-            
-            if(sz - mx <= k){
-                // we can use it
-                res = max(sz, mx);
-            }
-            else{
-                // we cannot use the current window size
-                // need to remove from the start
-                
+
+            // check whether we can expand the window or else contract it from back
+            if((j - i + 1) - mx <= k){
+                // once max freq element is removed from window size, we should be left with number of changes required
+                // if <= k can continue
+                ans = max(ans, j - i + 1);
+            }else{
+                // start removing from behind 
                 freq[s[i] - 'A']--;
-                mx--;
-                
-                // find the new max;
-                for(int ind = 0; ind < 26; ind++){
-                    mx = max(mx, freq[ind]);
-                }
-                
+                mx = maxFreq();
                 i++;
             }
-            
             j++;
         }
-        
-        return res;
+
+        return ans;
+
     }
 };
