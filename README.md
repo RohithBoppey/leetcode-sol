@@ -202,6 +202,7 @@ Collection of LeetCode questions solved!
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
+| [0450-delete-node-in-a-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0450-delete-node-in-a-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -240,6 +241,7 @@ Collection of LeetCode questions solved!
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
+| [0450-delete-node-in-a-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0450-delete-node-in-a-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -333,6 +335,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0098-validate-binary-search-tree) |
+| [0450-delete-node-in-a-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0450-delete-node-in-a-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
