@@ -74,6 +74,7 @@ Collection of LeetCode questions solved!
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/RohithBoppey/leetcode-sol/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
+| [0567-permutation-in-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/0567-permutation-in-string) |
 | [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [0680-valid-palindrome-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0680-valid-palindrome-ii) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
@@ -153,6 +154,7 @@ Collection of LeetCode questions solved!
 | [0242-valid-anagram](https://github.com/RohithBoppey/leetcode-sol/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0347-top-k-frequent-elements) |
 | [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/0567-permutation-in-string) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0924-fair-candy-swap](https://github.com/RohithBoppey/leetcode-sol/tree/master/0924-fair-candy-swap) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
@@ -168,6 +170,7 @@ Collection of LeetCode questions solved!
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/RohithBoppey/leetcode-sol/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0680-valid-palindrome-ii) |
 | [1170-shortest-common-supersequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1250-longest-common-subsequence) |
@@ -181,6 +184,7 @@ Collection of LeetCode questions solved!
 | [0209-minimum-size-subarray-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0219-contains-duplicate-ii) |
 | [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/0567-permutation-in-string) |
 | [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/RohithBoppey/leetcode-sol/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
