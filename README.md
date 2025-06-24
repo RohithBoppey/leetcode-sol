@@ -151,6 +151,7 @@ Collection of LeetCode questions solved!
 | [0219-contains-duplicate-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0219-contains-duplicate-ii) |
 | [0242-valid-anagram](https://github.com/RohithBoppey/leetcode-sol/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0347-top-k-frequent-elements) |
+| [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0924-fair-candy-swap](https://github.com/RohithBoppey/leetcode-sol/tree/master/0924-fair-candy-swap) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
@@ -165,6 +166,7 @@ Collection of LeetCode questions solved!
 | [0014-longest-common-prefix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0014-longest-common-prefix) |
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/RohithBoppey/leetcode-sol/tree/master/0242-valid-anagram) |
+| [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
 | [0680-valid-palindrome-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0680-valid-palindrome-ii) |
 | [1170-shortest-common-supersequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1250-longest-common-subsequence) |
@@ -176,6 +178,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0219-contains-duplicate-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0219-contains-duplicate-ii) |
+| [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
 | [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/RohithBoppey/leetcode-sol/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
