@@ -87,6 +87,7 @@ Collection of LeetCode questions solved!
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
 | [0680-valid-palindrome-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0680-valid-palindrome-ii) |
+| [1304-longest-happy-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/1304-longest-happy-string) |
 | [1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k](https://github.com/RohithBoppey/leetcode-sol/tree/master/1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k) |
 ## Sorting
 |  |
@@ -174,6 +175,7 @@ Collection of LeetCode questions solved!
 | [0680-valid-palindrome-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0680-valid-palindrome-ii) |
 | [1170-shortest-common-supersequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1250-longest-common-subsequence) |
+| [1304-longest-happy-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/1304-longest-happy-string) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2186-count-vowel-substrings-of-a-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
@@ -314,6 +316,7 @@ Collection of LeetCode questions solved!
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0948-sort-an-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0948-sort-an-array) |
 | [1127-last-stone-weight](https://github.com/RohithBoppey/leetcode-sol/tree/master/1127-last-stone-weight) |
+| [1304-longest-happy-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/1304-longest-happy-string) |
 ## Matrix
 |  |
 | ------- |
