@@ -162,6 +162,7 @@ Collection of LeetCode questions solved!
 | [0567-permutation-in-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/0567-permutation-in-string) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0924-fair-candy-swap](https://github.com/RohithBoppey/leetcode-sol/tree/master/0924-fair-candy-swap) |
+| [1023-time-based-key-value-store](https://github.com/RohithBoppey/leetcode-sol/tree/master/1023-time-based-key-value-store) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2186-count-vowel-substrings-of-a-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [2308-divide-array-into-equal-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/2308-divide-array-into-equal-pairs) |
@@ -177,6 +178,7 @@ Collection of LeetCode questions solved!
 | [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0680-valid-palindrome-ii) |
+| [1023-time-based-key-value-store](https://github.com/RohithBoppey/leetcode-sol/tree/master/1023-time-based-key-value-store) |
 | [1170-shortest-common-supersequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1250-longest-common-subsequence) |
 | [1304-longest-happy-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/1304-longest-happy-string) |
@@ -272,6 +274,7 @@ Collection of LeetCode questions solved!
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
 | [0907-koko-eating-bananas](https://github.com/RohithBoppey/leetcode-sol/tree/master/0907-koko-eating-bananas) |
 | [0924-fair-candy-swap](https://github.com/RohithBoppey/leetcode-sol/tree/master/0924-fair-candy-swap) |
+| [1023-time-based-key-value-store](https://github.com/RohithBoppey/leetcode-sol/tree/master/1023-time-based-key-value-store) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/RohithBoppey/leetcode-sol/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/RohithBoppey/leetcode-sol/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -429,6 +432,7 @@ Collection of LeetCode questions solved!
 | [0225-implement-stack-using-queues](https://github.com/RohithBoppey/leetcode-sol/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/RohithBoppey/leetcode-sol/tree/master/0232-implement-queue-using-stacks) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1023-time-based-key-value-store](https://github.com/RohithBoppey/leetcode-sol/tree/master/1023-time-based-key-value-store) |
 ## Data Stream
 |  |
 | ------- |
