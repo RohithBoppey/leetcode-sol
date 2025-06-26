@@ -12,6 +12,7 @@ Collection of LeetCode questions solved!
 | [0033-search-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/RohithBoppey/leetcode-sol/tree/master/0035-search-insert-position) |
 | [0045-jump-game-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0045-jump-game-ii) |
+| [0049-group-anagrams](https://github.com/RohithBoppey/leetcode-sol/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
 | [0063-unique-paths-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0063-unique-paths-ii) |
@@ -96,6 +97,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
+| [0049-group-anagrams](https://github.com/RohithBoppey/leetcode-sol/tree/master/0049-group-anagrams) |
 | [0075-sort-colors](https://github.com/RohithBoppey/leetcode-sol/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0088-merge-sorted-array) |
 | [0169-majority-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0169-majority-element) |
@@ -153,6 +155,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0049-group-anagrams](https://github.com/RohithBoppey/leetcode-sol/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0169-majority-element) |
 | [0219-contains-duplicate-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0219-contains-duplicate-ii) |
@@ -173,6 +176,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0014-longest-common-prefix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0014-longest-common-prefix) |
+| [0049-group-anagrams](https://github.com/RohithBoppey/leetcode-sol/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/RohithBoppey/leetcode-sol/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
