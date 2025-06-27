@@ -440,11 +440,13 @@ Collection of LeetCode questions solved!
 | [0225-implement-stack-using-queues](https://github.com/RohithBoppey/leetcode-sol/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/RohithBoppey/leetcode-sol/tree/master/0232-implement-queue-using-stacks) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0937-online-stock-span](https://github.com/RohithBoppey/leetcode-sol/tree/master/0937-online-stock-span) |
 | [1023-time-based-key-value-store](https://github.com/RohithBoppey/leetcode-sol/tree/master/1023-time-based-key-value-store) |
 ## Data Stream
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0937-online-stock-span](https://github.com/RohithBoppey/leetcode-sol/tree/master/0937-online-stock-span) |
 ## Interactive
 |  |
 | ------- |
@@ -458,6 +460,7 @@ Collection of LeetCode questions solved!
 | [0445-add-two-numbers-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0445-add-two-numbers-ii) |
 | [0682-baseball-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/RohithBoppey/leetcode-sol/tree/master/0735-asteroid-collision) |
+| [0937-online-stock-span](https://github.com/RohithBoppey/leetcode-sol/tree/master/0937-online-stock-span) |
 ## Trie
 |  |
 | ------- |
@@ -470,4 +473,8 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0937-online-stock-span](https://github.com/RohithBoppey/leetcode-sol/tree/master/0937-online-stock-span) |
 <!---LeetCode Topics End-->
