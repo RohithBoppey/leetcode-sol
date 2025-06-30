@@ -57,6 +57,7 @@ Collection of LeetCode questions solved!
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/RohithBoppey/leetcode-sol/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/RohithBoppey/leetcode-sol/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/RohithBoppey/leetcode-sol/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2308-divide-array-into-equal-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/2308-divide-array-into-equal-pairs) |
 | [2478-longest-nice-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/2478-longest-nice-subarray) |
@@ -311,6 +312,7 @@ Collection of LeetCode questions solved!
 | [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
 | [1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k](https://github.com/RohithBoppey/leetcode-sol/tree/master/1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k) |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2610-closest-prime-numbers-in-range](https://github.com/RohithBoppey/leetcode-sol/tree/master/2610-closest-prime-numbers-in-range) |
 | [2649-count-total-number-of-colored-cells](https://github.com/RohithBoppey/leetcode-sol/tree/master/2649-count-total-number-of-colored-cells) |
 | [2998-count-symmetric-integers](https://github.com/RohithBoppey/leetcode-sol/tree/master/2998-count-symmetric-integers) |
@@ -319,6 +321,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0062-unique-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0062-unique-paths) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Number Theory
 |  |
 | ------- |
@@ -346,6 +349,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -414,6 +418,7 @@ Collection of LeetCode questions solved!
 | [0191-number-of-1-bits](https://github.com/RohithBoppey/leetcode-sol/tree/master/0191-number-of-1-bits) |
 | [0338-counting-bits](https://github.com/RohithBoppey/leetcode-sol/tree/master/0338-counting-bits) |
 | [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/RohithBoppey/leetcode-sol/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2308-divide-array-into-equal-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/2308-divide-array-into-equal-pairs) |
 | [2478-longest-nice-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/2478-longest-nice-subarray) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/RohithBoppey/leetcode-sol/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
@@ -427,6 +432,7 @@ Collection of LeetCode questions solved!
 ## Enumeration
 |  |
 | ------- |
+| [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2998-count-symmetric-integers](https://github.com/RohithBoppey/leetcode-sol/tree/master/2998-count-symmetric-integers) |
 ## Quickselect
 |  |
