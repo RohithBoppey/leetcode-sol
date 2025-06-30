@@ -348,6 +348,7 @@ Collection of LeetCode questions solved!
 ## Backtracking
 |  |
 | ------- |
+| [0077-combinations](https://github.com/RohithBoppey/leetcode-sol/tree/master/0077-combinations) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Binary Search Tree
