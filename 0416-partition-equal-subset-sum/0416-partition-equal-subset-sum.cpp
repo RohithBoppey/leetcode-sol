@@ -1,56 +1,43 @@
 class Solution {
 public:
+    int n;
+    vector<vector<int>> dp;
 
-    void print2d(vector<vector<int>>& dp){
-        for(auto &y: dp){
-            for(auto &x: y){
-                cout << x << " ";
-            }
-            cout << endl;
-        }
-    }
+    // check if such subset sum exists
+    bool solve(vector<int>& nums, int s){
+        dp.resize(n + 1, vector<int>(s + 1, 0));
 
-    bool checkIfSumExists(int sum, vector<vector<int>>& dp, vector<int>& nums, int n){
-        // using tabulation 
-
-        // init
-        for(int i = 1; i <= n; i++){
-            // when sum = 0, such arr is possible to construct
+        // initialization
+        for(int i = 0; i < n; i++){
+            // if sum = 0, possible
             dp[i][0] = 1;
         }
 
-        // processing
-        int can, cannot;
+        // now for each, check if possible or not
+        int can, cannot; 
         for(int i = 1; i <= n; i++){
-            for(int j = 1; j <= sum; j++){
-                // check can and cannot
-
-                // take current element only when the capacity is left
+            for(int j = 1; j <= s; j++){
+                // for each, can take or not cannot take
                 can = (nums[i - 1] <= j) ? dp[i - 1][j - nums[i - 1]] : 0;
-                
-                // if the element is not taken, sum wont change
                 cannot = dp[i - 1][j];
 
+                // if either of that is true, take it
                 dp[i][j] = can || cannot;
             }
         }
-
-        // print2d(dp);
-
-        return dp[n][sum];
+        
+        return dp[n][s];
     }
 
     bool canPartition(vector<int>& nums) {
-        int n = nums.size();
+        n = nums.size(); 
 
-        // finding the sum of the array
         int sum = 0;
-        for(auto& x: nums){
+        for(auto &x: nums){
             sum += x;
         }
 
-        vector<vector<int>> dp(n + 1, vector<int>((sum / 2) + 1));
-
-        return (sum % 2) ? 0 : checkIfSumExists(sum / 2, dp, nums, n);
+        // check if exists
+        return !(sum % 2) ? solve(nums, sum / 2) : false;
     }
 };
