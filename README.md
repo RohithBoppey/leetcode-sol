@@ -18,6 +18,7 @@ Collection of LeetCode questions solved!
 | [0063-unique-paths-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0063-unique-paths-ii) |
 | [0074-search-a-2d-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/RohithBoppey/leetcode-sol/tree/master/0075-sort-colors) |
+| [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/RohithBoppey/leetcode-sol/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -182,6 +183,7 @@ Collection of LeetCode questions solved!
 | [0003-longest-substring-without-repeating-characters](https://github.com/RohithBoppey/leetcode-sol/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0014-longest-common-prefix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0014-longest-common-prefix) |
 | [0049-group-anagrams](https://github.com/RohithBoppey/leetcode-sol/tree/master/0049-group-anagrams) |
+| [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/RohithBoppey/leetcode-sol/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
@@ -227,6 +229,7 @@ Collection of LeetCode questions solved!
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0098-validate-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0104-maximum-depth-of-binary-tree) |
@@ -344,11 +347,13 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0063-unique-paths-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0063-unique-paths-ii) |
 | [0074-search-a-2d-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 ## Backtracking
 |  |
 | ------- |
 | [0077-combinations](https://github.com/RohithBoppey/leetcode-sol/tree/master/0077-combinations) |
+| [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Binary Search Tree
