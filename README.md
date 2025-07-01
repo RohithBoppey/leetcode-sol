@@ -24,6 +24,7 @@ Collection of LeetCode questions solved!
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/RohithBoppey/leetcode-sol/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
+| [0152-maximum-product-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0152-maximum-product-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/RohithBoppey/leetcode-sol/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0169-majority-element) |
@@ -126,6 +127,7 @@ Collection of LeetCode questions solved!
 | [0070-climbing-stairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/RohithBoppey/leetcode-sol/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0152-maximum-product-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/RohithBoppey/leetcode-sol/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0213-house-robber-ii) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
