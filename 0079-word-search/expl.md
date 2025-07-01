@@ -6,7 +6,7 @@
 - if reached here, that means, the current word is matching
 - so from here on, if any of the traversal is returning true, that means the word exists, return true
 - else return false
-  
+      
 - DFS solution
 ```c++
 class Solution {
