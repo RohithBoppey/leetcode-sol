@@ -24,6 +24,7 @@ Collection of LeetCode questions solved!
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/RohithBoppey/leetcode-sol/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/RohithBoppey/leetcode-sol/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0152-maximum-product-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0152-maximum-product-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/RohithBoppey/leetcode-sol/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -311,6 +312,7 @@ Collection of LeetCode questions solved!
 | [0062-unique-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0062-unique-paths) |
 | [0069-sqrtx](https://github.com/RohithBoppey/leetcode-sol/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0070-climbing-stairs) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/RohithBoppey/leetcode-sol/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
 | [0445-add-two-numbers-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0445-add-two-numbers-ii) |
 | [0909-stone-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0909-stone-game) |
@@ -468,6 +470,7 @@ Collection of LeetCode questions solved!
 ## Stack
 |  |
 | ------- |
+| [0150-evaluate-reverse-polish-notation](https://github.com/RohithBoppey/leetcode-sol/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/RohithBoppey/leetcode-sol/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/RohithBoppey/leetcode-sol/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/RohithBoppey/leetcode-sol/tree/master/0232-implement-queue-using-stacks) |
