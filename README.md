@@ -45,6 +45,7 @@ Collection of LeetCode questions solved!
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
 | [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
 | [0682-baseball-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0682-baseball-game) |
+| [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 | [0735-asteroid-collision](https://github.com/RohithBoppey/leetcode-sol/tree/master/0735-asteroid-collision) |
 | [0792-binary-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0792-binary-search) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
@@ -242,6 +243,7 @@ Collection of LeetCode questions solved!
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
+| [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
@@ -253,6 +255,7 @@ Collection of LeetCode questions solved!
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
+| [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Binary Tree
@@ -355,6 +358,7 @@ Collection of LeetCode questions solved!
 | [0074-search-a-2d-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 ## Backtracking
 |  |
 | ------- |
@@ -492,6 +496,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
+| [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 ## Monotonic Stack
 |  |
 | ------- |
