@@ -55,6 +55,7 @@ Collection of LeetCode questions solved!
 | [0917-boats-to-save-people](https://github.com/RohithBoppey/leetcode-sol/tree/master/0917-boats-to-save-people) |
 | [0924-fair-candy-swap](https://github.com/RohithBoppey/leetcode-sol/tree/master/0924-fair-candy-swap) |
 | [0948-sort-an-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0948-sort-an-array) |
+| [1036-rotting-oranges](https://github.com/RohithBoppey/leetcode-sol/tree/master/1036-rotting-oranges) |
 | [1037-minimum-number-of-k-consecutive-bit-flips](https://github.com/RohithBoppey/leetcode-sol/tree/master/1037-minimum-number-of-k-consecutive-bit-flips) |
 | [1039-find-the-town-judge](https://github.com/RohithBoppey/leetcode-sol/tree/master/1039-find-the-town-judge) |
 | [1127-last-stone-weight](https://github.com/RohithBoppey/leetcode-sol/tree/master/1127-last-stone-weight) |
@@ -257,6 +258,7 @@ Collection of LeetCode questions solved!
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
+| [1036-rotting-oranges](https://github.com/RohithBoppey/leetcode-sol/tree/master/1036-rotting-oranges) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Binary Tree
 |  |
@@ -359,6 +361,7 @@ Collection of LeetCode questions solved!
 | [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
+| [1036-rotting-oranges](https://github.com/RohithBoppey/leetcode-sol/tree/master/1036-rotting-oranges) |
 ## Backtracking
 |  |
 | ------- |
