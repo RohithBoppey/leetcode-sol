@@ -1,55 +1,48 @@
 class Solution {
 public:
-    
-    void solve(vector<int>& candidates, int target, int ind, int n, vector<vector<int>>& result, vector<int>& curr){
-        
+    int n; 
+    vector<vector<int>> ans; 
+
+    void solve(vector<int>& v, int target, int start, vector<int>& curr){
         if(target == 0){
-            result.push_back(curr);
+            // the curr should be added to the ans
+            ans.push_back(curr);
+            // no other elements should be added
+            return; 
+        }
+
+        if(start >= n){
+            // cant do anything
             return;
         }
-        
-        if(ind >= n){
-            // nothing can be done
-            return;
+
+        // proceed if the current element is less than the target
+        if(target >= v[start]){
+            // can be added
+            curr.push_back(v[start]);
+            solve(v, target - v[start], start + 1, curr);
+            curr.pop_back();
         }
-        
-        
-        if(target < 0){
-            return;
+
+        // if we are not taking the element, we should not take duplicates as well
+        int t = v[start];
+        while(start < n && v[start] == t){
+            start++;
         }
-        
-        // for each call, we can take it or not take it
-        
-        // take it
-        curr.push_back(candidates[ind]);
-        solve(candidates, target - candidates[ind], ind + 1, n, result, curr);
-        curr.pop_back();
-        
-        // then skip the duplicates
-        // skipping the duplicates
-        int t = candidates[ind];
-        
-        while(ind < n && candidates[ind] == t){
-            ind++;
-        }
-        
-        // not taking it
-        solve(candidates, target, ind, n, result, curr);
-        
-        
+
+        // not taking
+        solve(v, target, start, curr);
+
     }
-    
+
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
-        
-        int n = candidates.size();
-        
-        vector<vector<int>> result;
-        vector<int> curr;
-        
+        n = candidates.size();
+        vector<int> curr; 
+
+        // sorting coz we want to remove duplicates
         sort(candidates.begin(), candidates.end());
-                
-        solve(candidates, target, 0, n, result, curr);
-        return result;
-        
+        solve(candidates, target, 0, curr);
+
+        return ans; 
     }
 };
