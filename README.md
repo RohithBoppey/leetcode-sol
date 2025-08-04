@@ -11,6 +11,7 @@ Collection of LeetCode questions solved!
 | [0027-remove-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/RohithBoppey/leetcode-sol/tree/master/0035-search-insert-position) |
+| [0040-combination-sum-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0040-combination-sum-ii) |
 | [0045-jump-game-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0045-jump-game-ii) |
 | [0049-group-anagrams](https://github.com/RohithBoppey/leetcode-sol/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/0053-maximum-subarray) |
@@ -373,6 +374,7 @@ Collection of LeetCode questions solved!
 ## Backtracking
 |  |
 | ------- |
+| [0040-combination-sum-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0040-combination-sum-ii) |
 | [0077-combinations](https://github.com/RohithBoppey/leetcode-sol/tree/master/0077-combinations) |
 | [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
