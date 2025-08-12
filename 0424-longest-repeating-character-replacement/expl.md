@@ -1,3 +1,5 @@
+![WhatsApp Image 2025-08-12 at 23 57 55_a0073c34](https://github.com/user-attachments/assets/1081b068-6051-4221-a489-7bca8a33966b)
+
 - the idea followed is sliding window kind
 - but based on **number of change required in the current substring to make all chars equal**,
 - and that can be calculated like: `current_length_of_window - max_frequency_of_an_element`
