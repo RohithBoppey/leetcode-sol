@@ -41,6 +41,7 @@ Collection of LeetCode questions solved!
 | [0239-sliding-window-maximum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0239-sliding-window-maximum) |
 | [0347-top-k-frequent-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/RohithBoppey/leetcode-sol/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RohithBoppey/leetcode-sol/tree/master/0417-pacific-atlantic-water-flow) |
@@ -201,6 +202,7 @@ Collection of LeetCode questions solved!
 | [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/RohithBoppey/leetcode-sol/tree/master/0242-valid-anagram) |
+| [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 | [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0680-valid-palindrome-ii) |
@@ -253,6 +255,7 @@ Collection of LeetCode questions solved!
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
+| [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RohithBoppey/leetcode-sol/tree/master/0417-pacific-atlantic-water-flow) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
@@ -267,6 +270,7 @@ Collection of LeetCode questions solved!
 | [0130-surrounded-regions](https://github.com/RohithBoppey/leetcode-sol/tree/master/0130-surrounded-regions) |
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
+| [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RohithBoppey/leetcode-sol/tree/master/0417-pacific-atlantic-water-flow) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
@@ -519,6 +523,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/RohithBoppey/leetcode-sol/tree/master/0130-surrounded-regions) |
+| [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 ## Monotonic Stack
 |  |
@@ -527,9 +532,14 @@ Collection of LeetCode questions solved!
 ## Graph
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 | [1039-find-the-town-judge](https://github.com/RohithBoppey/leetcode-sol/tree/master/1039-find-the-town-judge) |
 ## Monotonic Queue
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0239-sliding-window-maximum) |
+## Shortest Path
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 <!---LeetCode Topics End-->
