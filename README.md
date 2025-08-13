@@ -66,6 +66,7 @@ Collection of LeetCode questions solved!
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/RohithBoppey/leetcode-sol/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/RohithBoppey/leetcode-sol/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/RohithBoppey/leetcode-sol/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
+| [1762-furthest-building-you-can-reach](https://github.com/RohithBoppey/leetcode-sol/tree/master/1762-furthest-building-you-can-reach) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/RohithBoppey/leetcode-sol/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/RohithBoppey/leetcode-sol/tree/master/2265-partition-array-according-to-given-pivot) |
@@ -106,6 +107,7 @@ Collection of LeetCode questions solved!
 | [0917-boats-to-save-people](https://github.com/RohithBoppey/leetcode-sol/tree/master/0917-boats-to-save-people) |
 | [1304-longest-happy-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/1304-longest-happy-string) |
 | [1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k](https://github.com/RohithBoppey/leetcode-sol/tree/master/1515-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k) |
+| [1762-furthest-building-you-can-reach](https://github.com/RohithBoppey/leetcode-sol/tree/master/1762-furthest-building-you-can-reach) |
 ## Sorting
 |  |
 | ------- |
@@ -363,6 +365,7 @@ Collection of LeetCode questions solved!
 | [0948-sort-an-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0948-sort-an-array) |
 | [1127-last-stone-weight](https://github.com/RohithBoppey/leetcode-sol/tree/master/1127-last-stone-weight) |
 | [1304-longest-happy-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/1304-longest-happy-string) |
+| [1762-furthest-building-you-can-reach](https://github.com/RohithBoppey/leetcode-sol/tree/master/1762-furthest-building-you-can-reach) |
 ## Matrix
 |  |
 | ------- |
