@@ -77,6 +77,7 @@ Collection of LeetCode questions solved!
 | [2665-minimum-time-to-repair-cars](https://github.com/RohithBoppey/leetcode-sol/tree/master/2665-minimum-time-to-repair-cars) |
 | [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/RohithBoppey/leetcode-sol/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
 | [3427-special-array-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/3427-special-array-ii) |
+| [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/RohithBoppey/leetcode-sol/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/RohithBoppey/leetcode-sol/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 ## Two Pointers
 |  |
@@ -383,6 +384,7 @@ Collection of LeetCode questions solved!
 | [0417-pacific-atlantic-water-flow](https://github.com/RohithBoppey/leetcode-sol/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 | [1036-rotting-oranges](https://github.com/RohithBoppey/leetcode-sol/tree/master/1036-rotting-oranges) |
+| [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/RohithBoppey/leetcode-sol/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 ## Backtracking
 |  |
 | ------- |
