@@ -6,6 +6,7 @@ Collection of LeetCode questions solved!
 ## Array
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/RohithBoppey/leetcode-sol/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/RohithBoppey/leetcode-sol/tree/master/0027-remove-element) |
@@ -82,6 +83,7 @@ Collection of LeetCode questions solved!
 ## Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/RohithBoppey/leetcode-sol/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0015-3sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0026-remove-duplicates-from-sorted-array) |
@@ -101,6 +103,7 @@ Collection of LeetCode questions solved!
 ## Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/RohithBoppey/leetcode-sol/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
