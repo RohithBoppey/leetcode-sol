@@ -1,58 +1,59 @@
 class Solution {
 public:
-    int n;
+    int n; 
+    int pivot; 
 
-    int search(vector<int>& nums, int target) {
-        n = nums.size(); 
-        // using binary search directly in a different way
-
-        // at any point, the mid can be either in left sorted array or right sorted array
-        int low = 0, high = n - 1, mid;
-
-        while(low <= high){
-            mid = low + (high - low) / 2;
-            cout << mid << endl;
-            if(nums[mid] == target){
-                return mid;
+    void findPivot(vector<int>& nums){
+        int i = 0;
+        for(i = 0; i < n - 1; i++){
+            // if it drops, then the next index where it drops is the pivot
+            if(nums[i] > nums[i + 1]){
+                break;
             }
-
-            // now checking if it is in left sorted or right sorted
-            if (nums[mid] >= nums[low]){
-                // left sorted
-                if(nums[mid] < target){
-                    // MUST go right
-                    low = mid + 1;
-                }else{
-                    // compare with left min
-                    if(target < nums[low]){
-                        // not present in left, move to right
-                        low = mid + 1;
-                    }else{
-                        // it is present in left, and less than mid
-                        high = mid - 1;
-                    }
-                }
-            }else{
-                // right sorted
-                if(nums[mid] > target){
-                    // MUST move left
-                    high = mid - 1;
-                }
-                else{
-                    // can move left or right - decide on nums[right] value
-                    if(target > nums[high]){
-                        // not present in right sorted - move left
-                        high = mid - 1;
-                    }else{
-                        // present within right sorted, but greater than min
-                        low = mid + 1;
-                    }
-                }
-            }
-
         }
 
-        return -1;
+        // it reached n
+        pivot = (i + 1) % n;
+        return; 
+    }
 
+    // find old to new index
+    int oldInd(int newInd){
+        return (newInd + pivot) % n;
+    }
+
+    void printPivot(vector<int>& nums){
+        for(int i = 0; i < n; i++){
+            cout << oldInd(i) << " "; 
+        }
+        cout << endl; 
+    }
+
+    int search(vector<int>& nums, int target) {
+        n = nums.size();
+
+        findPivot(nums); 
+        // cout << pivot << endl;
+
+        int low = 0, high = n - 1, mid; 
+
+        // printPivot(nums);
+
+        while(low <= high){
+            mid = low + (high - low) / 2; 
+            int md = oldInd(mid);
+
+            if(nums[md] == target){
+                return md; 
+            }else if(nums[md] > target){
+                // should reduce
+                high = mid - 1;
+            }else{
+                // move right - increase
+                low = mid + 1;
+            }
+        }
+
+        return -1; 
     }
 };
