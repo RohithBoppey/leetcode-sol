@@ -53,6 +53,7 @@ Collection of LeetCode questions solved!
 | [0682-baseball-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0682-baseball-game) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 | [0735-asteroid-collision](https://github.com/RohithBoppey/leetcode-sol/tree/master/0735-asteroid-collision) |
+| [0747-min-cost-climbing-stairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0747-min-cost-climbing-stairs) |
 | [0769-largest-plus-sign](https://github.com/RohithBoppey/leetcode-sol/tree/master/0769-largest-plus-sign) |
 | [0792-binary-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0792-binary-search) |
 | [0802-k-th-smallest-prime-fraction](https://github.com/RohithBoppey/leetcode-sol/tree/master/0802-k-th-smallest-prime-fraction) |
@@ -151,6 +152,7 @@ Collection of LeetCode questions solved!
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
+| [0747-min-cost-climbing-stairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0747-min-cost-climbing-stairs) |
 | [0769-largest-plus-sign](https://github.com/RohithBoppey/leetcode-sol/tree/master/0769-largest-plus-sign) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0909-stone-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0909-stone-game) |
