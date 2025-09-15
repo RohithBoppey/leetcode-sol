@@ -268,6 +268,7 @@ Collection of LeetCode questions solved!
 | [0417-pacific-atlantic-water-flow](https://github.com/RohithBoppey/leetcode-sol/tree/master/0417-pacific-atlantic-water-flow) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
+| [0871-keys-and-rooms](https://github.com/RohithBoppey/leetcode-sol/tree/master/0871-keys-and-rooms) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
@@ -284,6 +285,7 @@ Collection of LeetCode questions solved!
 | [0417-pacific-atlantic-water-flow](https://github.com/RohithBoppey/leetcode-sol/tree/master/0417-pacific-atlantic-water-flow) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
+| [0871-keys-and-rooms](https://github.com/RohithBoppey/leetcode-sol/tree/master/0871-keys-and-rooms) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1036-rotting-oranges](https://github.com/RohithBoppey/leetcode-sol/tree/master/1036-rotting-oranges) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
@@ -545,6 +547,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0207-course-schedule](https://github.com/RohithBoppey/leetcode-sol/tree/master/0207-course-schedule) |
 | [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
+| [0871-keys-and-rooms](https://github.com/RohithBoppey/leetcode-sol/tree/master/0871-keys-and-rooms) |
 | [1039-find-the-town-judge](https://github.com/RohithBoppey/leetcode-sol/tree/master/1039-find-the-town-judge) |
 ## Monotonic Queue
 |  |
