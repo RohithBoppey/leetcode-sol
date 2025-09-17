@@ -210,6 +210,7 @@ Collection of LeetCode questions solved!
 | [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/RohithBoppey/leetcode-sol/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/RohithBoppey/leetcode-sol/tree/master/0242-valid-anagram) |
+| [0257-binary-tree-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0257-binary-tree-paths) |
 | [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 | [0424-longest-repeating-character-replacement](https://github.com/RohithBoppey/leetcode-sol/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/0567-permutation-in-string) |
@@ -246,6 +247,7 @@ Collection of LeetCode questions solved!
 | [0104-maximum-depth-of-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
+| [0257-binary-tree-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0257-binary-tree-paths) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
 | [0450-delete-node-in-a-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0450-delete-node-in-a-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -267,6 +269,7 @@ Collection of LeetCode questions solved!
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0207-course-schedule](https://github.com/RohithBoppey/leetcode-sol/tree/master/0207-course-schedule) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
+| [0257-binary-tree-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0257-binary-tree-paths) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
 | [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RohithBoppey/leetcode-sol/tree/master/0417-pacific-atlantic-water-flow) |
@@ -307,6 +310,7 @@ Collection of LeetCode questions solved!
 | [0104-maximum-depth-of-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
+| [0257-binary-tree-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0257-binary-tree-paths) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
 | [0450-delete-node-in-a-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0450-delete-node-in-a-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -413,6 +417,7 @@ Collection of LeetCode questions solved!
 | [0040-combination-sum-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0040-combination-sum-ii) |
 | [0077-combinations](https://github.com/RohithBoppey/leetcode-sol/tree/master/0077-combinations) |
 | [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
+| [0257-binary-tree-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0257-binary-tree-paths) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Binary Search Tree
