@@ -24,18 +24,14 @@ public:
 
         int flag = 0;
 
-        vector<int> curr; 
+        deque<int> curr; 
 
         while(!q.empty()){
             TreeNode* t = q.front(); 
             q.pop();
 
             if(t == NULL){
-                if(flag == 1){
-                    reverse(curr.begin(), curr.end());
-                }
-
-                ans.push_back(curr);
+                ans.push_back(vector<int>(curr.begin(), curr.end()));
                 curr.clear(); 
 
                 if(!q.empty()){
@@ -46,7 +42,12 @@ public:
                 flag = !flag;
 
             }else{
-                curr.push_back(t->val);
+                if(flag == 1){
+                    // right to left
+                    curr.push_front(t->val);
+                }else{
+                    curr.push_back(t->val);
+                }
 
                 // push the next children
                 if(t->left) q.push(t->left);
