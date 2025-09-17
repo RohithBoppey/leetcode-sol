@@ -252,6 +252,7 @@ Collection of LeetCode questions solved!
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
+| [1116-maximum-level-sum-of-a-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Depth-First Search
 |  |
@@ -272,6 +273,7 @@ Collection of LeetCode questions solved!
 | [0871-keys-and-rooms](https://github.com/RohithBoppey/leetcode-sol/tree/master/0871-keys-and-rooms) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
+| [1116-maximum-level-sum-of-a-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Breadth-First Search
 |  |
@@ -290,6 +292,7 @@ Collection of LeetCode questions solved!
 | [0871-keys-and-rooms](https://github.com/RohithBoppey/leetcode-sol/tree/master/0871-keys-and-rooms) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1036-rotting-oranges](https://github.com/RohithBoppey/leetcode-sol/tree/master/1036-rotting-oranges) |
+| [1116-maximum-level-sum-of-a-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Binary Tree
 |  |
@@ -307,6 +310,7 @@ Collection of LeetCode questions solved!
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
+| [1116-maximum-level-sum-of-a-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Binary Search
 |  |
