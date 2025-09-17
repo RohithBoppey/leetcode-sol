@@ -11,23 +11,20 @@
  */
 class Solution {
 public:
-    void solve(TreeNode* root){
+    TreeNode* invertTree(TreeNode* root) {
         if(root == NULL){
-            return;
+            return root;
         }
 
-        // first swap the left and right
-        TreeNode* temp = root->left;
+        // first change left and right
+        TreeNode* t = root->left; 
         root->left = root->right;
-        root->right = temp;
+        root->right = t; 
 
-        // no go in the left and right
-        solve(root->left);
-        solve(root->right);
-    }
+        // now children
+        root->left = invertTree(root->left);
+        root->right = invertTree(root->right);
 
-    TreeNode* invertTree(TreeNode* root) {
-        solve(root);
         return root;
     }
 };
