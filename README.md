@@ -241,6 +241,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0100-same-tree) |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/RohithBoppey/leetcode-sol/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
@@ -276,6 +277,7 @@ Collection of LeetCode questions solved!
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0100-same-tree) |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/RohithBoppey/leetcode-sol/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0130-surrounded-regions](https://github.com/RohithBoppey/leetcode-sol/tree/master/0130-surrounded-regions) |
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
@@ -294,6 +296,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0100-same-tree) |
+| [0103-binary-tree-zigzag-level-order-traversal](https://github.com/RohithBoppey/leetcode-sol/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/RohithBoppey/leetcode-sol/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0226-invert-binary-tree) |
