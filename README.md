@@ -253,6 +253,7 @@ Collection of LeetCode questions solved!
 | [0257-binary-tree-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0257-binary-tree-paths) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
 | [0450-delete-node-in-a-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0450-delete-node-in-a-bst) |
+| [0501-find-mode-in-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -278,6 +279,7 @@ Collection of LeetCode questions solved!
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
 | [0399-evaluate-division](https://github.com/RohithBoppey/leetcode-sol/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RohithBoppey/leetcode-sol/tree/master/0417-pacific-atlantic-water-flow) |
+| [0501-find-mode-in-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 | [0871-keys-and-rooms](https://github.com/RohithBoppey/leetcode-sol/tree/master/0871-keys-and-rooms) |
@@ -320,6 +322,7 @@ Collection of LeetCode questions solved!
 | [0257-binary-tree-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0257-binary-tree-paths) |
 | [0337-house-robber-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0337-house-robber-iii) |
 | [0450-delete-node-in-a-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0450-delete-node-in-a-bst) |
+| [0501-find-mode-in-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -434,6 +437,7 @@ Collection of LeetCode questions solved!
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0098-validate-binary-search-tree) |
 | [0450-delete-node-in-a-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0450-delete-node-in-a-bst) |
+| [0501-find-mode-in-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
