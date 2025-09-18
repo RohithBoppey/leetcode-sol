@@ -217,6 +217,7 @@ Collection of LeetCode questions solved!
 | [0567-permutation-in-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0680-valid-palindrome-ii) |
 | [1023-time-based-key-value-store](https://github.com/RohithBoppey/leetcode-sol/tree/master/1023-time-based-key-value-store) |
+| [1030-smallest-string-starting-from-leaf](https://github.com/RohithBoppey/leetcode-sol/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1170-shortest-common-supersequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/RohithBoppey/leetcode-sol/tree/master/1250-longest-common-subsequence) |
 | [1304-longest-happy-string](https://github.com/RohithBoppey/leetcode-sol/tree/master/1304-longest-happy-string) |
@@ -255,6 +256,7 @@ Collection of LeetCode questions solved!
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1030-smallest-string-starting-from-leaf](https://github.com/RohithBoppey/leetcode-sol/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
@@ -279,6 +281,7 @@ Collection of LeetCode questions solved!
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0695-max-area-of-island](https://github.com/RohithBoppey/leetcode-sol/tree/master/0695-max-area-of-island) |
 | [0871-keys-and-rooms](https://github.com/RohithBoppey/leetcode-sol/tree/master/0871-keys-and-rooms) |
+| [1030-smallest-string-starting-from-leaf](https://github.com/RohithBoppey/leetcode-sol/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
@@ -320,6 +323,7 @@ Collection of LeetCode questions solved!
 | [0530-minimum-absolute-difference-in-bst](https://github.com/RohithBoppey/leetcode-sol/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/RohithBoppey/leetcode-sol/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1030-smallest-string-starting-from-leaf](https://github.com/RohithBoppey/leetcode-sol/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1035-cousins-in-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1035-cousins-in-binary-tree) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/RohithBoppey/leetcode-sol/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/RohithBoppey/leetcode-sol/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
@@ -423,6 +427,7 @@ Collection of LeetCode questions solved!
 | [0079-word-search](https://github.com/RohithBoppey/leetcode-sol/tree/master/0079-word-search) |
 | [0257-binary-tree-paths](https://github.com/RohithBoppey/leetcode-sol/tree/master/0257-binary-tree-paths) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
+| [1030-smallest-string-starting-from-leaf](https://github.com/RohithBoppey/leetcode-sol/tree/master/1030-smallest-string-starting-from-leaf) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/RohithBoppey/leetcode-sol/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Binary Search Tree
 |  |
