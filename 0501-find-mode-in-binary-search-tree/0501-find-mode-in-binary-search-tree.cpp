@@ -11,46 +11,41 @@
  */
 class Solution {
 public:
+    int curr = INT_MIN;
+    int md = 0, mxd = 1; // count of the mode, max mode seen so far
     vector<int> ans; 
-    int curr;
-    int max_count = 0;
-    int curr_count = 0; 
 
-    void solve(int val){
-        if(val != curr){
-            // now going with a new variable, since all the previous variables are done
-            curr = val;
-            curr_count = 0; 
-        }
-
-        curr_count++;
-
-        if(curr_count > max_count){
-            // first new max found
-            max_count = curr_count; 
-            ans.clear();
-            ans.push_back(curr);
-        }else if(curr_count == max_count){
-            // already a max is present, new one came
-            ans.push_back(curr);
-        }
-
-    }
-
-    void inorder(TreeNode* root){
+    void solve(TreeNode* root){
         if(root == NULL){
             return;
         }
 
-        inorder(root->left);
-        // handle current value count
-        solve(root->val);
-        inorder(root->right);
+        solve(root->left);
+
+        // check if this is mode or not
+        if(curr != root->val){
+            curr = root->val;
+            md = 1;
+        }else{
+            md++;
+        }
+
+        // now calc mode
+        if(md > mxd){
+            mxd = md;
+            ans.clear();
+            ans.push_back(root->val);
+        }else if(md == mxd){
+            // this is also a mode
+            ans.push_back(root->val);
+        }
+
+        solve(root->right);
 
     }
 
     vector<int> findMode(TreeNode* root) {
-        inorder(root);
-        return ans; 
+        solve(root);
+        return ans;
     }
 };
