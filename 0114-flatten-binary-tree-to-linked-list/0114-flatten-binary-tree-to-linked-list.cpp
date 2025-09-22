@@ -11,25 +11,26 @@
  */
 class Solution {
 public:
-    TreeNode* prev; 
+    TreeNode* prev;
 
     void flatten(TreeNode* root) {
         if(root == NULL){
-            return; 
+            return;
         }
 
-        // overwriting right
-        TreeNode* right = root->right; 
+        TreeNode* right = root->right;
 
         if(prev){
-            // put the current node to the right
+            // not the first node at this point, so make the current tree processed being as root;
             prev->right = root;
             prev->left = NULL;
         }
 
-        prev = root; 
-
-        flatten(prev->left);
+        // for the next subtree
+        prev = root;
+        
+        // since this is asking pre-order traversal
+        flatten(root->left);
         flatten(right);
 
     }
