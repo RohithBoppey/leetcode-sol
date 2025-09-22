@@ -18,10 +18,10 @@ Visit root first, then left/right subtrees. Use for constructing trees, or when 
 - Same Tree
 - Symmetric Tree
 - Construct Binary Tree from Preorder and Inorder Traversal
-- Flatten Binary Tree to Linked List
+- [Flatten Binary Tree to Linked List](https://github.com/RohithBoppey/leetcode-sol/blob/master/0114-flatten-binary-tree-to-linked-list/expl.md)
 - Invert Binary Tree
 - Binary Tree Paths
-- Smallest String Starting From Leaf
+- Smallest String Starting From Leaf - traverse each using DFS (but by creating the string and compare when coming to the leaf node)
 
 𝗣𝗮𝘁𝘁𝗲𝗿𝗻 𝟯: Tree DFS – Recursive Inorder Traversal
 
