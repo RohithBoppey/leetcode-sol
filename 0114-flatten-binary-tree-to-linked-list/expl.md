@@ -1,3 +1,6 @@
+![WhatsApp Image 2025-09-22 at 22 31 31_029d68f9](https://github.com/user-attachments/assets/850bc6df-e3e2-4f46-9e59-7ae4692eb40b)
+                
+
 - so for preorder traversal (NLR), we need to completely discard the right branch, put the left branch in place right?
 - so first step is isolating right branch
 - now if you already have a prev pointer for tracking until where we have done the flattening, then we proceed from there
