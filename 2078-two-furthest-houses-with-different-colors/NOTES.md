@@ -41,7 +41,7 @@ class Solution:
         return ans
 ```
 
-Final optimized approach (since the only values possible are: first house to the last or last house to the first)
+Final optimized approach (since the only values possible are: first house to the last or last house to the first) ✅
 
 ```py
 class Solution:
