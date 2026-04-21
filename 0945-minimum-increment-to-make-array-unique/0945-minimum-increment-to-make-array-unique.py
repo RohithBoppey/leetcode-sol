@@ -1,7 +1,8 @@
 class Solution:
     def minIncrementForUnique(self, nums: List[int]) -> int:
         n = len(nums)
-        cnt = [0]*(20**5 + 1)
+        max_val = max(nums)
+        cnt = [0] * (max_val + len(nums) + 1)
 
         for i in nums:
             cnt[i] += 1
