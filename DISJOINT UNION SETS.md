@@ -108,3 +108,7 @@ dsu.union(1, 2)
 print(dsu.connected(0, 2))  # True
 print(dsu.connected(0, 3))  # False
 ```
+
+    
+P1: [Minimum hamming distance](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/submissions/1984974456/?envType=daily-question&envId=2026-04-21)
+
