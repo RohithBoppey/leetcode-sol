@@ -4,9 +4,12 @@ class DSU:
         self.size = [1 for _ in range(n)]
 
     def find(self, x): 
-        while (self.parent[x] != x):
-            x = self.parent[x]
-        return x
+        # updated algo
+        if self.parent[x] != x: 
+            # should update
+            self.parent[x] = self.find(self.parent[x])
+        
+        return self.parent[x]
 
     def connected(self, x, y):
         return self.find(x) == self.find(y)
