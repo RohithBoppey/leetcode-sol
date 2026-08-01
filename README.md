@@ -47,6 +47,7 @@ Collection of LeetCode questions solved!
 | [0416-partition-equal-subset-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/RohithBoppey/leetcode-sol/tree/master/0417-pacific-atlantic-water-flow) |
 | [0455-assign-cookies](https://github.com/RohithBoppey/leetcode-sol/tree/master/0455-assign-cookies) |
+| [0486-predict-the-winner](https://github.com/RohithBoppey/leetcode-sol/tree/master/0486-predict-the-winner) |
 | [0493-reverse-pairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
 | [0658-find-k-closest-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0658-find-k-closest-elements) |
@@ -151,6 +152,7 @@ Collection of LeetCode questions solved!
 | [0338-counting-bits](https://github.com/RohithBoppey/leetcode-sol/tree/master/0338-counting-bits) |
 | [0410-split-array-largest-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0410-split-array-largest-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0416-partition-equal-subset-sum) |
+| [0486-predict-the-winner](https://github.com/RohithBoppey/leetcode-sol/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/RohithBoppey/leetcode-sol/tree/master/0494-target-sum) |
 | [0747-min-cost-climbing-stairs](https://github.com/RohithBoppey/leetcode-sol/tree/master/0747-min-cost-climbing-stairs) |
 | [0769-largest-plus-sign](https://github.com/RohithBoppey/leetcode-sol/tree/master/0769-largest-plus-sign) |
@@ -180,6 +182,7 @@ Collection of LeetCode questions solved!
 | [0025-reverse-nodes-in-k-group](https://github.com/RohithBoppey/leetcode-sol/tree/master/0025-reverse-nodes-in-k-group) |
 | [0203-remove-linked-list-elements](https://github.com/RohithBoppey/leetcode-sol/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/RohithBoppey/leetcode-sol/tree/master/0206-reverse-linked-list) |
+| [0486-predict-the-winner](https://github.com/RohithBoppey/leetcode-sol/tree/master/0486-predict-the-winner) |
 | [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 ## Hash Table
 |  |
@@ -377,6 +380,7 @@ Collection of LeetCode questions solved!
 | [0150-evaluate-reverse-polish-notation](https://github.com/RohithBoppey/leetcode-sol/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0189-rotate-array](https://github.com/RohithBoppey/leetcode-sol/tree/master/0189-rotate-array) |
 | [0445-add-two-numbers-ii](https://github.com/RohithBoppey/leetcode-sol/tree/master/0445-add-two-numbers-ii) |
+| [0486-predict-the-winner](https://github.com/RohithBoppey/leetcode-sol/tree/master/0486-predict-the-winner) |
 | [0909-stone-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0909-stone-game) |
 | [1013-fibonacci-number](https://github.com/RohithBoppey/leetcode-sol/tree/master/1013-fibonacci-number) |
 | [1307-ugly-number-iii](https://github.com/RohithBoppey/leetcode-sol/tree/master/1307-ugly-number-iii) |
@@ -560,6 +564,7 @@ Collection of LeetCode questions solved!
 ## Game Theory
 |  |
 | ------- |
+| [0486-predict-the-winner](https://github.com/RohithBoppey/leetcode-sol/tree/master/0486-predict-the-winner) |
 | [0909-stone-game](https://github.com/RohithBoppey/leetcode-sol/tree/master/0909-stone-game) |
 ## Union Find
 |  |
