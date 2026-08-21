@@ -1,21 +1,22 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        l = 0
-        h = len(height) - 1
+        n = len(height)
+        l, r = 0, n - 1
+        ans = 0
 
-        mx = 0
+        while (l < r):
+            w = (r - l)
+            mx = min(height[l], height[r])
+            ans = max(ans, mx * w)
 
-        # take 2 pointers -> iterate and find the container with most water
-        while(l < h):
-            width = h - l
-            curr_height = min(height[l], height[h])
-            mx = max(mx, width * curr_height)
-
-            # now reduce based on the min value
-            if height[l] < height[h]:
-                # that means in the next iteration, I might find a better equal height
+            if height[l] < height[r]:
+                # can go to right, so that I can find a better height
                 l += 1
             else:
-                h -= 1
+                r -= 1 
 
-        return mx
+        return ans
+
+# Synced seamlessly with LeetHub Pro
+# Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+# Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
