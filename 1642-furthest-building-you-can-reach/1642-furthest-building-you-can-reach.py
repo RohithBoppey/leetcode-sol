@@ -1,27 +1,42 @@
+def solve(m, b, l, h): 
+    diff = []
+    for i in range(m): 
+        d = h[i + 1] - h[i]
+        if d > 0:
+            diff.append(d)
+    diff.sort(reverse=True) 
+
+    # use ladders first
+    i = 0
+    while l > 0:
+        i += 1
+        l -= 1
+    
+    # use bricks
+    while i < len(diff): 
+        b -= diff[i]
+        i += 1
+
+    return b >= 0 
+
+    
+
 class Solution:
     def furthestBuilding(self, heights: List[int], bricks: int, ladders: int) -> int:
-        # always use ladder first, and then fix with bricks later
-        # min heap to always store at what min height we used a ladder
+        # binary search 
         n = len(heights)
-        pq = []
 
-        for i in range(0, n - 1):
-            d = heights[i + 1] - heights[i]
-            if d <= 0:
-                # nothing is required
-                continue
-            
-            # use ladder
-            heapq.heappush(pq, d)
+        low, high, mid = 0, n - 1, 0
 
-            if len(pq) > ladders: 
-                # should remove min height ladder and replace with bricks
-                md = heapq.heappop(pq)
-                bricks -= md
-                if bricks < 0:
-                    return i 
+        while low <= high: 
+            mid = low + (high - low) // 2
+            if solve(mid, bricks, ladders, heights) == True: 
+                # keep this, but can also move further
+                low = mid + 1
+            else: 
+                high = mid - 1
 
-        return n - 1
+        return high
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
