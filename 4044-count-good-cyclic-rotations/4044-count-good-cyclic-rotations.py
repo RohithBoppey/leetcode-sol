@@ -1,30 +1,30 @@
 class Solution:
     def countGoodRotations(self, nums: list[int]) -> int:
         n = len(nums)
-        f,s = 0,0
-        for i in range(n // 2): 
-            f += nums[i]
-            s += nums[(n // 2) + i]
+
+        sm = sum(nums)
+        rn = 0
+        i,j = 0,0 
+
+        for i in range(n // 2):
+            rn += nums[i]
+            j += 1
 
         ans = 0
-        fi, li = (n // 2) - 1, n - 1
-        for i in range(n): 
-            # print(f, s, fi, li)
-            if f > s: 
+        i = 0
+        c = n - 1
+        
+        while c >= 0: 
+            print(rn)
+            if rn > sm - rn: 
                 ans += 1
-            
-            # rotate 
-            f += nums[li] - nums[fi]
-            s += nums[fi] - nums[li]
 
-            fi = (fi - 1) % n
-            li = (li - 1) % n
+            rn += nums[j % n] - nums[i % n]
+            j += 1
+            i += 1
+            c -= 1
 
         return ans
-
-
-
-
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
